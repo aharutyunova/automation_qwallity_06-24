@@ -5,4 +5,4 @@ print(15+25)
 
 
 # Anna comment - Everything ok only your Name and surname is not printed on the new line
-# In the first print you should wite end='\n!'
+# In the first print you should wite end='!\n'
