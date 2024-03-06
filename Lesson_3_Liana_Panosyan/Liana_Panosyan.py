@@ -12,3 +12,6 @@ State University.
 number_1 = 71
 number_2 = 8
 print("Sum of number_1 and number_2 is", number_1+number_2)
+
+
+# Anna Comment - Good, you used in solution everything we discussed about, and even not discussed yet :)
