@@ -10,3 +10,6 @@ def hamestsummary(a, b):
 
 
 hamestsummary(21, 12)
+
+
+# Anna comment - You even used function in solution :) Very good job
