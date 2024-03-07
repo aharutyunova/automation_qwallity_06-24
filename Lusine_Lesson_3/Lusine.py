@@ -1,4 +1,4 @@
-print("It's my first program", end='!')
+print("It's my first program", end='!\n')
 print("Lusine Hovsepyan")
 
 # My background
