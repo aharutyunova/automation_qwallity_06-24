@@ -4,7 +4,7 @@ def Fibonacci(n):
     if n <= 0:
         print("Invalid n value")
     else:
-        print(first_member, end=" ")
+        print("The Fibonacci sequence is:", first_member, end=" ")
         for i in range(1, n):
             print(second_member, end=" ")
             next_member = first_member + second_member
@@ -13,3 +13,4 @@ def Fibonacci(n):
 
 
 Fibonacci(int(input("Enter n value: ")))
+
