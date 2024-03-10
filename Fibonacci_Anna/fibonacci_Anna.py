@@ -10,3 +10,7 @@ def generate_fibonacci_sequence(start, next_number, n):
 
 # Example: Generating the first 10 Fibonacci numbers
 generate_fibonacci_sequence(start, next_number, 10)
+
+
+# Anna comment - I didn't mean you write the code, just the steps,
+# But in case you wrote function understanding the logic, that's very good!!!
