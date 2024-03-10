@@ -5,18 +5,20 @@ def fibonacci(n):
     if n < 0:
         print("Incorrect input!")
     
-    elif n == 0:
-        return 0
-    
-    elif n == 1:
-        return b
-    
     else:
-        for i in range(1, n):
-            c = a + b
-            a = b
-            b = c
+        for i in range(n):
+                
+            if i == 0:
+                print(0)
+            else:
+                c = a + b
+                a = b
+                b = c
 
-        return b
+            print(b)
     
-print(fibonacci(9))
+(fibonacci(9))
+
+# I didn't expect you write the code for this task, but it's good you try
+# I edited a bit the code, but currenlty don't want we focus on it
+#  Will discuss the code after a couple of lessons
