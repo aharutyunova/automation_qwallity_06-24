@@ -18,3 +18,6 @@ def fibonachi(n):
 
 print("Please enter the number you want to see the fibonachi elements list")
 fibonachi(int(input()))
+
+# Anna - I didn't expect you wrute the code :) Just describe the logic via 
+# diagram all words. But anyway code is totally correct!!!
