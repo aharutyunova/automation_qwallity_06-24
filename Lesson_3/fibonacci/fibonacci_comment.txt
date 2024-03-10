@@ -1,0 +1,3 @@
+The general logic is correct
+Only you didn't print result for else branch
+And in your example + branch never will be used. If you add it for general solution, in this case what should be the result- 0 or 1? Did I understand correctly?
