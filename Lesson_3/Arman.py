@@ -18,5 +18,4 @@ number_two = 20
 sum_result = number_one + number_two
 print(f"Sum of two arbitrary numbers is {sum_result}")
 
-
 # Anna comment - You already used advanced solution ;) Everything is correct!!! Well done
