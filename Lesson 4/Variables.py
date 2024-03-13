@@ -97,3 +97,5 @@ print("".join(reversed(str(int(x)+int(y)))))
 # Anna - correct
 
 # Totally very good job!!!
+
+# Thank you very much ^_^
