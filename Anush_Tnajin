@@ -1,0 +1,102 @@
+# 1. Write a Python program to calculate the length of a string.
+
+my_string = "Here is string for your exercise!"
+print(len(my_string))
+
+# Answer` 33
+
+# 2. Write a Python program to get a string made of the first 2 and the last 2 chars from a given a string. 
+
+new_string = "w3resource"
+
+if len(new_string) < 2:
+    print("It is failed")
+else:
+    new_outpute = new_string[:2] + new_string[-2:]
+    print(new_outpute)
+
+# Answer` w3ce
+
+
+#3  Write a Python program to add 'ing' at the end of a given string.
+
+def new_add(text):
+    return text + "ing"
+ 
+ 
+x = "abc"
+print(new_add(x))
+
+#4  Write a Python program to replace ‘cut’ word to ‘dog’
+
+def new(string, word1, word2):
+    return string.replace(word1, word2)
+
+
+x = 'I have a cat and I love it'
+word1 = "cat"
+word2 = "dog"
+
+res = new(x, word1, word2)
+print(res)
+
+
+
+7.Write a Python program to which will print the triangle perimeter․ 
+
+def triangel_sum(num1, num2, num3):
+    x = num1 + num2 + num3
+    return x
+
+
+print(triangel_sum(3, 4, 7))
+
+#8 Write a Python program to check whether a specified value is contained in a group of values.
+  
+  def test(x, y):
+    return x in y
+
+
+x = 3
+y = [1, 5, 8, 3]
+
+t = -1
+k = [1, 5, 8, 3]
+
+print(test(x, y))
+print(test(t, k))
+
+
+
+#9.	Write a Python program to solve (x + y) * (x + y). 
+
+
+def new_func(x, y):
+    result = (x + y) * (x + y)
+    return result
+
+
+print(new_func(4, 3))
+
+
+#10. Write a Python program which converts float values to integer, and sum of two values, then result print with reversed order.
+
+
+def sum(x, y):
+    a = int(x)
+    b = int(y)
+    res = a + b
+    print(res)
+    res = str(res)
+    new = int(res[::-1])
+    return new
+
+
+x = 2.5
+y = 13.75
+
+print(sum(x, y))
+
+
+
+
