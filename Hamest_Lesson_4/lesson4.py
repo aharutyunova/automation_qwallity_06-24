@@ -6,7 +6,8 @@ def func1():
     my_string1 = input()
     print("This is solution of 1-st task\n", len(my_string1))
 
-
+# Anna - correct
+    
 # 2.	Write a Python program to get a string made of the first 2 and the last 2
 # chars from a given a string.
 # Sample String : 'w3resource'
@@ -19,6 +20,8 @@ def func2():
     my_string2 = input()
     print("This is solution of 2-nd task\n", my_string2[0:2] + my_string2[-2::])
 
+# Anna - correct
+    
 # 3.	Write a Python program to add 'ing' at the end of a given string.
 # Sample String : 'abc'
 # Expected Result : 'abcing'
@@ -29,6 +32,8 @@ def func3():
     my_string3 = input()
     print("This is solution of 3-d task\n", my_string3 + "ing")
 
+# Anna - correct
+
 # 4.	Write a Python program to replace ‘cut’ word to ‘dog’
 # Sample String : 'I have a cut and I love it'
 # Expected Result : 'I have a dog and I love it'
@@ -38,6 +43,8 @@ def func4():
     my_string4 = "I have a cut and I love it"
     print("This is solution of 4-d task\n", my_string4.replace("cut", "dog"))
 
+# Anna - correct
+    
 # 5.	Write a Python program to reverse 123  to 321 in text.
 # Sample String : ‘I have 123 books’
 # Expected Result : 'I have 321 books'
@@ -53,6 +60,8 @@ def func5():
     print("This is solution of 5-d task\n")
     print(my_string5.replace(mini_string, to_rep))
 
+# Anna - correct, Interesting solution
+
 # 6.	Replace all occurrence of word five to one.
 # Sample String : "five five was a race horse, two two was one too."
 # Expected Result "one one was a race horse, two two was one too."
@@ -61,6 +70,8 @@ def func5():
 def func6():
     my_string6 = "five five was a race horse, two two was one too."
     print("This is solution of 6-d task\n", my_string6.replace("five", "one"))
+
+# Anna - correct
 
 # 7.	Write a Python program to which will print the triangle perimeter․
 # Triangle sides are 3, 4, 7
@@ -82,6 +93,8 @@ def func7():
 
     else:
         print("This is solution of 7-d task\n", "perimiter=", a+b+c)
+
+# Anna - very complex solution :)
 
 # 8.	Write a Python program to check whether a specified value is contained in a group of values.
 # Test Data :
@@ -106,6 +119,8 @@ def func8():
     my_list_str = f"{my_list}"
     print("This is solution of 8-d task\n", my_find_element in my_list_str)
 
+# Anna - correct, again complex solution 
+
 # 9.	Write a Python program to solve (x + y) * (x + y). 
 # Test Data : x = 4, y = 3
 # Expected Output : (4 + 3) ^ 2) = 49
@@ -120,6 +135,7 @@ def func9():
     print("Program will solv the folowwing formula\n(x+y)*(x+y)")
     print("This is solution of 9-d task\n", (x+y)*2)
 
+# Anna - Almost correct , task is require ^2 action not *2 :) but it is not critical
 
 # 10.Write a Python program which converts float values to integer, and sum of two values, then result print with reversed order.
 # Test Data: x = 2,5 , y = 13.75
@@ -135,8 +151,9 @@ def func10():
     str_sum = f"{z}"
     print("This is solution of 10-d task\n", ''.join(reversed(str_sum)))
 
+# Anna correct
 
-func1()
+# func1()
 # func2()
 # func3()
 # func4()
@@ -145,5 +162,6 @@ func1()
 # func7()
 # func8()
 # func9()
-#func10()
+# func10()
 
+# Anna - good job, even more than enougth :)
