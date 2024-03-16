@@ -1,8 +1,8 @@
 # 1.	Write a Python program to calculate the length of a string.
-my_string = 'Here is string for your exercise!'
+# my_string = 'Here is string for your exercise!'
 
-my_string = "Here is string for your exercise!"
-print("The length of the given string is ", len(my_string))
+# my_string = "Here is string for your exercise!"
+# print("The length of the given string is ", len(my_string))
 
 # Anna - correct
 
@@ -48,7 +48,8 @@ print("The length of the given string is ", len(my_string))
 # my_list = my_string.split()
 # print("New string:", my_list[0], my_list[1], my_list[2][::-1], my_list[3])
 
-# Anna - correct. You could also get 123 from the stirng reverce it and replace old value with new one
+# Anna - correct. You could also get 123 from the stirng reverce it and
+# replace old value with new one
 
 
 # 6.	Replace all occurrence of word five to one.
@@ -72,8 +73,7 @@ print("The length of the given string is ", len(my_string))
 # print("The perimeter of the triangle will be equal:")
 # print(f"{first_side} + {second_side} + {third_side} =", perimeter)
 
-
-
+\
 # first_side = float(input("Enter the first side of the triangle։ "))
 # second_side = float(input("Enter the second side of the triangle։ "))
 # third_side = float(input("Enter the third side of the triangle: "))
@@ -97,7 +97,7 @@ print("The length of the given string is ", len(my_string))
 #     print("False")
 
 # Anna - correct
-    
+
 # 9.	Write a Python program to solve (x + y) * (x + y).
 # Test Data : x = 4, y = 3
 # Expected Output : (4 + 3) ^ 2) = 49
