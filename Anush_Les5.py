@@ -3,7 +3,7 @@ mylist = [1, 2, 3, 3, 4, 5]
 new_sum = sum(mylist)
 print(new_sum)
 
-# result` 18
+# result` 18   
 
 
 
