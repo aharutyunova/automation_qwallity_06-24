@@ -17,3 +17,15 @@ for i in range(11):
 # Anna comment - I didn't expect you write code )) you just need to describe in diagram )
     # But anyway code logic is correct. Maybe it is a bit longer, but anyway
     # taking into account that we didn't discuss it everything is very good :)
+
+
+mydict = {
+    "a": "1",
+    "b": "2",
+    "c": "3"
+}
+mydict.update({"d": "4"})
+print(mydict)
+
+mydict.update({'key3': 'geeks'})
+print(mydict)
