@@ -85,3 +85,78 @@ print(l == t)
 print(l != t)
 print(l <= t)
 print(l >= t)
+
+test_data_8 = [1, 5, 8, 3]
+res_8_1 = "True" if 3 in test_data_8 else "False"
+res_8_2 = "True" if -1 in test_data_8 else "False"
+print(res_8_1, res_8_2)
+
+
+
+print(3 in [2, 4, 7, 5])
+
+x = [2,3,5,5]
+print(x)
+print(id(x))
+print(type(x))
+x[1] = 10
+print(x)
+
+print(id(x))
+
+y = (2, 3, 5, 7, 2)
+print(set(y))
+
+s = {3, 6, 8, 8}
+print(s)
+print(s)
+
+#dic = {"position": "QA", "name": "Poghos", "age": 34}
+#print(dic)
+#print(dic["position"])
+
+list = ["w", "c", "b", "f", "m", "a"]
+list.sort(reverse=True)
+print(list)
+
+Armlist = []
+Armlist.append('Ani')
+Armlist.append('Anna')
+Armlist.append('Karine')
+Armlist.append('Armine')
+print(Armlist)
+Armlist.remove('Ani')
+print(Armlist)
+print(Armlist[0])
+del Armlist[1]
+print(Armlist)
+list4 = [3, 5, 6, 9, 4, 3, 2]
+if 10 in list4:
+    print(False) 
+list4.reverse
+print(list4)
+
+tup = (2, 3, 1, 6, 7)
+print(tup)
+y = len(tup)
+print(y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
