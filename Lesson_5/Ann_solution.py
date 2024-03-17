@@ -3,9 +3,13 @@ mylist = [1, 2, 3, 3, 4, 5]
 total = (sum(mylist))
 print("Sum all the ite ms in a list:", total)
 
+# Anna correct 
+
 # 2 Write a Python program to remove duplicates from a list.
 mylist = [1, 2, 3, 3, 4, 5]
 print("Remove duplicates from a list:", (list(set(mylist))))
+
+# Anna correct 
 
 # 3 Write a Python program which print a specified list after removing the 0th, 4th and 5th elements.
 mylist = [1, 2, 3, 3, 4, 5]
@@ -13,15 +17,21 @@ remove_indices = [0, 4, 5]
 new_list = [mylist[i] for i in range(len(mylist)) if i not in remove_indices]
 print(new_list)
 
+# Anna correct - interesting solution
+
 # 4 Write a Python program to get the difference between the two lists.
 mylist = [1, 2, 3, 3, 4, 5]
 mylist2 = [1, 2, 7]
 print(list(set(mylist).difference(set(mylist2))))
 
+# Anna correct
+
 # 5 Write a Python program to convert a tuple to a dictionary.-
 mytuple = ('green', 'red', 'black', 'blue')
 my_dict = {index: value for index, value in enumerate(mytuple)}
 print(my_dict)
+
+# Anna correct
 
 # 6 Write a Python program to add a key to a dictionary.
 mydict = {
@@ -32,6 +42,8 @@ mydict = {
 mydict["d"] = "4"
 print(mydict)
 
+# Anna correct
+
 # 7 Write a Python program to remove a key from a dictionary.
 # Solution_1
 mydict = {
@@ -41,6 +53,8 @@ mydict = {
 }
 del mydict["a"]
 print(mydict)
+
+# Anna correct
 
 # Solution_2
 mydict = {
@@ -60,11 +74,15 @@ mydict = {
 print(max(mydict.values(), key=int))
 print(min(mydict.values(), key=int))
 
+# Anna correct, key is addiotional here
+
 # 9 Write a Python program to create a union of sets.
 set1 = {1, 2, 3, 4, 5}
 set2 = {1, "b", "c", "d", "e"}
 union_set = set1.union(set2)
 print(union_set)
+
+# Anna correct
 
 # 10 Write a Python program to create a difference of two sets and print output. 
 set1 = {1, 2, 3, 4, 5}
@@ -79,3 +97,8 @@ set1 = {1, 2, 3, 4, 5}
 set2 = {1, "b", "c", "d", "e"}
 difference_set = set1 - set2
 print(difference_set)
+
+
+# Anna correct
+
+# Very good An jan!!!
