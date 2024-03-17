@@ -3,11 +3,15 @@ mylist1 = [1, 2, 3, 3, 4, 5]
 y = sum(mylist1)
 print(y)
 
+# Anna - correct
+
 # 2 Write a Python program to remove duplicates from a list.
 mylist2 = [1, 2, 3, 3, 4, 5]
 x = (set(mylist2))
 print(x)
 print(list(x))
+
+# Anna - correct
 
 # 3 Write a Python program which print a specified list after removing the 0th, 4th and 5th elements.
 mylist3 = [1, 2, 3, 3, 4, 5]
@@ -15,6 +19,9 @@ del mylist3[0]
 del mylist3[4]
 del mylist3[-1]
 print(mylist3)
+
+# Anna - correct (Did you get that after removing 0 th index 4 th index \
+# becomes 3 and after removing 0 and 4th elements 5 th index again become 3th)
 
 # 4 Write a Python program to get the difference between the two lists.
 mylist4 = [1, 2, 3, 3, 4, 5]
@@ -29,10 +36,17 @@ difference2 = (set2) - (set1)
 print(difference2)
 print(list(difference1)+list(difference2))
 
+# Anna - you I expect only difference1, but you solution more exact'
+
 # 5 Write a Python program to convert a tuple to a dictionary.-
 #mytuple = ('green', 'red', 'black', 'blue')
 # x = dict(mytuple)
 #print(x) #please help))
+
+# Anna - we didn't discuss enumarate funciton yet, The enumerate () method adds a counter to an iterable and returns it in the form of an enumerating object
+# for example enumarete(mytuple) will return enumarate object where for each item add counter
+# list(enumarete(mytuple)) will be [(0, 'green'), (1, 'red'), (2, 'black'), (3, 'blue')]
+# Insted of list you could convert it to the dictionary dict(enumarete(mytuple)) -{0: 'green', 1: 'red', 2: 'black', 3: 'blue'}
 
 # 6 Write a Python program to add a key to a dictionary.
 mydict = { 
@@ -42,6 +56,8 @@ mydict = {
 mydict['d'] = '6'
 print(mydict)
 
+# Anna - correct
+
 # 7 Write a Python program to remove a key from a dictionary.
 mydict = { 
  "a": "1",
@@ -50,6 +66,8 @@ mydict = {
 }
 del mydict['b']
 print(mydict)
+
+# Anna - correct
 
 
 # 8 Write a Python program to get the maximum and minimum value in a dictionary.
@@ -61,10 +79,15 @@ mydict = {
 print(max(mydict))
 print(min(mydict))
 
+# Anna you should get max/min value, so solution is max(list(mydict.values())) and min(list(mydict.values()))
+
+
 # 9 Write a Python program to create a union of sets.
 set1 = {1, 2, 3, 4, 5}
 set2 = {1, "b", "c", "d", "e"}
 print(set1.union(set2))
+
+# Anna - correct
 
 # 10 Write a Python program to create a difference of two sets and print output. 
 set1 = {1, 2, 3, 4, 5}
@@ -76,10 +99,13 @@ print(set4)
 print(set3.union(set4))
 
 
+# Anna - you could just print set3 and that was enough
+
+# Anna - Good job!!! 
 
 
 
 
 
 
-
+print(dict(enumerate(('green', 'red', 'black', 'blue'))))
