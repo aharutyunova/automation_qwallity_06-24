@@ -4,7 +4,7 @@ Note : The Fibonacci Sequence is the series of numbers :
 0, 1, 1, 2, 3, 5, 8, 13, 21, ....
 Every next number is found by adding up the two numbers before it.
 Expected Output : 0 1 1 2 3 5 8 13 21 34
-
+'''
 
 
 def fibonacci(n):
@@ -40,7 +40,7 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 print(fibonacci(9))
-'''
+
 
 
 '''
@@ -49,7 +49,7 @@ Sample Data: Python 3.2
 Expected Output:
 Letters 6
 Digits 2
-
+'''
 
 sample_data = "Fibonacci_50"
 
@@ -65,9 +65,9 @@ for i in sample_data:
 print(f"Letters {count_lett}\nDigits {count_dig}")
 #print("Letters", count_lett)
 #print("Digits", count_dig)
-'''
-'''''
 
+
+'''
 3.	Write a Python program to print alphabet pattern 'L'
 Expected Output:
 *                                                                      
@@ -77,7 +77,7 @@ Expected Output:
 *                                                                      
 *                                                                      
 *****
-
+'''
 
 height = 7
 
@@ -87,13 +87,14 @@ for i in range(height):
     else:
         print(height * "*")
 
-'''
+
 '''
 4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
 Expected Output:
 Month: July(7)                   
 Day: 31 
 Season: Summer                                                    
+'''
 
 month = input("Input the month (e.g. January, February etc.): ")
 day = int(input("Input the day: "))
@@ -114,7 +115,8 @@ elif (month == 'September') and (day > 21):
 elif (month == 'December') and (day > 20):
     season = 'winter'
 print("Season is", season)
-'''
+
+# will write another solution tomorrow
 '''
 5.	Write a Python program to find the median of few values. 
 Numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
