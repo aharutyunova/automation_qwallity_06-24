@@ -30,7 +30,7 @@ Letters 6
 Digits 2
 '''
 
-# test
+
 def check_digit_letter(input_string):
     letter_count = 0
     digit_count = 0
@@ -77,7 +77,8 @@ Day: 31
 Season: Summer                                                    
 '''
 
-
+# Solution 1
+'''
 def get_season(month, day):
     # Dictionary mapping months to their respective seasons
     seasons = {
@@ -100,6 +101,51 @@ season_of_year = get_season(ask_for_month, ask_for_day)
 print(f"Month: {ask_for_month}")
 print(f"Day: {ask_for_day}")
 print(f"Season: {season_of_year}")
+'''
+
+# Solution 2
+'''
+def get_season(input_day, input_month):
+    inner_month = ""
+    inner_season = ""
+    seasons = ["Winter", "Spring", "Summer", "Autumn"]
+    months = {
+        1: "January",
+        2: "February",
+        3: "March",
+        4: "April",
+        5: "May",
+        6: "June",
+        7: "July",
+        8: "August",
+        9: "September",
+        10: "October",
+        11: "November",
+        12: "December"
+    }
+    if input_month in months.keys():
+        if input_day < 31:
+            if input_month == 1 or input_month == 2 or input_month == 3:
+                inner_season = seasons[0]
+                inner_month = months[input_month] + f"({input_month})"
+            elif input_month == 4 or input_month == 5 or input_month == 6:
+                inner_season = seasons[1]
+                inner_month = months[input_month] + f"({input_month})"
+            elif input_month == 7 or input_month == 8 or input_month == 9:
+                inner_season = seasons[2]
+                inner_month = months[input_month] + f"({input_month})"
+            elif input_month == 10 or input_month == 11 or input_month == 12:
+                inner_season = seasons[3]
+                inner_month = months[input_month] + f"({input_month})"
+        else:
+            return f"There is no {input_day} day in month"
+    else:
+        return f"There is no month with number {input_month}"
+    return f"Month: {inner_month} \n "f"Day: {input_day} \n " f"Season: {inner_season}"
+
+
+print(get_season(19, 10))
+'''
 
 '''
 5.	Write a Python program to find the median of few values. 
