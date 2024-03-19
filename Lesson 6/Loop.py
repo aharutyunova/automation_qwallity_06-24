@@ -117,7 +117,7 @@ elif (month == 'December') and (day > 20):
 print("Season is", season)
 
 # will write another solution tomorrow
-'''
+'''.;p8uijkjygyhf
 5.	Write a Python program to find the median of few values. 
 Numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
 
