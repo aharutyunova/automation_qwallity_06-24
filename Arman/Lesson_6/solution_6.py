@@ -62,9 +62,11 @@ Expected Output:
 *****
 '''
 
-y = 5
+# z horizontal line
+# y vertical line
 z = 5
-for i in range(y + 1):
+y = 5
+for i in range(z + 1):
     print("*")
     if i == y:
         print("*" * z)
