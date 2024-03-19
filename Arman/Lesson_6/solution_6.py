@@ -30,7 +30,7 @@ Letters 6
 Digits 2
 '''
 
-
+# test
 def check_digit_letter(input_string):
     letter_count = 0
     digit_count = 0
