@@ -32,7 +32,6 @@ for index, value in enumerate(my_list_three):
         result_list.append(value)
 print(result_list)
 
-
 # Anna - good solution
 
 # 4 Write a Python program to get the difference between the two lists.
@@ -57,8 +56,7 @@ print(to_dictionary)
 my_dict = {"a": "1", "b": "2", "c": "3", "d": 4, "e": 5, "f": 6}
 print(my_dict)
 
-
-# Anna - to show add step you could have in the code somehting like
+# Anna - to show add step you could have in the code something like
 #  my_dict[k] = 10
 
 # 7 Write a Python program to remove a key from a dictionary.
@@ -73,7 +71,7 @@ for key in my_dict_two.keys():
         break
 print(my_dict_two)
 
-# Anna - correct and complex solution ) for more simple way you could use del my_dict_two["a"]
+# Anna - correct and complex solution for more simple way you could use del my_dict_two["a"]
 
 # 8 Write a Python program to get the maximum and minimum value in a dictionary.
 my_dict_three = {
