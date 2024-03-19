@@ -1,5 +1,5 @@
 """
-1.	Write a Python program to get the Fibonacci series between 0 to 50.
+1.	Write a Python program to get the Fibonacci series between 0 and 50.
 Note : The Fibonacci Sequence is the series of numbers :
 0, 1, 1, 2, 3, 5, 8, 13, 21, ....
 Every next number is found by adding up the two numbers before it.
@@ -13,7 +13,7 @@ def fibonacci_sequence(number):
     fib_num_one = 0
     fib_num_two = 1
 
-    for i in range(1, number):
+    for num in range(1, number):
         sum_fib_numbers = fib_num_one + fib_num_two
         fib_num_one = fib_num_two
         fib_num_two = sum_fib_numbers
@@ -72,7 +72,8 @@ for i in range(z + 1):
         print("*" * z)
 
 '''
-4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
+4.	Write a Python program that reads two integers representing a month
+and day and prints the season for that month and day.  
 Expected Output:
 Month: July(7)                   
 Day: 31 
@@ -127,16 +128,16 @@ def get_season(input_day, input_month):
     }
     if input_month in months.keys():
         if input_day < 31:
-            if input_month == 1 or input_month == 2 or input_month == 3:
+            if input_month in (1, 2, 3):
                 inner_season = seasons[0]
                 inner_month = months[input_month] + f"({input_month})"
-            elif input_month == 4 or input_month == 5 or input_month == 6:
+            elif input_month in (4, 5, 6):
                 inner_season = seasons[1]
                 inner_month = months[input_month] + f"({input_month})"
-            elif input_month == 7 or input_month == 8 or input_month == 9:
+            elif input_month in (7, 8, 9):
                 inner_season = seasons[2]
                 inner_month = months[input_month] + f"({input_month})"
-            elif input_month == 10 or input_month == 11 or input_month == 12:
+            elif input_month in (10, 11, 12):
                 inner_season = seasons[3]
                 inner_month = months[input_month] + f"({input_month})"
         else:
@@ -150,16 +151,27 @@ print(get_season(19, 10))
 '''
 
 '''
-5.	Write a Python program to find the median of few values. 
-Numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
+5.
+Write
+a
+Python
+program
+to
+find
+the
+median
+of
+few
+values.
+Numbers: 15, 26, 28, 33 or 1, 4, 5, 6, 7
 
 Example:
 1, 3, 3, 6, 7, 8, 9
 
-Median = 6 
+Median = 6
 
-1, 2, 3, 4, 5, 6, 8, 9, 
-Median = (4+5)/2 = 4.5
+1, 2, 3, 4, 5, 6, 8, 9,
+Median = (4 + 5) / 2 = 4.5
 '''
 
 first_numbers = 15, 26, 28, 33
