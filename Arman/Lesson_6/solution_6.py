@@ -151,18 +151,7 @@ print(get_season(19, 10))
 '''
 
 '''
-5.
-Write
-a
-Python
-program
-to
-find
-the
-median
-of
-few
-values.
+5. Write a Python program to find the median of few values.
 Numbers: 15, 26, 28, 33 or 1, 4, 5, 6, 7
 
 Example:
