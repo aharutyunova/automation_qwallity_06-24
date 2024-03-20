@@ -110,7 +110,7 @@ print(f"Season: {season_of_year}")
 
 # Solution 2
 '''
-ask_for_day = int(input("Enter day of month (1-31): "))
+ask_for_day = int(input("Enter day of day (1-31): "))
 ask_for_month = int(input("Enter month (1-12): "))
 
 
