@@ -12,6 +12,8 @@ while fibonacci_series[-1] + fibonacci_series[-2] <= 50:
 for number in fibonacci_series:
     print(number, end=" ")
 print()
+
+# Anna - correct
 '''
 2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
 Sample Data: Python 3.2
@@ -32,6 +34,8 @@ for char in str:
 
 print("Letters:", letter)
 print("Digits:", digit)
+
+# Anna - correct
 
 '''
 3.	Write a Python program to print alphabet pattern 'L'
@@ -59,6 +63,7 @@ for i in range(11):
         print("*")
 print()
 
+# Anna - both solutions are correct
 '''
 4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
 Expected Output:
@@ -100,3 +105,7 @@ else:
     after_center = int(numbers_list[len(numbers_list) // 2])
     median = (before_center + after_center) / 2
     print(f"Median is: {median}")
+
+
+# Anna correct :)
+# Good job An jan, 4th task will discuss tomorrow  
