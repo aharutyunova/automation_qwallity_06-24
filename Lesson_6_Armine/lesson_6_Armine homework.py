@@ -20,6 +20,7 @@ for i in series_length:
 
 print("\n")
 
+# Anna - correct
   
 
 '''
@@ -30,17 +31,19 @@ Letters 6
 Digits 2
 '''
 
-Example_string = input("Python 3.2")
-for i in Example_string:
+Example_string = "Python 3.2" # This part not user friendly, you coould write something like Input your word. So in console it will be readable
 alpha_count = 0
 digit_count = 0
-if i.isalpha():
-      alpha_count = alpha_count + 1
-elif:
-      digit_count = digit_count + 1
+for i in Example_string:
+    if i.isalpha():
+        alpha_count = alpha_count + 1
+    elif i.isdigit(): # After elif you missed condition
+        digit_count = digit_count + 1
 
 print(digit_count) 
 print(alpha_count)
+
+# alpha_count = 0 and digit_count = 0 should be before loop is starting. Also Pay attention on tabulation
 
 
 '''
@@ -60,8 +63,11 @@ for i in list:
     print(i)
 print('*****')
 
+# Solution is correct but hardcoded
 
 # I am thinking of around 4th and 5th exercises. I will push them as soon as I solve them))
+
+# That's ok in case you have some difficulties with this tasks, will discuss tomorrow
 
 
 
