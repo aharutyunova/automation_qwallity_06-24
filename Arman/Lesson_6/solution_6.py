@@ -22,6 +22,8 @@ def fibonacci_sequence(number):
 
 fibonacci_sequence(ask_for_number)
 
+# Anna - very good, only you didn't print 0  :)
+
 '''
 2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
 Sample Data: Python 3.2
@@ -52,6 +54,7 @@ def check_digit_letter(input_string):
 
 print(check_digit_letter("lesson_6"))
 
+# Anna - correct
 '''
 3.	Write a Python program to print alphabet pattern 'L'
 Expected Output:
@@ -72,6 +75,9 @@ for i in range(ask_for_vertical + 1):
     print("*")
     if i == ask_for_vertical:
         print("*" * ask_for_horizontal)
+
+
+# Anna - correct
 
 '''
 4.	Write a Python program that reads two integers representing a month
@@ -107,6 +113,7 @@ print(f"Month: {ask_for_month}")
 print(f"Day: {ask_for_day}")
 print(f"Season: {season_of_year}")
 '''
+# Anna - everything is correct, only month return the number not month name, also condition in line 102 not very clear
 
 # Solution 2
 '''
@@ -155,7 +162,7 @@ def get_season(input_day, input_month):
 
 print(get_season(ask_for_day, ask_for_month))
 '''
-
+# Anna - Second solution also correct and return month name not the number
 '''
 5. Write a Python program to find the median of few values.
 Numbers: 15, 26, 28, 33 or 1, 4, 5, 6, 7
@@ -207,3 +214,8 @@ def median(input_string):
 
 
 print(median(second_numbers))
+
+# Anna - the algorithm is not clear, why you reversed lists? 
+# For the first_numbers - median is 27, per your solution 15 is returned
+
+# Generally very good job 
