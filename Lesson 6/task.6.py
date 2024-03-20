@@ -13,6 +13,8 @@ while next_num <= 50:
     a, b = b, next_num
     next_num = a + b
 
+# Anna - correct
+
 '''
 2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
 Sample Data: Python 3.2
@@ -31,6 +33,9 @@ for item in given_str:
         letters += 1
 
 print(f"In the given string, Letters = {letters} and Digits = {digits}")
+
+# Anna - correct
+
         
 '''
 3.	Write a Python program to print alphabet pattern 'L'
@@ -54,6 +59,7 @@ for Row in range(0,8):
     text =text +"\n"    
 print(text); 
 
+# Anna - correct
 
 '''
 4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
@@ -84,7 +90,7 @@ else:
     print("Out of range")
 
 
-
+# Anna -correct, interesting solution
 '''
 5.	Write a Python program to find the median of few values. 
 Numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
@@ -101,4 +107,8 @@ num = [1, 3, 7, 6, 7, 6, 10, 20, 4]
 if len(num) % 2 != 0:
     print(num[len(num)-(len(num) // 2) - 1])
 elif len(num) % 2 == 0:
-    print((num[int((len(num)-1 / 2))] + num[int(((len(num)-1) / 2) + 1)]) /2)
+    print((num[int((len(num)-1) / 2)] + num[int(((len(num)-1) / 2) + 1)]) /2)
+
+    # Anna - The logic is correct, you just put bracket in incorrect place
+
+    # Very good job!!!
