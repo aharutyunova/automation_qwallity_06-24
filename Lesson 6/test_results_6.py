@@ -15,6 +15,7 @@ for f in range(fibonacci_result):
 
     print(f)
 
+# Anna - correct, you didn't print 0 :)
 
 
 '''
@@ -25,20 +26,21 @@ Letters 6
 Digits 2
 '''
 
-string_name = input ("Enter a string: ")
-d = l = 0
+# string_name = input ("Enter a string: ")
+# d = l = 0
 
-for c in string_name:
-    if c.isdigit():
-        d = d + 1
-    elif c.isalpha():
-        l = l + 1
-    else:
-        pass
+# for c in string_name:
+#     if c.isdigit():
+#         d = d + 1
+#     elif c.isalpha():
+#         l = l + 1
+#     else:
+#         pass
 
-print("Letters", l)
-print("Digits", d)
+# print("Letters", l)
+# print("Digits", d)
 
+# Anna - correct,
 
 
 '''
@@ -80,7 +82,7 @@ print("Month:", month)
 print("Day:", day)
 print("Season:", season)
 
-
+# Anna -General logic is correct, but you print month number not the name, also missing checking for the day
 '''
 5.	Write a Python program to find the median of few values. 
 Numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
@@ -93,3 +95,4 @@ Median=6
 1, 2, 3, 4, 5, 6, 8, 9, 
 Median = (4+5)/2 = 4.5
 '''
+# Will discuss tomorrow task 3 and 6 :)
