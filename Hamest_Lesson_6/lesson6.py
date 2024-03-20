@@ -19,11 +19,15 @@ def my_fibonachi():
     else:
         a = [0, 1]
         i = 2
-        while not z <= a[i]:
+        while a[i-1] <= z:
             a.insert(i, a[i-1] + a[i-2])
-            i = i+1
-    print(a)
-# not complite
+            if a[i] > z:
+                del a[i]
+                break
+            else:
+                i = i+1
+    print("Fibonachi list is\n", a)
+
 
 '''
 2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
@@ -78,6 +82,30 @@ def drow_L():
                     i = i - 1
 
 
-my_fibonachi()
+'''
+4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
+Expected Output:
+Month: July(7)                   
+Day: 31 
+Season: Summer                                                    
+'''
+
+# do not check, not complite :(
+def season_func():
+    my_dict = {
+        "Winter": ["December", "January", "Febrory"], 
+        "Spring": ["March", "April", "May"], 
+        "Summer": ["June", "July", "August"],
+        "Autumn": ["September", "October", "November"]
+        }
+    long_month = ["January", "March", "May", "July", "August", "October", "December"]
+    medium_month = ["April", "June", "September", "November"]
+    short_month = ["Febrory"]
+
+
+# season_func()
+
+
+# my_fibonachi()
 # calculator_of_dig_num()
 # drow_L()
