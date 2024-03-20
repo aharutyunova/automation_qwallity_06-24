@@ -28,7 +28,8 @@ def my_fibonachi():
                 i = i+1
     print("Fibonachi list is\n", a)
 
-
+# Anna - the logic is correct, but I guess you need check if i < Z and i > z in line 22 and 25
+#  In your solution even I input 9, 15 the same fibonacci sequence is printed
 '''
 2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
 Sample Data: Python 3.2
@@ -50,6 +51,8 @@ def calculator_of_dig_num():
         elif k.isalpha():
             count_of_str = count_of_str + 1
     print("Letters ", count_of_str, "\nDigits ", count_of_dig)
+
+# Anna - correct
 
 '''
 3.	Write a Python program to print alphabet pattern 'L'
@@ -80,7 +83,8 @@ def drow_L():
                 else:
                     print(f"{n}\n")
                     i = i - 1
-
+drow_L()
+# Anna - correct but a bit long solution
 
 '''
 4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
@@ -109,3 +113,5 @@ def season_func():
 # my_fibonachi()
 # calculator_of_dig_num()
 # drow_L()
+
+# Anna - will discuss all tasks solution tomorrow :)
