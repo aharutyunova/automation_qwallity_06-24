@@ -66,12 +66,12 @@ Expected Output:
 
 # z horizontal line
 # y vertical line
-z = 5
-y = 5
-for i in range(z + 1):
+ask_for_vertical = int(input("Enter a horizontal line value (z): "))
+ask_for_horizontal = int(input("Enter a horizontal line value (y): "))
+for i in range(ask_for_vertical + 1):
     print("*")
-    if i == y:
-        print("*" * z)
+    if i == ask_for_vertical:
+        print("*" * ask_for_horizontal)
 
 '''
 4.	Write a Python program that reads two integers representing a month
@@ -175,17 +175,23 @@ second_numbers = 1, 4, 5, 6, 7
 
 def median(input_string):
     med = 0
+
     # first and second half parts of list
     first_list_part = []
     second_list_part = []
+
     # convert string to list
     str_list = list(input_string)
+
     # get length of list
     length = len(str_list)
+
     # reverse list
     reversed_list = str_list[::-1]
+
     # get half list value
     half_list = int(length / 2)
+
     # check if list length is even
     if length % 2 == 0:
         for number in range(1, half_list + 1):
