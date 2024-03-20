@@ -1,13 +1,14 @@
 '''
 1.	Write a Python program to calculate the length of a string.
-my_string = ‘Here is string for your exercise!’
+my_string = "Here is string for your exercise!"
 '''
 my_string = "Here is string for your exercise!"
 len_of_str = len(my_string)
 print(len_of_str)
 
 '''
-2.	Write a Python program to get a string made of the first 2 and the last 2 chars from a given a string. 
+2.	Write a Python program to get a string made of the first 2 and the last 2
+chars from a given a string.
 Sample String : "w3resource"
 Expected Result : "w3ce"
 Sample String : "w3"
@@ -31,7 +32,7 @@ expected_res = sample_str + "ing"
 print(expected_res)
 
 '''
-4.	Write a Python program to replace ‘cut’ word to ‘dog’
+4.	Write a Python program to replace "cut" word to "dog"
 Sample String : "I have a cut and I love it"
 Expected Result : "I have a dog and I love it"
 '''
@@ -41,7 +42,7 @@ print(expected_res_4)
 
 '''
 5.	Write a Python program to reverse 123  to 321 in text.
-Sample String : ‘I have 123 books’
+Sample String : "I have 123 books"
 Expected Result : "I have 321 books"
 '''
 sample_str_5 = "I have 123 books"
@@ -69,7 +70,8 @@ tr_perimeter = tr_side_a + tr_side_b + tr_side_c
 print(tr_perimeter)
 
 '''
-8.	Write a Python program to check whether a specified value is contained in a group of values.
+8.	Write a Python program to check whether a specified value is contained in a
+group of values.
 Test Data :
 3 -> [1, 5, 8, 3] : True
 -1 -> [1, 5, 8, 3] : False
@@ -80,7 +82,7 @@ res_8_2 = "True" if -1 in test_data_8 else "False"
 print(res_8_1, res_8_2)
 
 '''
-9.	Write a Python program to solve (x + y) * (x + y). 
+9.	Write a Python program to solve (x + y) * (x + y).
 Test Data : x = 4, y = 3
 Expected Output : (4 + 3) ^ 2) = 49
 '''
@@ -90,7 +92,8 @@ res_9 = (x + y) * (x + y)
 print(f"(({x} + {y}) ^ 2) = {res_9}")
 
 '''
-10.Write a Python program which converts float values to integer, and sum of two values, then result print with reversed order.
+10.Write a Python program which converts float values to integer, and sum of
+two values, then result print with reversed order.
 Test Data: x = 2,5 , y = 13.75
 Expected Output: 51
 '''
