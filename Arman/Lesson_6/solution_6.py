@@ -38,8 +38,10 @@ def check_digit_letter(input_string):
         for char in input_string:
             if char.isdigit():
                 digit_count += 1
-            else:
+            elif char.isalpha():
                 letter_count += 1
+            else:
+                continue
     else:
         return False
 
