@@ -141,7 +141,19 @@ print(tup)
 y = len(tup)
 print(y)
 
+product = False
+discount = 0
+price = 1000
 
+if product:
+    if discount > 0:
+       price = price - price*discount/100
+       print(price)
+    else: price = price
+    print(price)
+
+else:
+    print("no product")
 
 
 
