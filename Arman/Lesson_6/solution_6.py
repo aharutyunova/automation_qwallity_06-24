@@ -110,6 +110,10 @@ print(f"Season: {season_of_year}")
 
 # Solution 2
 '''
+ask_for_day = int(input("Enter day of month (1-31): "))
+ask_for_month = int(input("Enter month (1-12): "))
+
+
 def get_season(input_day, input_month):
     inner_month = ""
     inner_season = ""
@@ -149,7 +153,7 @@ def get_season(input_day, input_month):
     return f"Month: {inner_month} \n "f"Day: {input_day} \n " f"Season: {inner_season}"
 
 
-print(get_season(19, 10))
+print(get_season(ask_for_day, ask_for_month))
 '''
 
 '''
