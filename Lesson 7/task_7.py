@@ -6,5 +6,3 @@
 
 #3.	Create module  with name fib.py where keep function of Fibonacci, in second .py file import and call it.
 
-
-fib()
