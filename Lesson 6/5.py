@@ -22,3 +22,4 @@ else:
     median = float((integer_list[int(length / 2 - 1)] + integer_list[int(length / 2)]) / 2)
     print('median is:', median)
 
+# Exactly :) The total homework is very very good!!!

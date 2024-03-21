@@ -36,3 +36,4 @@ for month_i in month_dict:
         days = month_i['days'] 
         print(f'month {name} has {days} days')
 
+# Anna - everything is almost correct, only month name is not printed. But general solutions is good enough

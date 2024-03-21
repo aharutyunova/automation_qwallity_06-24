@@ -17,3 +17,5 @@ for i in data:
     else:
         pass
 print(f'data: {data} - has {letters} letters and {digits} digits')
+
+# Anna - correct

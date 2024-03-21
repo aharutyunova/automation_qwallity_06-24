@@ -9,10 +9,14 @@ print (sum_mylist)
 '''mylist = [1, 2, 3, 3, 4, 5]
 print(sum(mylist))
 '''
+# Anna - correct
+
 # 2 Write a Python program to remove duplicates from a list.
 mylist = [1, 2, 3, 3, 4, 5]
 myset = list(set(mylist))
 print (myset)
+
+# Anna - correct
 
 # 3 Write a Python program which print a specified list after removing the 0th, 4th and 5th elements.
 mylist = [1, 2, 3, 3, 4, 5]
@@ -20,6 +24,9 @@ mylist.pop(5)
 mylist.pop(4)
 mylist.pop(0)
 print(mylist)
+
+# Anna - very good approch
+
 # 4 Write a Python program to get the difference between the two lists.
 mylist1 = [1, 2, 3, 3, 4, 5]
 mylist2 = [1, 2, 7]
@@ -37,9 +44,13 @@ mySet2 = set(mylist2)
 dif = list(mySet1.difference(mySet2)) + list(mySet2.difference(mySet1))
 print (dif)
 
+# Anna - second solution more simple and better in this case
+
 # 5 Write a Python program to convert a tuple to a dictionary.-
 mytuple = ('green', 'red', 'black', 'blue')
 print(dict(enumerate(mytuple)))
+
+# Anna - correct
 
 # 6 Write a Python program to add a key to a dictionary.
 mydict = { 
@@ -50,6 +61,8 @@ mydict = {
 mydict["key"] = '4'
 print (mydict)
 
+# Anna - correct
+
 # 7 Write a Python program to remove a key from a dictionary.
 mydict = { 
  "a": "1",
@@ -58,6 +71,8 @@ mydict = {
 }
 mydict.pop("a")
 print(mydict)
+
+# Anna - correct
 
 # 8 Write a Python program to get the maximum and minimum value in a dictionary.
 mydict = { 
@@ -69,12 +84,19 @@ mylist =list(mydict.values())
 print('minimum value is', sorted(mylist)[0])
 print('maximum value is', sorted(mylist)[-1])
 
+# Anna - correct
+
 # 9 Write a Python program to create a union of sets.
 set1 = {1, 2, 3, 4, 5}
 set2 = {1, "b", "c", "d", "e"}
 print(set1.union(set2))
 
+# Anna - correct
+
 # 10 Write a Python program to create a difference of two sets and print output. 
 set1 = {1, 2, 3, 4, 5}
 set2 = {1, "b", "c", "d", "e"}
 print(set1.difference(set2))
+# Anna - correct
+
+# Anna - very good solutions
