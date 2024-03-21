@@ -1,7 +1,0 @@
-Create Branch with your name
-On your GitHub branch add folder Lesson_3, Inside this folder add <Your_name>.py file and in That file write following code
-Prints 'It's my first program’ and adds '!' at the end on the first line.
-Prints your name and surname on the second line.
-Adds a comment about your background on the third line.
-Sum two arbitrary numbers and print the result on the fourth line
-Commit changes and Push to github
