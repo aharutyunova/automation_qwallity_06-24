@@ -13,7 +13,7 @@ def fibonacci_sequence(number):
     fib_num_one = 0
     fib_num_two = 1
 
-    for num in range(1, number):
+    for num in range(number):
         sum_fib_numbers = fib_num_one + fib_num_two
         fib_num_one = fib_num_two
         fib_num_two = sum_fib_numbers
@@ -75,7 +75,6 @@ for i in range(ask_for_vertical + 1):
     print("*")
     if i == ask_for_vertical:
         print("*" * ask_for_horizontal)
-
 
 # Anna - correct
 
@@ -180,42 +179,23 @@ first_numbers = 15, 26, 28, 33
 second_numbers = 1, 4, 5, 6, 7
 
 
-def median(input_string):
-    med = 0
+def median(input_numbers):
+    sort_numbers = sorted(input_numbers)
+    length_numbers = len(input_numbers)
 
-    # first and second half parts of list
-    first_list_part = []
-    second_list_part = []
-
-    # convert string to list
-    str_list = list(input_string)
-
-    # get length of list
-    length = len(str_list)
-
-    # reverse list
-    reversed_list = str_list[::-1]
-
-    # get half list value
-    half_list = int(length / 2)
-
-    # check if list length is even
-    if length % 2 == 0:
-        for number in range(1, half_list + 1):
-            first_list_part.append(number)
-        for number in range(half_list):
-            second_list_part.append(reversed_list[number])
-            med = (first_list_part[-1] + second_list_part[-1]) / 2
+    if length_numbers % 2 == 0:
+        median_one = sort_numbers[length_numbers // 2]
+        median_two = sort_numbers[length_numbers // 2 - 1]
+        median_result = (median_one + median_two) / 2
     else:
-        # get middle number of the list which length value is odd
-        middle_number = sorted(input_string)[len(input_string) // 2]
-        return f"Median for {input_string} is: {middle_number}"
-    return f"Median for {input_string} is: {med}"
+        median_result = input_numbers[length_numbers // 2]
+    return median_result
 
 
+print(median(first_numbers))
 print(median(second_numbers))
 
 # Anna - the algorithm is not clear, why you reversed lists? 
 # For the first_numbers - median is 27, per your solution 15 is returned
 
-# Generally very good job 
+# Generally very good job
