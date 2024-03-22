@@ -9,10 +9,12 @@ random_numbers_list_two = [10, 50, 72, 92, 70, 102, 109, 233, 240, 120]
 # function finds maximum value in any list with integers
 # Solution 1
 def list_max_value(input_list):
-    max_value = input_list[0]
-    for number in input_list:
-        if number > max_value:
-            max_value = number
+    max_value = 0
+    if input_list:
+        max_value = input_list[0]
+        for number in input_list:
+            if number > max_value:
+                max_value = number
     return max_value
 
 
