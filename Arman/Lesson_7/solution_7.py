@@ -27,6 +27,8 @@ print(f" Solution 2: {lst_max_value(random_numbers_list_two)}")
 
 # 2. Write a Python function, which will get few numbers from keyboard, return to sum of them
 
+# function returns numbers sum from input
+# question count 5 in the function
 def sum_numbers():
     question_count = 1
     numbers = []
@@ -43,6 +45,8 @@ print(sum_numbers())
 
 # 3. Create module with name fib-py where keep function of Fibonacci, in second •py file import and call
 
+# get user number from input
 ask_for_number = int(input("Enter a number (fibonacci sequence): "))
 
+# run fibonacci sequence function
 fibonacci_sequence = fib.fibonacci_sequence(ask_for_number)
