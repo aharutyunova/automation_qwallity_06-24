@@ -42,7 +42,7 @@ def fibonacci(n):
 
 print(fibonacci(9))
 
-
+# Anna - first solution is correct, second not return fibopnacci sequence
 '''
 2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
 Sample Data: Python 3.2
@@ -67,6 +67,7 @@ print(f"Letters {count_lett}\nDigits {count_dig}")
 #print("Letters", count_lett)
 #print("Digits", count_dig)
 
+# Anna - correct
 
 '''
 3.	Write a Python program to print alphabet pattern 'L'
@@ -88,6 +89,7 @@ for i in range(height):
     else:
         print(height * "*")
 
+# Anna correct
 
 '''
 4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
@@ -146,7 +148,7 @@ elif (month == 'December') and (day > 20):
     season = 'winter'
 print("Season is", season)
 
-
+# Anna - the second solution not accept month as integer and print only Season. First solution cover all requirements
 '''
 5.	Write a Python program to find the median of few values. 
 Numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
@@ -170,3 +172,7 @@ if len(val_list) % 2 == 0:
 elif len(val_list) % 2 != 0:
     median = val_list[int(len(val_list) // 2)]
 print(median)
+
+# Anna - correct
+
+# Very Good Job for this difficult tasks:)
