@@ -11,6 +11,8 @@ while a <= 50:
     a, b = b, a + b
 
 
+# Anna - correct
+    
 
 # 2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
 # Sample Data: Python 3.2
@@ -40,7 +42,7 @@ def paint():
 
 paint()
 
-
+# Anna - correct
 
 #4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
 #Expected Output:
