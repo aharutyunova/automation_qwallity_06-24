@@ -157,6 +157,26 @@ else:
 
 
 
+def greetings(name='Armine'):
+    print(f'hello spring {name}')
+
+greetings ('Vardush')
+
+
+
+def calculations(*args):
+    print(sum(args))
+
+
+calculations(10, 40, 50, 60)
+
+
+def mathematics (**kwargs):
+    print(sum(kwargs.values()))
+
+mathematics (a=3, b=4, c=5)
+
+
 
 
 
