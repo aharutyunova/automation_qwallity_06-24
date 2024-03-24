@@ -14,6 +14,8 @@ def sum_of_numbers(list):
         
 print(sum_of_numbers([1,2,3]))
 
+# Anna - for task 1 and task 2 I would like you write your own algorithm and not use max/sum  :)
+#  But from function creation part everything is ok
 
 #3.	Create module  with name fib.py where keep function of Fibonacci, in second .py file import and call it.
 
