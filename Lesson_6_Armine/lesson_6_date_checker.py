@@ -53,13 +53,13 @@ def myfunction(month, day):
     return month, day
 
 
-month = input("please enter month with digit") 
-day = input("Please enter the day")
+month = int(input("please enter month with digit"))
+day = int(input("Please enter the day"))
 
-if day == day_list_2 and month == month_2:
-        print((month_name_2), end='\n'(season_4))
-elif day == day_list_1 and month == month_1:
-        print((month_name_1), end='\n'(season_4)) 
+if day in day_list_2 and month == month_2:
+        print(month_name_2, season_4)
+elif day in day_list_1 and month == month_1:
+        print(month_name_1, season_4) 
 elif day == day_list_1 and month == month_12:
         print((month_name_12), end='\n'(season_4)) 
 elif day == day_list_1 and month == month_3:
@@ -81,9 +81,17 @@ elif day == day_list_1 and month == month_10:
 elif day == day_list_1 and month == month_11:
         print((month_name_11), end='\n'(season_3))    
         
-    else:
+else:
         print("No such a date")
       
 
 
+# Some notes here
+#  1. You should convert day and month inputed to int, as you compare with integer
+#  2. In case you whant check day in the list, you should check day in list  not day==list, 
+# because as day you get int and compare it with the list
+#3. When print end='\n' is the last parameter of the print function, it is default '\n'.
+        #  You can't take it between printed values - I changed for the first 2 prints
+# After this changes program works
 
+# Anyway, even code didn't work it is very good you tru build your own algorithm to solve this task
