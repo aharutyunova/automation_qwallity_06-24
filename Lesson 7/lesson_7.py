@@ -27,6 +27,7 @@ def max_value(args):
 
 print(max_value(list_1))
 
+# Anna -  correct, second way is more acceptable per requirements
 
 # 2.	Write a Python function, which will get few numbers from keyboard, return to sum of them
 
@@ -44,5 +45,11 @@ def sum_nums(args):
 numbers = input("Please input numbers from space in one line: ")
 print(sum_nums(numbers))
 
+# Anna - correct
+
 # 3.	Create module  with name fib.py where keep function of Fibonacci, in second .py file import and call it.
 fib.fibonacci(50)
+
+# Anna -very good
+
+# Good solutions
