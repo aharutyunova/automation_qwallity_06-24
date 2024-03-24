@@ -12,6 +12,8 @@ def max_value(list_numbers):
 list_numbers = [10, 20, 50, 30, 40]
 print("Max value is:", max_value(list_numbers))
 
+# Anna -very good
+
 # 2. Write a Python function, which will get few numbers from keyboard, return to sum of them.
 
 # example_1
@@ -32,7 +34,7 @@ def sum_numbers():
 
 print("Sum number is:", sum_numbers())
 
-
+# Anna - Good
 # Example_2
 
 
@@ -47,6 +49,7 @@ def sum_numbers():
 
 print("Sum number is:", sum_numbers())
 
+# Anna - Second example also good enough
 
 # 3.	Create module  with name fib.py where keep function of Fibonacci, in second .py file import and call it.
 
@@ -55,3 +58,7 @@ import fib
 
 # call function
 fib.fib_series()
+
+# Anna - correct
+
+# Anna - very good job
