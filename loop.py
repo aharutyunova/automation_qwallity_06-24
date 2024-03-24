@@ -25,6 +25,7 @@ for i in range(limit):
         break
     print(fib_number)
 
+# Anna - correct but solution is not simple
 
 # '''
 # 2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
@@ -42,7 +43,7 @@ num = "qwallity 2024"
 count = sum(1 for char in num if char.isdigit())
 print(count)
 
-
+# Anna - correct but you could count digits and letters in on loop
 
 # 3.	Write a Python program to print alphabet pattern 'L'
 # Expected Output:
@@ -63,6 +64,7 @@ for row in range(7):
             print(end=" ")
     print()
 
+# Anna -correct
 
 
 
@@ -93,7 +95,7 @@ elif i in (9, 10, 11):
 else:
     print("Incorrect value")
 
-
+# Anna - only checking of valid days is absent, but logic and solution is correct
 
 # '''
 # 5.	Write a Python program to find the median of few values. 
@@ -122,3 +124,8 @@ if len(b) % 2 == 0:
     print((b[len(b) // 2 - 1] + b[len(b) // 2]) / 2)
 else:
     print(b[len(b) // 2 ])
+
+    
+# Anna - correct
+    
+# Very Good job!!!
