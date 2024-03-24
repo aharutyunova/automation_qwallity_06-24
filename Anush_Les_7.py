@@ -12,6 +12,9 @@ print("Maximum value in the list:", func1(my_list))
 
 # Answer` 46
 
+# Anna - I would like you write your own algorith to get maximum from the list, 
+# anyway from function structure, everything is correct
+
 # 2. Write a Python function, which will get few numbers from keyboard, return to sum of them 
 
 
@@ -24,6 +27,8 @@ print("This is sum:", result)
 
 
 # Answer` 18
+
+# Anna - the same comment for this taks :)
 
 # 3. Create module  with name fib.py where keep function of Fibonacci, in second .py file import and call it.
 

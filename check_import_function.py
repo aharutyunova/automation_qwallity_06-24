@@ -6,3 +6,6 @@ Anush_Les_7.func1([3, 4, 8])
 
 # qani vor fibonachin funciayov chei grel, ayl funcia em kanchel,
 # haskanalu hamar vor ashxatwum e
+
+
+# Import works correctly :)
