@@ -49,7 +49,14 @@ def sum_numbers():
 
 print("Sum number is:", sum_numbers())
 
-# Anna - Second example also good enough
+
+
+def sum_numbers(*args):
+    return sum(args)
+
+
+print(sum_numbers(10, 20, 30, 50))
+
 
 # 3.	Create module  with name fib.py where keep function of Fibonacci, in second .py file import and call it.
 
