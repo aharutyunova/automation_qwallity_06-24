@@ -49,6 +49,7 @@ def sum_numbers():
 
 print("Sum number is:", sum_numbers())
 
+# Example_3
 
 
 def sum_numbers(*args):
