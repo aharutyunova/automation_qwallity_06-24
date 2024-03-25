@@ -45,7 +45,7 @@ def sum_numbers():
 
 print(sum_numbers())
 
-# 3. Create module with name fib-py where keep function of Fibonacci, in second •py file import and call
+# 3. Create module with name fib-py where keep function of Fibonacci, in second .py file import and call
 
 # get user number from input
 ask_for_number = int(input("Enter a number (fibonacci sequence): "))
