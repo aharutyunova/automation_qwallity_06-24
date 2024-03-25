@@ -47,13 +47,11 @@ def sum_numbers():
 
 print(sum_numbers())
 
-<<<<<<< HEAD
+
 # 3. Create module with name fib-py where keep function of Fibonacci, in second .py file import and call
-=======
 # Anna - correct
 
 # 3. Create module with name fib-py where keep function of Fibonacci, in second •py file import and call
->>>>>>> 7f2fdfc2747d4864c8709cbf4b74e5981f835b0e
 
 # get user number from input
 ask_for_number = int(input("Enter a number (fibonacci sequence): "))
