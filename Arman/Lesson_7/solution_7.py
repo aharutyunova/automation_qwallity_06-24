@@ -26,6 +26,7 @@ def lst_max_value(input_list):
 print(f" Solution 1: {list_max_value(random_numbers_list_one)}")
 print(f" Solution 2: {lst_max_value(random_numbers_list_two)}")
 
+
 # Anna - Both solutions are very good
 
 
@@ -47,7 +48,6 @@ def sum_numbers():
 
 print(sum_numbers())
 
-
 # 3. Create module with name fib-py where keep function of Fibonacci, in second .py file import and call
 # Anna - correct
 
@@ -59,6 +59,6 @@ ask_for_number = int(input("Enter a number (fibonacci sequence): "))
 # run fibonacci sequence function
 fibonacci_sequence = fib.fibonacci_sequence(ask_for_number)
 
-# Anna - in fibonacci function the first 0 and 1 doesn't print, but improt and call of functions are correct
+# Anna - in fibonacci function the first 0 and 1 doesn't print, but import and call of functions are correct
 
 # Very good!!!
