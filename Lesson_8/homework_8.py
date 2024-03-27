@@ -3,28 +3,36 @@
  It's my first file handling! - second line
  Read data from file and print in console. Don't forget and close it, use with block here.
  '''
-'''
+
 # Open file in 'append' mode ('a+'), if not exist than create it
-with open('my_file.txt', 'a+', encoding="utf8") as file:
-    # Append the text to the file
-    file.write("Hello\n")
-    file.write("It's my first file handling!\n")
+# with open('my_file.txt', 'a+', encoding="utf8") as file:
+#     # Append the text to the file
+#     file.write("Hello\n")
+#     file.write("It's my first file handling!\n")
 
 # Open the file in 'read' mode ('r')
-with open('my_file.txt', 'r') as file:
+
+with open(r'C:\Qwallity\Automation_02_2024\automation_qwallity_06-24\task.txt', 'r') as file:
     # Read data from file
     file.read()
     # Print the contents to the console
     print(file.read())
     # Close
-    file.close()
-'''
+# Anna - generally correct, only when you read from the file in the line 17 and the print the read result nothing is printed
+#  It is happened because because when you read from the 
+# file the coursor is moved to the end of the file and when you read it second time and print, nothing is printed
+
+#  When you use with open sintax, no need to close file at the end, file automatically closed
+
+
+
+
 
 '''
 2.	Write a Python program which will create directory with your name, 
 switch to directory and generate there 26 text files named A.txt, B.txt, and so on up to Z.txt.
 '''
-'''
+
 import os
 
 # 1. Define directory name
@@ -41,7 +49,15 @@ for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
     file_name = letter + ".txt"
     with open(file_name, "w", encoding="utf8") as file:
         file.write(f"{file_name}\n")
-'''
+
+# Anna - everything is correct,
+#  Other way to get all letters is to use string lib
+#  Can try this one
+"""
+import string
+
+print(string.ascii_uppercase)
+"""
 
 '''
 3.	Write a Python program which will open file, add your name, 
@@ -62,3 +78,7 @@ info = {
 # Open file and write the dictionary to it
 with open("my_info.txt", "a", encoding="utf8") as file:
     file.write(str(info) + "\n")
+
+# Anna - correct
+
+# All tasks are good enough
