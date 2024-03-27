@@ -12,5 +12,8 @@ def sum_input_numbers():
 
     return sum(list_numbers)
 
+# Anna - the logic is correct, 
+# only for exit point will be better to give some other conditions. In case I don't input alpha the cycle willn't end
+# You should give any limit of entered numbers, or somehow hint that for stop loop any aptha symbol should be entered
 
 print('The sum of inputed numbers is: ', sum_input_numbers())
