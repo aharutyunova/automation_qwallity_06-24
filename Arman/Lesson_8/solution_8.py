@@ -61,27 +61,27 @@ A.txt, B.txt, and so on up to Z.txt.
 surname and address to the file (keep there as dictionary).
 '''
 
-# files = os.getcwd()
-# user_file_name = "user_credentials.py"
-# user_full_path = os.path.join(files, user_file_name)
+files = os.getcwd()
+user_file_name = "user_credentials.py"
+user_full_path = os.path.join(files, user_file_name)
 
 
-# def write_user_credential_in_file(input_file):
-#     ask_for_name = input("(User) Enter your name: ")
-#     ask_for_surname = input("(User) Enter your surname: ")
-#     ask_for_address = input("(User) Enter your address: ")
-#
-#     user = {
-#         "name": ask_for_name,
-#         "surname": ask_for_surname,
-#         "address": ask_for_address,
-#     }
-#
-#     with open(input_file, "w") as file:
-#         file.write(str(user))
-#
-#
-# write_user_credential_in_file(user_full_path)
+def write_user_credential_in_file(input_file):
+    ask_for_name = input("(User) Enter your name: ")
+    ask_for_surname = input("(User) Enter your surname: ")
+    ask_for_address = input("(User) Enter your address: ")
+
+    user = {
+        "name": ask_for_name,
+        "surname": ask_for_surname,
+        "address": ask_for_address,
+    }
+
+    with open(input_file, "w") as file:
+        file.write(str(user))
+
+
+write_user_credential_in_file(user_full_path)
 
 # Anna - we didn't discuss json.dumps method yet, solution and way of writing json is correct :)
 
