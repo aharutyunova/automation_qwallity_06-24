@@ -26,9 +26,7 @@ def div(number_one, number_two):
     If both numbers are positive and at least one is a float, return a float; otherwise, return an integer.
     """
     if number_one and number_two:
-        if number_one > 0 and number_two > 0:
-            if isinstance(number_one, float) or isinstance(number_two, float):
-                return float(number_one / number_two)
+        return format(number_one / number_two, '.2f')
     return 0
 
 

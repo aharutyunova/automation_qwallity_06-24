@@ -15,13 +15,12 @@ print("1. Addition        (+)")
 print("2. Subtraction     (-)")
 print("3. Multiplication  (*)")
 print("4. Division        (/)")
-print("5. exit         (exit)")
 
 # ask for first calculator number in console from user
-ask_for_first_number = float(input("Enter first number: "))
+ask_for_first_number = int(input("Enter first number: "))
 # ask for first calculator number in console from user
-ask_for_second_number = float(input("Enter second number: "))
+ask_for_second_number = int(input("Enter second number: "))
 # ask for first calculator number in console from user
 ask_for_operation_type = input("Enter operation: ")
 # run calculator operation function and print result to console
-calculator_operation(ask_for_first_number, ask_for_second_number, ask_for_operation_type)
+calculator_operation(int(ask_for_first_number), int(ask_for_second_number), ask_for_operation_type)
