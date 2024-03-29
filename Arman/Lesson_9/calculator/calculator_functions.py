@@ -4,14 +4,14 @@ def add(number_one, number_two):
     """Add two numbers and return the result."""
     if number_one and number_two:
         return int(number_one + number_two)
-    return " "
+    return 0
 
 
 def sub(number_one, number_two):
     """Subtract number_two from number_one and return the result."""
     if number_one and number_two:
         return int(number_one - number_two)
-    return ""
+    return 0
 
 
 def mult(number_one, number_two):
