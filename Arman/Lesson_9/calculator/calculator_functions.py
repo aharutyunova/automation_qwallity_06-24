@@ -22,9 +22,7 @@ def mult(number_one, number_two):
 
 
 def div(number_one, number_two):
-    """Divide number_one by number_two and return the result.
-    If both numbers are positive and at least one is a float, return a float; otherwise, return an integer.
-    """
+    """Divide number_one by number_two and return the result"""
     if number_one and number_two:
         return format(number_one / number_two, '.2f')
     return 0
