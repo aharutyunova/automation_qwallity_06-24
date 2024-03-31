@@ -47,6 +47,8 @@ def sum_calculation():
 
 result = sum_calculation()
 
+# Anna - the solutions are correct, one note, in case you request for random number, and all numbers could be integer,
+# you could convert to float not integer
 
 
 

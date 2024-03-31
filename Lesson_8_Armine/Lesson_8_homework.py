@@ -19,7 +19,7 @@ with open("my_new_document.txt", "r", encoding="utf8") as doc:
     readonly = doc.read()
     print(readonly)
 
-
+# Anna - correct
 
 '''
 2.	Write a Python program which will create directory with your name, 
@@ -28,7 +28,7 @@ switch to directory and generate there 26 text files named A.txt, B.txt, and so 
 
 import os
 current=os.getcwd()
-os.chdir(r"C:\Users\Public\automation_qwallity_06-24\Lesson_8_Armine")
+# os.chdir(r"C:\Users\Public\automation_qwallity_06-24\Lesson_8_Armine")
 os.mkdir("Armine")
 
 os.chdir("Armine")
@@ -44,6 +44,8 @@ def doccreator():
             print(f)
 
 doccreator()
+
+# Anna - line 31 path is hardcoded, it doesn't work from my side. But without this chdir action wverything work
 
 
 '''
@@ -61,4 +63,7 @@ info = {"name": "Armine",
         "address": "Yerevan"}
 
 with open("my_info.txt", mode ="w+",encoding="utf-8") as myinfo:
+    print(json.dumps(info))
     myinfo.write(json.dumps(info))
+
+# Anna - correct

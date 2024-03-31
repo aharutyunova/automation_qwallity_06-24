@@ -13,3 +13,5 @@ Requirements
 #Lesson_7 folder - exercise_1_2.py file
 #Lesson_8 folder totally
 #Thank you in advance))
+
+# You mentions files are checked :) Good luck with calculator

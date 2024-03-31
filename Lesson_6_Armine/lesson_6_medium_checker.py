@@ -11,13 +11,15 @@ Median=6
 Median = (4+5)/2 = 4.5
 '''
 ...
- def mediium_fun(*args):
+def mediium_fun(*args):
   result_1 = (sum(args))
   result_2 =(len(args))
   print(result_1/result_2)
 
-mediium_fun(5, 6, 7, 8, 9, 10, 11, 12, 13, 14)
+mediium_fun(5, 6, 7)
 
+# Anna - in case you calculate medium the solution is correct, but per requuirement you should check median,
+# we discuss solution in the video, please have a look one more time
 
 
     
