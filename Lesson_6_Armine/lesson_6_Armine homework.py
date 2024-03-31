@@ -70,4 +70,3 @@ print('*****')
 # That's ok in case you have some difficulties with this tasks, will discuss tomorrow
 
 
-

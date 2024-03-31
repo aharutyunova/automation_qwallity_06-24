@@ -178,7 +178,40 @@ mathematics (a=3, b=4, c=5)
 
 
 
+''''''
+#def max_value(*args):
+ #  args = []
+  # list_1=sorted(args)
+   #max = list_1[-1]
+   #return max
+#max_value(3, 5, 455 6, 8, 6, 3, 10, )
 
+
+#list = []
+#def my_max(list):
+     
+  
+  #   print(list)
+
+list = [0, 1, 2, 3, 4, 5, 6]
+for number in list:
+  if number in [3, 6]:
+    continue
+  print(number)
+
+  
+
+#function
+
+poghos = [2, 3, 4, 5, 6]
+
+
+def sumofthenumbers(l):
+    return sum(l)
+
+
+sumofthenumbers(poghos)
+print(sumofthenumbers(poghos))
 
 
 
