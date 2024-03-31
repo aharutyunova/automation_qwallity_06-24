@@ -36,4 +36,7 @@ if isinstance(result, str):
 elif isinstance(result, float) and result.is_integer():
     print(int(result))
 else:
-    print(round(result, 2))
+    print((result))
+
+
+# Anna - very good, didn't find any bugs)))
