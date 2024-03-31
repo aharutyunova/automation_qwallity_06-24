@@ -28,7 +28,7 @@ def calculator(a,b,action):
     elif res.is_integer():
         return int(res)
     else:
-        return round(res,2)
+        return round(res, 2)
     
 
 a = float(input("Write your first number = "))
@@ -36,7 +36,8 @@ b =  float(input("Write your first number = "))
 action = input("Action = ")
 
 
-result = calculator(a,b,action)
+result = calculator(a, b, action)
 print(result)
 
+# Anna -Very good. Only in case I input not exist operator, The program will crash. You should handle also this part
 
