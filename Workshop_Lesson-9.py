@@ -28,4 +28,6 @@ def cal(a,action,b):
         print("That action can not find by my code")
 
 cal(a,"+", b)
-cal(a,"-", b)                                   
+cal(a,"-", b)          
+cal(a,"*", b)
+cal(a,"/", b)
