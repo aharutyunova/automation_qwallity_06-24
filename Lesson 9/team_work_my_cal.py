@@ -12,7 +12,7 @@ Requirements
 
 Action_name = ["+", "-", "*", "/"]
 a = 15
-b = 0
+b = 4
 
 def cal(a, action, b):
     if action == "+":
@@ -22,14 +22,22 @@ def cal(a, action, b):
     elif action == "*":
         print(int(a * b))
     elif action == "/":
-        if a or b == 0:
+        if a == 0 or b == 0:
             print("Division by zero is not allowed.")
         elif a%b != 0:
             print(a / b)
-        else:
+        else: 
             print(int(a / b))
     else:
         print("Invalid action. Please choose from '+', '-', '*', '/'.")
 
-my_list = list(input("Please enter the action what you want"))
- 
+
+action = input("Please enter the action what you want")-
+cal(a, action, b)
+
+# Anna - why you need actions as a list? I changed it to one action  - line 35
+#  In Line 25 where you check a or b are equal to 0, when you write a or b==0, it means check, a exists or b ==0, 
+#  So you should write if a == 0 or b == 0:
+# But in your case you should check that only b is not equal to 0, "a" could be equal to 0
+
+# Other logic is correct :)

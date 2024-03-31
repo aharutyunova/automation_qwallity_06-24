@@ -3,11 +3,16 @@
  It's my first file handling! - second line
  Read data from file and print in console. Don't forget and close it, use with block here.
  '''
-
-with open(r"C:\automation_qwallity_06-24\Lesson 8\my_file.txt", "w+", encoding="utf-8") as text:
+import os
+my_path = os.getcwd()
+full_path = os.path.join(my_path, "my_file.txt")
+with open(full_path, "w+", encoding="utf-8") as text:
     text.write("Hello - first line\n")
     text.write("It's my first file handling! - second line\n")
 
+# Anna - Your path doesn't work from my side, better to build universal path like I changed
+    
+    
 '''
 2.	Write a Python program which will create directory with your name, 
 switch to directory and generate there 26 text files named A.txt, B.txt, and so on up to Z.txt.
@@ -27,8 +32,7 @@ for f in range(26):
 
 
 os.chdir("..")
-
-
+# Anna - good
 '''
 3.	Write a Python program which will open file, add your name, 
 surname and address to the file(keep there as dictionary).
@@ -43,3 +47,5 @@ my_info = {
 with open(r"C:\automation_qwallity_06-24\Lesson 8\Shushan_file.txt", "w+", encoding="utf-8") as text:
     text.write(str(my_info))
     text.write("\n")
+
+# Anna - the path is hardcoded, other is correct
