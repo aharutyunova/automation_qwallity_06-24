@@ -16,7 +16,7 @@ print("2. Subtraction     (-)")
 print("3. Multiplication  (*)")
 print("4. Division        (/)")
 
-# ask for first calculator number in console from user
+# ask for first calculator number in1 console from user
 ask_for_first_number = int(input("Enter first number: "))
 # ask for first calculator number in console from user
 ask_for_second_number = int(input("Enter second number: "))
@@ -24,3 +24,15 @@ ask_for_second_number = int(input("Enter second number: "))
 ask_for_operation_type = input("Enter operation: ")
 # run calculator operation function and print result to console
 calculator_operation(int(ask_for_first_number), int(ask_for_second_number), ask_for_operation_type)
+
+
+# Anna - interesting and complex solution
+# Your calculator let input only integers, in case I try input float, get error, 
+# because when we convert from string , it is impossible to convert any float number to int
+#  For example
+# int(10.1) -> 10
+# int("10.1")-> Invalid value error
+
+# And In case we divide on 0, you cold return error message, not 0
+
+# The code style very good - code is structured and readable!!!
