@@ -8,8 +8,8 @@ Requirements
 """
 
 actname = {"+","-","*","/"}
-a = 6
-b = 0
+a = 7.5
+b = 2.2
 def cal(a,action,b):
     if action == "+":
         print(int(a + b))
@@ -31,3 +31,6 @@ cal(a,"+", b)
 cal(a,"-", b)          
 cal(a,"*", b)
 cal(a,"/", b)
+
+# Anna - As you convert all results to integer, in case "a" and "b" be float, your (+, -, *) action values be incorrect
+# Other logic is correct
