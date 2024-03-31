@@ -36,9 +36,19 @@ def calculator(a, b, action):
 
 
 a = float(input("Write your first number = "))
-b = float(input("Write your first number = "))
+b = float(input("Write your second number = "))
 action = input("Enter the action (add/sub/mult/div): ")
 
 
 result = calculator(a, b, action)
 print(result)
+
+# Anna very good  :)
+# Only note related to float number calculation - for example in case you add 1.1+2.2 you will get not 3.3 but 3.3000000000000003
+# Also inptut messages and format are userfriendly
+#  It is because of specifications of numbers convertion by interpretator.
+#  In case you need get exact result you need use Decimal
+
+# from decimal import Decimal 
+# a = Decimal(input("Write your first number = "))
+# b = Decimal(input("Write your second number = "))
