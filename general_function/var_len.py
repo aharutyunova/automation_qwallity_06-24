@@ -7,6 +7,8 @@ def total_price(*args, **kwargs):
 
 total_price(100, 200, 300, apple=100, banana=200, orange=300)
 
+# Anna - The solution for requirement to get total is correct, based on requirements you should get max value :)
+
 #2.	Write a Python function, which will get few numbers from keyboard, return to sum of them
 
 def sum_price(x=50, y=50, c=100):
@@ -16,6 +18,8 @@ def sum_price(x=50, y=50, c=100):
 
 result = sum_price()
 print("Result:", result)
+
+# Anna - you get numbers from variables nor from input, but it is not a big difference, 
     
 
 
