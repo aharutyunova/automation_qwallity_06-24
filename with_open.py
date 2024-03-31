@@ -14,7 +14,7 @@ with open("file.txt", "a+", encoding="utf8") as f:
     
     data = f.read()
     print(data)
-
+# Anna - correct
 '''
 2.	Write a Python program which will create directory with your name, 
 switch to directory and generate there 26 text files named A.txt, B.txt, and so on up to Z.txt.
@@ -41,6 +41,7 @@ def create_26_files(directory):
 
 create_26_files("Lianna")
 
+# Anna - Correct, Interesting solution with makedirs
 
 
 
@@ -63,3 +64,5 @@ info = {
 
 add_info_to_file("my_info.txt", info)
 print(info)
+
+# Anna - correct, good job

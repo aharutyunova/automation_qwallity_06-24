@@ -36,3 +36,7 @@ def calc():
                 return float(arg1) / float(arg2)
 
 print(calc())
+
+
+# Anna - Logic is correct, everything work, only one note,
+#  your / action return integer (if division result is int) but other actions always return float
