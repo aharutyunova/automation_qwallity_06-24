@@ -14,6 +14,7 @@ Don't forget and close it, use with block here.
 #     read_data = f.read()
 #     print(read_data)
 
+# Anna - very good
 
 '''
 2.	Write a Python program which will create directory with your name,
@@ -30,13 +31,19 @@ named A.txt, B.txt, and so on up to Z.txt.
 #         f.write("This is a file")
 # print("Directory created:")
 
+# Anna - correct, very good
+
 '''
 3.	Write a Python program which will open file, add your name,
 surname and address to the file(keep there as dictionary).
 '''
 
-# my_dict = {"name": "Liana", "surname": "Panosyan",
-#            "address": "Metsamor city, 2nd building, 23 apartments"}
-# with open("my_file.txt", "a") as f:
-#     f.write(str(my_dict) + '\n')
-# print("My personal information has been added to the newly created file.")
+my_dict = {"name": "Liana", "surname": "Panosyan",
+           "address": "Metsamor city, 2nd building, 23 apartments"}
+with open("my_file.txt", "a") as f:
+    f.write(str(my_dict) + '\n')
+print("My personal information has been added to the newly created file.")
+
+# Anna - correct
+
+# Very good as usual :)
