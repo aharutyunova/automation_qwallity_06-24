@@ -1,27 +1,27 @@
 # calculator functions
 
-def add(number_one, number_two):
+def addition(number_one, number_two):
     """Add two numbers and return the result."""
     if number_one and number_two:
         return format(number_one + number_two, '.1f')
     return 0
 
 
-def sub(number_one, number_two):
+def subtraction(number_one, number_two):
     """Subtract number_two from number_one and return the result."""
     if number_one and number_two:
         return format(number_one - number_two, '.1f')
     return 0
 
 
-def mult(number_one, number_two):
+def multiplication(number_one, number_two):
     """Multiply two numbers and return the result"""
     if number_one and number_two:
         return format(number_one * number_two, '.1f')
     return 0
 
 
-def div(number_one, number_two):
+def division(number_one, number_two):
     """Divide number_one by number_two and return the result"""
     if number_one and number_two:
         return format(number_one / number_two, '.1f')
@@ -33,13 +33,13 @@ def calculator_operation(first_number, second_number, operation_type):
     """General function of the calculator operation"""
     calculation_result = 0
     if operation_type == "+":
-        calculation_result = add(first_number, second_number)
+        calculation_result = addition(first_number, second_number)
     elif operation_type == "-":
-        calculation_result = sub(first_number, second_number)
+        calculation_result = subtraction(first_number, second_number)
     elif operation_type == "*":
-        calculation_result = mult(first_number, second_number)
+        calculation_result = multiplication(first_number, second_number)
     elif operation_type == "/":
-        calculation_result = div(first_number, second_number)
+        calculation_result = division(first_number, second_number)
     else:
         return f"There is no operation type like: ({operation_type})"
     return print(f"Result: {calculation_result}")
