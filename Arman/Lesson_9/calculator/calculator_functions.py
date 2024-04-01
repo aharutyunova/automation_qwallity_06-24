@@ -40,4 +40,6 @@ def calculator_operation(first_number, second_number, operation_type):
         calculation_result = mult(first_number, second_number)
     elif operation_type == "/":
         calculation_result = div(first_number, second_number)
+    else:
+        return f"There is no operation type like: ({operation_type})"
     return print(f"Result: {calculation_result}")

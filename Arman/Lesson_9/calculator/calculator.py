@@ -23,7 +23,7 @@ ask_for_second_number = float(input("Enter second number: "))
 # ask for first calculator number in console from user
 ask_for_operation_type = input("Enter operation: ")
 # run calculator operation function and print result to console
-calculator_operation(ask_for_first_number, ask_for_second_number, ask_for_operation_type)
+print(calculator_operation(ask_for_first_number, ask_for_second_number, ask_for_operation_type))
 
 # Anna - interesting and complex solution
 # Your calculator let input only integers, in case I try input float, get error, 
