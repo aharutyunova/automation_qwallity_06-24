@@ -20,6 +20,10 @@ output_string = reverser.reverse_words(input_string)
 
 print(output_string)
 
+# Anna - will be better to pass variable with __init__ method and use instance method not staic
+# Functionality is correct
+
+
 
 # 2. Write a Python class which get any string and with methods print_String print this sting in upper case
 
@@ -37,6 +41,7 @@ to_uppercase = StringToUpperCase()
 output_string = to_uppercase.uppercase_words(input_string)
 
 print(output_string)
+# Anna - the same comment as for task 1
 
 # 3. Write a Python class to generate 26 text files named A.txt, B.txt, and so on up to Z.txt.
 
@@ -53,5 +58,5 @@ class TextFileGenerator:
 
 generator = TextFileGenerator()
 generator.generate_files()
-
-
+# Anna - And the same is here :) 
+# Anna - Try to use static method in exeptional cases not as a rule
