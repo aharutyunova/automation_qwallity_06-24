@@ -14,7 +14,7 @@ class Wordchanges:
 new = Wordchanges("Hello py.")
 new.reversing_fun()
 
-
+# Anna - correct
 
 
 # 2. Write a Python class which get any string and with methods print_String print this sting in upper case 
@@ -30,6 +30,8 @@ class Uppercaseword:
 my_word = Uppercaseword("My name is Armine")
 my_word.upper_case_fun()
 
+# Anna - correct
+
 # 3. Write a Python class to generate 26 text files named A.txt, B.txt, and so on up to Z.txt. 
 
 import os
@@ -39,7 +41,7 @@ import string
 
 class TestCreator:
     def __init__(self):
-        pass  
+        pass     # Anna - in case you don't need pass something in __init__, you can skip it and don't write in the class
 
     def doc_creator(self):
         print(string.ascii_uppercase)
@@ -51,8 +53,12 @@ class TestCreator:
                 print(f)
 
 
-os.chdir(r"C:\Users\Public\automation_qwallity_06-24\Lesson_10_Armine")
 
+
+# Anna - path is hardcoded
+# You could move to the folder in the same - doc_creator method
+# The other logic is correct
+# Also note - Code style is improved :)
 
 new_file = TestCreator()
 new_file.doc_creator()
