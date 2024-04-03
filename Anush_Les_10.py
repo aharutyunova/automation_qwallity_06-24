@@ -14,6 +14,7 @@ new = rev.rev_word()
 print("Original string:", inputt)
 print("Reversed string:", new)
 
+# Anna - correct
 
 # 2 Write a Python class which get any string and with methods print_String print this sting in upper case
 
@@ -30,17 +31,20 @@ print1 = Uppercase(newString)
 print1.stringWord()
 
 
+# Correct and totally agree !!!
+# # 3  Write a Python class to generate 26 text files named A.txt, B.txt, and so on up to Z.txt. 
 
-# 3  Write a Python class to generate 26 text files named A.txt, B.txt, and so on up to Z.txt. 
 
+# import os
 
-import os
+# os.makedirs("letter")
 
-os.makedirs("letter")
-
-with open("txt57", "w+") as f:
-    f.writelines(letter)
+# with open("txt57", "w+") as f:
+#     f.writelines(letter)
        
        
        
-#      To be continued․․․․․․․․․․․․
+# #      To be continued․․․․․․․․․․․․
+# Anna - will be waiting for :)
+
+# First 2 tasks are very good done
