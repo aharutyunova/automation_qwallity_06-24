@@ -21,14 +21,12 @@ class StringReverser:
         return reversed_string
 
 
-input_string = 'hello .py'
-print(input_string[::-1])
 reverser = StringReverser(input_string)
 output_string = reverser.reverse_words()
 # print("Input string:", input_string)
 print("Reversed string:", output_string)
 
-# Anna - correct, one note, tehere is a more simple way to revert the string - input_string[::-1])
+# Anna - correct
 
 # 2. Write a Python class which get any string and with methods print_String print this sting in upper case 
 
