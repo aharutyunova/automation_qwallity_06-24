@@ -12,6 +12,8 @@ class Reverse:
 x = Reverse()
 print(x.reverse_str())
 
+# Anna - correct
+
 # 2. Write a Python class which get any string and with methods print_String print this sting in upper case 
 
 class Upper:
@@ -22,6 +24,10 @@ class Upper:
         return modif_str
 x = Upper()
 print(x.upper_str())
+
+# Anna - correct
+
+
 # 3. Write a Python class to generate 26 text files named A.txt, B.txt, and so on up to Z.txt. 
 import os
 class AlphabetFiles:
@@ -39,3 +45,7 @@ class AlphabetFiles:
         return 
 x = AlphabetFiles()
 x.file_creating()
+
+# Anna - correct, only try to use with open syntax instead of f.open() f.close()\
+
+# Good job!!!
