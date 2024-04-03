@@ -13,6 +13,8 @@ with open('task8.txt', "w+", encoding='utf-8') as f:
     f.seek(0)
     print(f.read())
 
+# Anna - correct
+
 '''
 2.	Write a Python program which will create directory with your name, 
 switch to directory and generate there 26 text files named A.txt, B.txt, and so on up to Z.txt.
@@ -24,7 +26,7 @@ for element in range(0, len(alphabet)):
     file_name = alphabet[element] + '.txt'
     f = open(file_name, 'w+', encoding = 'utf-8')
     f.close()
-
+# Anna - correct
 '''
 3.	Write a Python program which will open file, add your name, 
 surname and address to the file(keep there as dictionary).
@@ -34,3 +36,5 @@ os.chdir(path)
 my_data = { "name": "Raya", "surname" : "Manukyan", "address": "Qasakh"}
 with open('my_data.txt', 'w+', encoding = 'utf-8') as f:
     f.writelines(json.dumps(my_data))
+
+# Anna - you solve issue with dict :) Correct 
