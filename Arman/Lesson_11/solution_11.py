@@ -1,4 +1,4 @@
-'''
+"""
 Task: Create a Python program that simulates a car market where there are 10 car brands with prices.
 The program should use object-oriented programming and inheritance to implement
 a base class CarMarket and a child class MyCar.
@@ -18,10 +18,9 @@ Base class CarMarket:
 
 Child class MyCar:
 •	Inherits from CarMarket
-•	Keep atribute with 20% discount for BMW
+•	Keep attribute with 20% discount for BMW
 •	Provides a method to print results based on the given brand if available
-
-'''
+"""
 
 
 class CarMarket:
@@ -40,7 +39,7 @@ class CarMarket:
         }
 
     def is_mark_exists(self, car):
-        '''Method to check if given car brand exists in the market'''
+        """Method to check if given car brand exists in the market"""
         return car in self.car_prices
 
 
@@ -52,7 +51,7 @@ class MyCar(CarMarket):
         self.car = car
 
     def print_price(self):
-        '''Method to print the price of a car brand with discount if applicable'''
+        """Method to print the price of a car brand with discount if applicable"""
         if self.is_mark_exists(self.car):
             if self.car == "BMW":
                 discounted_price = self.car_prices[self.car] * (1 - self.discount)
