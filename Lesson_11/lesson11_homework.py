@@ -22,3 +22,66 @@ Child class MyCar:
 •	Provides a method to print results based on the given brand if available
 
 '''
+class CarMarket:
+    car_dictionary = [
+                        {'name': 'Nissan', 
+                         'price': 5000},
+                        {'name': 'Volkswagen', 
+                         'price': 6000},
+                        {'name': 'Toyota', 
+                         'price': 10000},
+                        {'name': 'Ford', 
+                         'price': 7000},
+                        {'name': 'Kia', 
+                         'price': 7000},
+                        {'name': 'Mercedes-Benz', 
+                         'price': 9000},
+                        {'name': 'BMW', 
+                         'price': 9000},
+                        {'name': 'Audi', 
+                         'price': 8000},
+                        {'name': 'Hyundai', 
+                         'price': 12000},
+                        {'name': 'Chevrolet', 
+                         'price': 11000}]
+
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+    def car_existence(self):
+        for car in CarMarket.car_dictionary:
+            if self.name == car['name']:
+                return 1
+        return 0
+
+
+class MyCar(CarMarket):
+    def __init__(self, name, price):
+        super().__init__(name,price)
+        if self.name == 'BMW':
+            self.discount = 20
+
+    def result(self):
+        if self.car_existence() == 0:
+            return "The brand is not exist in the Market"
+        else:
+            if self.name == 'BMW':
+                self.price *= (1-self.discount/100)
+                return f"There is a 20 % discount for BMW, and the price now is {self.price}"
+            else: 
+                carNames = []
+                for car in CarMarket.car_dictionary:
+                    carNames.append(car['name'])
+                return f"Discount only for BMW, Market list : {carNames}"
+
+           
+x = MyCar('Yaguar', 1000)
+print(x.result())
+x = MyCar('BMW', 1000)
+print(x.result())
+x = MyCar('Kia', 1000)
+print(x.result())
+
+
+
+    
