@@ -44,7 +44,7 @@ class CarMarket:
     def isCarBrand(self):
         if self.car_brand in self.car_prices:
             print(f"Requested car price: {self.car_prices[self.car_brand]}")
-            print(f"{self.car_prices}")
+            # print(f"{self.car_prices}")
         else:
             print("Car brand not found in the market")
 
@@ -63,3 +63,8 @@ class MyCar(CarMarket):
 
 my_car = MyCar()
 print(my_car.discount(30))
+
+# Anna - generally everything is correct.
+# But will be more correct if your isCarBrand method return true if car exists and false if not exists
+# After it you will call this methot in MyCar class-discount
+#  method which will return final price or message that car doesn't exist

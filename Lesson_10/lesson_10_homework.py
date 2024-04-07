@@ -10,7 +10,9 @@ class StringReverser:
     def __init__(self, input_string=None):
         self.input_string = input("Enter a string and get it Reversed: ")
         self.reversed_string()
-
+# TODO # Anna - because you don'e use this argument in the init body
+# In your example you don't wait intpur_string outseide, so you have no need to pass it as parameter
+# you could write just def __init__(self)
     def reversed_string(self):
         words = self.input_string.split()
         reversed_words = words[::-1]
@@ -18,8 +20,9 @@ class StringReverser:
         print("Reversed string:", reversed_string)
 
 
-reverser = StringReverser()
+# reverser = StringReverser()
 
+# Anna - other parts are correct
 
 # 2. Write a Python class which get any string and with methods print_String
 # print this sting in upper case
@@ -36,8 +39,9 @@ class StringUpperCase:
         print("Uppercased string:", self.string_to_uppercase())
 
 
-uppercased_string = StringUpperCase()
+# uppercased_string = StringUpperCase()
 
+# Anna - correct, good. The same comment for input string=None
 
 # 3. Write a Python class to generate 26 text files named A.txt, B.txt,
 # and so on up to Z.txt.
@@ -50,7 +54,8 @@ class GenerateFiles:
         self.file_extension = ".txt"
 
         os.chdir("Lesson_10")
-        os.mkdir("My_files")
+        if not os.path.isdir("My_files"):
+            os.mkdir("My_files")
         os.chdir("My_files")
 
         while self.file_name <= ord("Z"):
@@ -62,3 +67,6 @@ class GenerateFiles:
 
 
 generate_files = GenerateFiles()
+
+# Anna - good, only you can add checking , if directory not exists only in tah case create it
+# I added in line 58
