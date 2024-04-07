@@ -28,3 +28,7 @@ file_format = CustomString(".txt")
 print(not_reversed_string.reverse_string())
 print(lower_case_string.print_upper_case())
 print(file_format.generate_a_to_z(".txt"))
+
+# Anna - general logic is correct, but why you mention generate_a_to_z as static method?
+#  In this method you use varibale which is passed from the object and you call this method from the object
+# So will be better leave generate_a_to_z method as instance method

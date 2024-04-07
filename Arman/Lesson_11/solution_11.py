@@ -70,3 +70,7 @@ my_car_2.print_price()
 
 my_car_3 = MyCar("Tesla")
 my_car_3.print_price()
+
+
+# Anna - very good, only in line 60 will be better to print not all dictionary, but given car price
+# with the same message as for if condition f"Price for {self.car}: ${self.car_prices[self.car]}"
