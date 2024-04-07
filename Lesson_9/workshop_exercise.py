@@ -6,6 +6,7 @@ Requirements
 - In all cases result format should be int, for example 2+2 = 4 and 16/4 = 4 but 10/8 should be exact value 1.25
 - Division on 0 is not allowed
 """
+
 def calc():
     while True:
         arg1 = input('input number1: ')
@@ -31,4 +32,14 @@ def calc():
                     else:
                         return float(arg1)/float(arg2)
 
-print(calc())
+# print(calc())
+
+# Anna - everything is correct, only float multiplication action return non correct resut
+# 1.1 *.0.1 = 0.11000000000000001 It is specification of how python iterprete float
+# For more exact result you can use decimal module in the future
+"""
+import decimal
+result = decimal.Decimal('1.1') * decimal.Decimal('0.1')
+
+print(result)
+"""
