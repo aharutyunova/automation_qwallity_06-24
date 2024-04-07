@@ -69,3 +69,10 @@ print(car_market.check_brand("Lexus"))
 car_market.print_results_based_on_the_brand("BMW")
 car_market.print_results_based_on_the_brand("Audi")
 car_market.print_results_based_on_the_brand("Porsche")
+
+# Anna - everything is correct, only in case you already have check_brand method
+#  you should use it in line 55, not write the same condition one more time
+#  In this example it is one line in other example logic could be bigger, so re-use it
+
+# Other logic is correct, good!!!
+
