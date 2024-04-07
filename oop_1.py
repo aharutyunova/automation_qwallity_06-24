@@ -12,8 +12,11 @@ class Reverse:
             print("Incorrect text")
 
 
-reverse1 = Reverse('hello .py')
-reverse1.hello()
+# reverse1 = Reverse('hello .py')
+# reverse1.hello()
+
+# Anna - you hardcoded .py hello :)) for no other string it willn't work
+# class structure us correct
 
 
 # 2. Write a Python class which get any string and with methods print_String print this sting in upper case 
@@ -29,10 +32,11 @@ class Point_2():
     def print_String(self):
         print(self.str1.upper())
 
-str1 = Point_2()
-str1.get_String()
-str1.print_String()
+# str1 = Point_2()
+# str1.get_String()
+# str1.print_String()
 
+# Anna - correct
 
 # 3. Write a Python class to generate 26 text files named A.txt, B.txt, and so on up to Z.txt. 
 
@@ -41,14 +45,16 @@ class Create:
         self.file = ""
 
 
-def create_26_files(self):
-    for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
-        filename = letter + '.txt'
-        with open(filename, 'w') as file:
-            file.write(f"This is file {filename}\n")
+    def create_26_files(self):
+        for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+            filename = letter + '.txt'
+            with open(filename, 'w') as file:
+                file.write(f"This is file {filename}\n")
 
-        print(f"File {filename} created.")
+            print(f"File {filename} created.")
 
 
 new_file = Create()
-new_file.create_26_files() 
+new_file.create_26_files()
+
+# Anna - generally correctm, only it seems you don't need file parameter here
