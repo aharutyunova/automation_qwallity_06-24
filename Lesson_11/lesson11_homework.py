@@ -42,7 +42,7 @@ class CarMarket:
 
 
 class Mycar(CarMarket):
-    def get_car(self,brand):
+    def get_car(self, brand):
         brand = brand.lower()
         if self.checker(brand):
             if brand == "BMW":
@@ -55,4 +55,10 @@ class Mycar(CarMarket):
 
 
 obj = Mycar()     
-obj.get_car("HONda")
+obj.get_car("BMW")
+
+# Anna - The logic is correct, only you convert brand to lower case and then compare with "BMW" :)
+# So you never will get discounted result.
+#  And also will be better to convert to float (line 49) in case exact price was matter
+
+# Other implementaions is good
