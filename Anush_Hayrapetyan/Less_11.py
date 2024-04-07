@@ -32,3 +32,10 @@ market = MyCar()
 market.new_res("BMW")
 market.new_res("Honda")
 market.new_res("Test")
+
+# Anna - general logic is close to be correct
+# But you don't print prices, only messages
+"""The price of BMW with discount 20%
+This is market list
+Test is nor available in the marke"""
+# Your method should return price for each brand or messag that car brand doesn't not exist
