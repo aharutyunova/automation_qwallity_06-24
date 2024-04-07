@@ -101,11 +101,9 @@ my_car.print_price()
 my_car = MyCar("BMW")
 my_car.print_price()
 
-my_car = MyCar("Dodge")
+my_car = MyCar("Mazda")
 my_car.print_price()
 
-my_car = MyCar("Honda")
-my_car.print_price()
-
-my_car = MyCar("Nissan")
-my_car.print_price()
+# Anna - Very good, only in line 93 you should return not all dictionary, but existing car price
+# self.car_price_dict[self.car]
+#  And the message could be the same - f"Price for {self.car}: ${self.car_price_dict[self.car]}"

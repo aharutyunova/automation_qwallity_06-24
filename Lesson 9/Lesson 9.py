@@ -39,3 +39,5 @@ num_2 = float(input("Enter the second number: "))
 _action = input("Enter action (add, sub, mult, div): ")
 
 print(calculator(num_1, num_2, _action))
+
+# Anna - everything is correct

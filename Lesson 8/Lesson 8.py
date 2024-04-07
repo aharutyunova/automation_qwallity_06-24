@@ -17,6 +17,7 @@ with open("Lesson_8.csv", "w") as file:
 with open("Lesson_8.csv", "r") as file:
     print(file.read())
 
+# Anna - correct
 """
 2.	Write a Python program which will create directory with your name, 
 switch to directory and generate there 26 text files named A.txt, B.txt, and so on up to Z.txt.
@@ -36,6 +37,7 @@ alphabet = list(string.ascii_uppercase)
 for char in alphabet:
     open(f"{char}.txt", "x")
 
+# Anna - correct
 """
 3.	Write a Python program which will open file, add your name, 
 surname and address to the file(keep there as dictionary).
@@ -56,3 +58,7 @@ with open("info_file.csv", "w+") as file:
 
 with open("info_file.csv", "r") as file:
     print(file.read())
+
+# Anna - correct
+# In case you have no need to write in csv you could write in txt file
+# In case to write in csv file use csv lib, to keep csv format when inserting data
