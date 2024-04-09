@@ -1,0 +1,2 @@
+Easy: Everything is clear and easy what we have learned until 12 lesson 
+Difficult: There is no difficult part of Python yet for me 
