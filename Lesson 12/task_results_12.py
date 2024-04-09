@@ -21,7 +21,7 @@ class writeafile:
                 file.write("What's most difficult for me in Python:\n")
                 file.write("OOP section is most difficult part in Python.\n")
                 file.write("What's most easy for me in Python:\n")
-                file.write("Readability of the code due to its simple syntax.\n")
+                file.write("Readability and understandability of code errors.\n")
         except Exception as e:
             logging.exception(f"An error occurred: {e}")
         finally:
