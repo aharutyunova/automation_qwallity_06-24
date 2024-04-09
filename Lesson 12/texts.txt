@@ -1,4 +1,4 @@
 What's most difficult for me in Python:
 OOP section is most difficult part in Python.
 What's most easy for me in Python:
-Readability of the code due to its simple syntax.
+Readability and understandability of code errors.

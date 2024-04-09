@@ -12,8 +12,6 @@ Put your code in "try except finally" block in case if something will go wrong w
 opening/writing file. Handle exception in log file.
 """
 
-import logging
-
 class writeafile:
     def write_texts(self):
         try:
