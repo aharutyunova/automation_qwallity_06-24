@@ -21,9 +21,12 @@ class writeafile:
                 file.write("What's most easy for me in Python:\n")
                 file.write("Readability and understandability of code errors.\n")
         except Exception as e:
-            logging.exception(f"An error occurred: {e}")
+            logging.error(f"An error occurred: {e}")
         finally:
             print("File writing process completed.")
 
 writer = writeafile()
 writer.write_texts()
+
+# Anna - good, It seems OOP also become easier for use to you :)
+# One small note, better to start class with upper case

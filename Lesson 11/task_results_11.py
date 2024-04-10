@@ -59,6 +59,13 @@ class MyCar(CarMarket):
         else:
             print("This brand is not available in the market.")
 
+car = MyCar()
+car.print_price("Toyota")
+
+# Anna - General implementsation is good enough, there is some notes for better functionality
+# For example if yopu need brand variable in first and second classes, you could pass it also in def_init__()
+# of the parent class
+# In print_price method in case brnad is not bmw you should print price of that brand, not the list of available brnads and prices
 
 
 
@@ -92,3 +99,6 @@ class Mypen(Penmarket):
             print(f"Price of {color} pen is ${self.pen_prices[color]}")
         else:
             print("Pen color not found")
+
+# Anna - In this example again main part is good
+# Only it seems price variable in class Mypen is not used
