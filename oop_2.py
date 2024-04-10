@@ -26,7 +26,7 @@ Child class MyCar:
 
 
 class CarMarket:
-    def __init__(self, car_price):
+    def __init__(self, car_price): #TODO #Anna - you don't need car_price as class parameter
         self.car_price = {
             'BMW': 50000,
             'Toyota': 30000,
@@ -44,15 +44,15 @@ class CarMarket:
         return brand , price in self.car_price  
 
 
-class Param:
+class Param: #TODO  # Anna - why you need Param class? it was not required and don't need for your solution
     def __init__(self , currency, production):
-    self.currency = currency
-    self.production = production
+        self.currency = currency
+        self.production = production
  
 
 class MyCar(CarMarket, Param):
-    def __init__(self, car_price , currency, production, discount = 20):
-        CarMarket().__init__(self, car_price )
+    def __init__(self, currency, production, discount=20):
+        CarMarket().__init__(self)
         Param().__init__(currency, production)
         self.discount = discount
 
@@ -72,7 +72,11 @@ my_car.print_price('Toyota')
 my_car.print_price('Tesla') 
 my_car.print_price('Test')
 
+# In case you inhertir MyCar from CarMarket and Param classes you shoud in object pass all parameters of init methods of all this classes
+#  In your example you should pass  currency and production my_car = MyCar("carrency_value", "production_value")
+#  Your print_price method just print messages not calculate and print price for each model
 
+# Please pay attention on my solution, I will coomit it on main branch a bit later
 
 # class CarMarket:
 #     def __init__(self,brand, price, currency, production, procent=20):
