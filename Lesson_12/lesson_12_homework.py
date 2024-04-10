@@ -9,8 +9,7 @@ opening/writing file. Handle exception in log file.
 import logging
 import os
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] \
-                    %(message)s',
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     filename='ab_python_error_log.log',
                     filemode='w+',
@@ -20,13 +19,15 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] \
 def python_difficulties_and_ease():
     os.chdir("Lesson_12")
     try:
-        with open("python_difficulties_and_ease.txt", "w+") as ab_python_file:
+        with open("python_difficulties_and_ease.txt", "r") as ab_python_file:
             ab_python_file.write("Difficulties:\n\tIndentation\n\tAccess Modifiers\n\tMany types of lists\n\tSelf\n\nEase:\n\tDynamic Typing")
     except Exception as e:
-        logging.error(f'An error occurred: {e}')
+        logging.error(f'An error occurred:{e}')
 # if you change "w+" into "r" you can see the error in log file
     finally:
         print("Execution complete")
 
 
 python_difficulties_and_ease()
+
+# Anna very good !!!

@@ -60,3 +60,7 @@ new_course = Automated_Testing(new_course_duration, new_course_start_date, new_s
 
 new_course.create_contract()
 new_course.give_certificate()
+
+# Anna - exactly what I expect :)
+# You only firget to call learn python and selenium before contract and certificate.
+# So in your flow learning months are skipped :)
