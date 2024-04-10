@@ -1,11 +1,14 @@
-import os
 import logging
+import os
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(message)s',
-                    datefmt='%Y-%m-%d %H:%M:%S',
-                    filename='log.log',
-                    filemode='w+',
-                    encoding='utf-8')
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    filename='log.log',
+    filemode='w+',
+    encoding='utf-8'
+)
 
 """Create method where you open file,
 write there about what is most difficult and what is most easy for you in python.
