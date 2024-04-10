@@ -22,6 +22,7 @@ def my_python_skills():
             file.writelines("Easy: Everything is clear and easy what we have "
                             "learned until 12 lesson \n")
             file.writelines("Difficult: There is no difficult part of Python yet for me \n")
+        logging.info("Info was successfully logged")
     except Exception as er:
         logging.error(er)
 
