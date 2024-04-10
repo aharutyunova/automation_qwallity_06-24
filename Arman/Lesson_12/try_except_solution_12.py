@@ -1,3 +1,4 @@
+import os
 import logging
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(message)s',
@@ -11,8 +12,6 @@ write there about what is most difficult and what is most easy for you in python
 Put your code in "try except finally" block in case if something will go wrong with
 opening/writing file. Handle exception in log file.
 """
-
-import os
 
 
 def my_python_skills():
