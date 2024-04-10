@@ -27,3 +27,7 @@ def write_method():
 
 
 write_method()
+
+# Anna - well done
+# What about OOP, I am sure you will cover all gaps with time, and it is not be so difficult for you,
+# as you understand coding very well
