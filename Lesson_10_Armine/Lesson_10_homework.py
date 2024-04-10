@@ -42,16 +42,20 @@ class TestCreator:
         pass  
 
     def doc_creator(self):
+        current = os.getcwd()
+        os.chdir(r"C:\Users\Public\automation_qwallity_06-24\Lesson_10_Armine")
+        os.mkdir("Textfiles")
+        os.chdir("Textfiles")
         print(string.ascii_uppercase)
 
-        for char in string.ascii_uppercase:
-            name1 = char + '.txt'
-            with open(name1, 'a+', encoding='utf-8') as file1:
-                f = file1
-                print(f)
+    for char in string.ascii_uppercase:
+        name1 = char + '.txt'
+        with open(name1, 'a+', encoding='utf-8') as file1:
+          f = file1
+          print(f) 
 
 
-os.chdir(r"C:\Users\Public\automation_qwallity_06-24\Lesson_10_Armine")
+
 
 
 new_file = TestCreator()

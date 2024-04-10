@@ -7,16 +7,6 @@ Requirements
 - Division on 0 is not allowed
 """
 
-#Dear Anna, I will submit the calculator as soon as possible. I still want to work on it)
-#Would you please check:
-#Lesson 6 folder - lesson_6_medium checker.py file
-#Lesson_7 folder - exercise_1_2.py file
-#Lesson_8 folder totally
-#Thank you in advance))
-
-# You mentions files are checked :) Good luck with calculator
-
-
 def Calculator():
     input1 = int(input("Please enter the first number: "))
     input2 = int(input("Please enter the second number: "))
@@ -29,11 +19,23 @@ def Calculator():
     elif input3 == "*":
         print(input1 * input2)
     elif input3 == "/":
+        
         if input2 != 0:
             print(input1 / input2)
         else:
             print("Division by zero is not allowed")
+        #if  input1 // input2:
+         #   print(input1 / input2)
+        #else:
+         #   print(int(input1 / input2))
+        
     else:
         print("No such action available")
 
 Calculator()
+
+
+
+
+
+
