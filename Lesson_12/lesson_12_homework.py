@@ -28,3 +28,10 @@ def about_python():
 
 
 about_python()
+
+# Anna - Good implemented, everything is correct
+# What about notes about difficulties - Course really intensive, 4 months from one side is long time,
+#  but in the same time we have a lot to cover during that time
+# From Time to Time I will try to find ways to focus out more on some parts
+# But Anyway I am sure as we very often will use loops/if else, not so often but also OOP, so 
+# all gaps will be covered with pracice
