@@ -16,7 +16,7 @@ import os
 
 
 def my_python_skills():
-    current_file_path = os.path.join(os.getcwd(), "test.txt")
+    current_file_path = os.path.join(os.getcwd(), "my_python_skills.txt")
     try:
         with open(current_file_path, 'w') as file:
             file.writelines("Easy: Everything is clear and easy what we have "
