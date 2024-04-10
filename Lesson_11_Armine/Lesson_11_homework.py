@@ -62,9 +62,15 @@ class Mycar(Carmarket):
         else:
             print("There is no such a brand in our list")
 
-car_1 = "BMW"
+car_1 = "Kia"
 Existance = Mycar(car_1)   
 print(Existance.price())
 
+# Anna - Also good implemented,
+#  only pay attention on object names (Existence) it is better to start with lowercase
+# Also in case when brand is not BMW you should print price of certen brand, not the whole list of brands and prices
+
+#  Also for the future in such cases compare names or other string to lower or upper case
+# Because in case now I input KIA, I will get message - "There is no such a brand in our list"
 
         
