@@ -30,6 +30,6 @@ finally:
 #Anna jan, would you please also check Lesson_11))
 
 #And I want to say that you are the best teacher, cause you do your best to explain such a complicated course in the simplest way. 
-#Before I thought it is something I could not understand, but thanks to you, now I like and understand almost everything and can write my own code somehow.
+#Before I thought it is something I could not understand, but thanks to you, now I like and understand almost everything and gradually can write my own code somehow.
 #I hope, that the rest of the course will go on in this way, and we will finish course successfully)) Thank you very much!
 
