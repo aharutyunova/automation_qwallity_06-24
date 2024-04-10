@@ -27,6 +27,6 @@ def my_python_skills():
         logging.info("Info was successfully logged")
     except Exception as er:
         logging.error(er)
-
+# Anna - correct, glad to hear that passed lessons were easy for you
 
 my_python_skills()
