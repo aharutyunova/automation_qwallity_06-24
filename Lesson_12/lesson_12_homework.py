@@ -1,6 +1,6 @@
 import logging 
 import os
-os.chdir("c:/automation_qwallity_06-24/Lesson_12")
+# os.chdir("c:/automation_qwallity_06-24/Lesson_12")  # Anna - path is hardcoded
 
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s [%(levelname)s] %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S', 
@@ -24,3 +24,5 @@ finally:
     print("The 'try except' is finished")
 
 
+# Anna - correct, what abot lack of time, course really very intensive, mostly python part, in selenium part workshop parts are more
+# But in python part I will try find time parallel to our new lessons, for workshops and practical work

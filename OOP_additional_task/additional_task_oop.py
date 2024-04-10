@@ -51,7 +51,10 @@ y.create_contract()
 z.create_contract()
 x.learn_python()
 x.learn_selenium()
-x.give_certificate()
+x.give_certfiicate()
 y.give_certificate()
 z.give_certificate()
 
+# Anna - the result is correct, but will be more effective if you pass not separate names, but list of names to your class
+# And your create_contract and give_certificate methods, using loop would print same message for all studetns
+# With this you could create one object for Automated_Testing class and call just once each method from that object
