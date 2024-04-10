@@ -5,7 +5,7 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s [%(levelname)s] %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
-    filename='log.log',
+    filename='app.log',
     filemode='w+',
     encoding='utf-8'
 )
