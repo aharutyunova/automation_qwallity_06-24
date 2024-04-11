@@ -83,5 +83,11 @@ x = MyCar('Kia', 1000)
 print(x.result())
 
 
+# Anna - from one side logic is covered, but solution a bit dificcult Ray jan
+# Look at first you could keep car names and prices as one dictionary 
+#  In case you already have stored prices you don't need pass them in line 48 __init__()
+# And the second for loop in else line 72 not necessary. 
+# You already have the list of availabe cars, why you create empty list and re-create it?
 
+# Please have a look pn my solution, will add it on the main branch
     
