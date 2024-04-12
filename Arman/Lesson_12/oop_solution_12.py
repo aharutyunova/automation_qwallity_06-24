@@ -78,6 +78,7 @@ print(student_2.give_certificate())
 print(student_3.give_certificate())
 
 # Anna - generally is correct and good job
-# Wants to add note - will be more effective, if you pass student name list and print contract and certificate messages with for loop
+# Wants to add note - will be more effective, if you pass student name list
+# and print contract and certificate messages with for loop
 # In that case you will create one object from AutomatedTesting class and call one time create_contract method
 # And this method will loop in names list and print all students names
