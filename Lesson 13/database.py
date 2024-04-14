@@ -15,7 +15,7 @@ class DB:
     def db_update(self):
         self.create_connection()
         try:
-            self.cursor.execute("UPDATE courses SET title= 'Izabella_courses' where id in (9000646, 9000680, 9000741)")
+            self.cursor.execute("UPDATE courses SET title='Izabella_courses5' where id in (9000334,9000335,9000336)")
             if self.cursor.rowcount == 3:
                 self.connection.commit()
                 print("Changes committed")
