@@ -33,3 +33,24 @@ class DB:
         else:
             self.db_connection().rollback()
             print('Changes not commeted to DB:    ', cursor.fetchall())
+
+
+# Anna - everything is correct, only for avoid create connection several time for example in db_close()
+# method you create connection  one more time and then close it
+# Instead of it you could have connection in def __init__ () 
+"""
+def __init__(self):
+    self.conn = None
+    def db_connection(self):
+        
+        self.conn = pymysql.connect(host= 'pro.freedb.tech',
+                             user = 'qwallity',
+                             password = '6YJsZQk&##7J2?e',
+                             database = 'qwallitydb')
+        
+     
+And in other methods already use self.connection
+
+"""
+
+# I will change example in ppt too, this part was not well described there
