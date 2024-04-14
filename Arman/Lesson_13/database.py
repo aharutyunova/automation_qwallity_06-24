@@ -9,6 +9,7 @@ class DB:
             password=password,
             database=database
         )
+
         self.cursor = self.conn.cursor()
 
     def db_connection(self):

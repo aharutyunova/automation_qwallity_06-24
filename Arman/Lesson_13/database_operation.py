@@ -1,7 +1,7 @@
 from database import DB
 
 # Create an instance of the DB class
-db = DB(host='localhost', user='username', password='password', database='database')
+db = DB(host='pro.freedb.tech', user='qwallity', password='6YJsZQk&##7J2?e', database='qwallitydb')
 
 # Update three courses
 courses_to_update = [
@@ -19,3 +19,12 @@ for course_id, new_title in courses_to_update:
 
 # Close the database connection
 db.db_close()
+
+
+# Anna - General structure is correct, still I have some questions
+# Why in update method you return 3? is it hardcoded value of updated rows? You should get it via cursor.rowcount 
+# and check if cursor.rowcount == 3 then commit your update in othercase rollback
+
+# Your example with test data localhost, username, password... did you try execute with our db dredentials?
+
+# And one note in case you get cursor in init method, then db_connection method is additonal
