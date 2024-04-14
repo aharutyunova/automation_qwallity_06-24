@@ -22,3 +22,28 @@ Certificate is presented to Lusine for finishing Automated testing course
 Certificate is presented to Arman for finishing Automated testing course
 Certificate is presented to Anna for finishing Automated testing course
 """
+class Courses:
+    def __init__(self, duration,start_date, student_names, course_title):
+        self.duration = duration
+        self.start_date = start_date
+        self.student_names = student_names
+        self.course_title = course_title
+    def create_contract(self):
+        for i in self.student_names:
+            print(f'Contract for {i} is created with start_date - {self.start_date} and duration {self.duration} month')
+        return 1
+    def give_certificate(self):
+        for i in self.student_names:
+            print(f'Certificate is presented to {i} for finishing {self.course_title} course')
+        return 1
+class Automated_Testing(Courses):
+    def learn_python(self):
+        print('Python Agenda')
+    def learn_selenium(self):
+        print('Selenium Agenda')
+
+x = Automated_Testing(4, '26.02.2024',['Lusine', 'Arman', 'Anna'], 'Automated testing')
+x.create_contract()
+x.learn_python()
+x.learn_selenium()
+x.give_certificate()
