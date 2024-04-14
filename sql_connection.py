@@ -1,0 +1,56 @@
+import pymysql
+
+connection = pymysql.connect(host='pro.freedb.tech',
+                             user='qwallity',
+                             password='6YJsZQk&##7J2?e',
+                             database='qwallitydb')
+cursor = connection.cursor()
+query = "select * from users"
+cursor.execute(query)
+result = cursor.fetchone()
+rowcount = cursor.rowcount
+print(rowcount)
+print(result)
+
+# ---------------------------------------------------------
+
+class DB:
+    def __init__(self):
+        self.create_conection 
+
+    def create_conection(self):
+        connection = pymysql.connect(host='pro.freedb.tech',
+                                     user='qwallity',
+                                     password='6YJsZQk&##7J2?e',
+                                     database='qwallitydb')
+        return connection
+    
+    def update(self):
+        cursor = connection.cursor()
+        query = "SELECT * FROM table_name WHERE Name LIKE '%Test%'"
+        query = "UPDATE table_name SET name = 'Anna' WHERE id = 10"
+        cursor.execute(query)
+        result = cursor.fetchone()
+        print(result)
+
+    def close_connection(self):
+        self.create_conection().close()
+
+
+# ----------------------------------------------------------------
+
+class DB2(DB):
+        def __init__(self):
+            super().__init__()
+            self.update_sql_info = None
+        
+    
+def update_sql_info(self, course_id, new_title):
+        try:
+            self.cursor.execute("UPDATE courses SET title = AUTOMATION WHERE id = 20", (new_title, course_id))
+        except pymysql.Error as e:
+            print(f"Error updating course: {e}")
+            self.connection.rollback()
+        else:
+            self.connection.commit()
+            print("Succsess message")
