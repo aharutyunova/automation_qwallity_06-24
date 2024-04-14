@@ -33,3 +33,24 @@ class DB:
             print('NOT COMMITTED:    ',cursor.fetchall())
             self.db_connection().rollback()
         return 1
+    
+# Anna - everything is correct, only for avoid create connection several time for example in db_close()
+# method you create connection  one more time and then close it
+# Instead of it you could have connection in def __init__ () 
+"""
+def __init__(self):
+    self.conn = None
+    def create_connection(self):
+        
+        self.connection = pymysql.connect(host= 'pro.freedb.tech',
+                             user = 'qwallity',
+                             password = '6YJsZQk&##7J2?e',
+                             database = 'qwallitydb')
+        
+     
+And in other methods already use self.connection
+
+"""
+# I changed example in PPT also
+
+# And one question why you need return 1 in db_update method?
