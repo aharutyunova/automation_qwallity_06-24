@@ -3,7 +3,8 @@ import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(message)s',
                     datefmt='%Y-%m  %H:%M:%S',
                     filename='my_log.log',
-                    filemode='w+',)
+                    filemode='w+',
+                    encoding='utf-8')
 
 try:
     with open("Anush_log.log", 'w') as f:
