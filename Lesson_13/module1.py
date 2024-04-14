@@ -42,7 +42,7 @@ def __init__(self):
     self.conn = None
     def create_connection(self):
         
-        self.connection = pymysql.connect(host= 'pro.freedb.tech',
+        self.conn = pymysql.connect(host= 'pro.freedb.tech',
                              user = 'qwallity',
                              password = '6YJsZQk&##7J2?e',
                              database = 'qwallitydb')
