@@ -3,6 +3,7 @@
 from module1 import DB
 obj = DB()
 obj.db_update()
+obj.db_close()
 
 
 #Anna jan please check also Lesson_12 and OOP_additonal_task
