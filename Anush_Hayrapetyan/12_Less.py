@@ -18,3 +18,6 @@ finally:
     
 
 # I will send the additional OOP task tomorrow.   
+
+# Anna - Even File path is difficult for you, this task well done :)
+# Only will be better to write abiut python in separate file not in the log file

@@ -1,22 +1,7 @@
-import pymysql
+import db_testing as connection
 
 
-connection = pymysql.connect(host='pro.freedb.tech',
-                             user='qwallity',
-                             password='6YJsZQk&##7J2?e',
-                             database='qwallitydb')
+db_testing = connection.DB()
 
-
-cursor = connection.cursor()
-query = "select * from users"
-
-cursor.execute(query)
-res = cursor.fetchone()
-res = cursor.fetchone()
-res = cursor.fetchone()
-rowcount = cursor.rowcount
-print(rowcount)
-print(res)
-connection.close()
-
-
+db_testing.update()
+db_testing.db_close()

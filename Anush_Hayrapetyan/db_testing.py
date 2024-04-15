@@ -1,31 +1,20 @@
 import pymysql
 
+
 class DB:
+    def db_connection(self):
+        return pymysql.connect(
+            host='pro.freedb.tech',
+            user='qwallity',
+            password='6YJsZQk&##7J2?e',
+            database='qwallitydb')
 
-    def create_connection(self):
-           con = my
+    def db_close(self):
+        self.db_connection().close()
 
-pymysql.connect(host='pro.freedb.tech',
-                             user='qwallity',
-                             password='6YJsZQk&##7J2?e',
-                             database='qwallitydb')
-
-def __init__(self, host, user, password, database):
-        self.host = host
-        self.user = user
-        self.password = password
-        self.database = database
-
-def db_connection(self):
-        self.connection = pymysql.connect(
-           host=self.host,
-           user=self.user,
-           password=self.password,
-           database=self.database
-        )
-
-def db_close(self):
-        self.connection.close()
-        print("Connection closed.")
-
-def update(self, ....):
+    def update(self):
+        db_con = self.db_connection()
+        cursor = db_con.cursor()
+        update_query = '''update users set email = 'anushikkk@gmail.com' where id = 1'''
+        cursor.execute(update_query)
+        db_con.commit()
