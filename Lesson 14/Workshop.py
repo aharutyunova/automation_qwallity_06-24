@@ -56,6 +56,7 @@ ids_without_email = db.get_user_ids_without_email()
 for user_id in ids_without_email:
     print(user_id)
 '''
+
 import pymysql
 
 connection = pymysql.connect(host='pro.freedb.tech',
