@@ -29,3 +29,6 @@ except NameError as nm:
 
 finally:
     print("Code worked")
+
+
+# Anna - code structure is correct, only in exception use logging.error() instead of print error message
