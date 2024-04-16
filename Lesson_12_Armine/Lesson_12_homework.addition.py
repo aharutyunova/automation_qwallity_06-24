@@ -27,18 +27,20 @@ Certificate is presented to Anna for finishing Automated testing course
 
 
 class Courses:
-    def __init__(self, duration, start_date, course_title, student_names):
+    def __init__(self, duration, start_date, course_title, student_names=[]):
         self.duration = duration
         self.start_date = start_date
         self.course_title = course_title
         self.student_names = student_names
 
     def Create_Contract(self):
-        return f"Contarct for {self.student_names} is created with start_date - {self.start_date} and duration {self.duration} month"
+        for student in self.student_names:
+            print(f"Contarct for {student} is created with start_date - {self.start_date} and duration {self.duration} month")
     
               
     def Certification(self):
-        return f"Certificate is presented to {self.student_names} for finishing {self.course_title} course"
+        for student in self.student_names:
+             print(f"Certificate is presented to {student} for finishing {self.course_title} course")
         
 
 
@@ -55,22 +57,10 @@ class Automated_Testing(Courses):
         return "Selenium Agenda"
     
 
-student1 = Automated_Testing("4", "26.02.2024", "Automated Testing", "Anna")
-print(student1.Create_Contract())
-print(student1.Learn_Python())
-print(student1.Learn_Selenium())
-print(student1.Certification())
 
-student2 = Automated_Testing("4", "26.02.2024", "Automated Testing", "Lusine")
-print(student2.Create_Contract())
-print(student2.Learn_Python())
-print(student2.Learn_Selenium())
-print(student2.Certification())
-
-student3 = Automated_Testing("4", "26.02.2024", "Automated Testing", "Arman")
-print(student3.Create_Contract())
-print(student3.Learn_Python())
-print(student3.Learn_Selenium())
-print(student3.Certification())
-
-#Anna jan, I think Learn Selenium, and Learn Python functions should be called for each student, so I did in this way)
+new_instance = Automated_Testing("4", "26.02.2024", "Automated Testing", student_names=["Arman", "Anna", "Lusine"])
+print(new_instance.Create_Contract())
+print(new_instance.Learn_Python())
+print(new_instance.Learn_Selenium())
+print(new_instance.Certification())
+    
