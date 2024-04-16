@@ -1,20 +1,30 @@
+import logging
 from datetime import datetime
 
 import mysql.connector
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    filename='database.log',
+    filemode='w+',
+    encoding='utf-8'
+)
 
 
 # 1. Find out the user id with maximum account
 def connect_to_db():
     try:
         connection = mysql.connector.connect(
-            host='pro.freedb.tech',
+            host='pro.freedb.techh',
             user='qwallity',
             password='6YJsZQk&##7J2?e',
             database='qwallitydb'
         )
         return connection
     except mysql.connector.Error as err:
-        print(f"Error connecting to the database: {err}")
+        logging.error(f"Error connecting to the database: {err}")
         return None
 
 
@@ -35,7 +45,7 @@ def get_user_with_max_account():
             print("No user found")
 
     except mysql.connector.Error as e:
-        print(f"Error connecting to the database: {e}")
+        logging.error(f"Error connecting to the database: {e}")
 
     finally:
         if db_connection.is_connected():
