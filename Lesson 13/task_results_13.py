@@ -87,6 +87,5 @@ class DB_update_courses_titles_1:
         self.db_connection1().close()
 
 
-
 db1 = DB_update_courses_titles_1()
 db1.db_update_courses_1() 
