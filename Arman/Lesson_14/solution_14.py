@@ -17,7 +17,7 @@ logging.basicConfig(
 def connect_to_db():
     try:
         connection = mysql.connector.connect(
-            host='pro.freedb.techh',
+            host='pro.freedb.tech',
             user='qwallity',
             password='6YJsZQk&##7J2?e',
             database='qwallitydb'
