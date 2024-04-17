@@ -12,12 +12,11 @@ connection = mysql.connector.connect(host='pro.freedb.tech',
 cur = connection.cursor()
 cur.execute("select MAX(account) FROM users")
 result=cur.fetchall()
-print(result)
 cur.execute("select id from users where account=2147483647")
 result1=cur.fetchall()
-print(result1[0][0])
+# print(result1[0][0])
 
-
+# Anna - you hardcoded amount in the query )) you could write query like this select * from users order by account desc limit 1
 
 # 2 Find out the earliest crieted course ID
 
@@ -26,7 +25,7 @@ cur2.execute("select id from courses order by date_created ASC")
 result3 = cur2.fetchall() #or fetchone()
 print(result3[0][0])
 
-
+# Anna - you could also use limit 1 in the query to get only one row
 
 # 3 Insert new course as author insert your name
 
@@ -36,4 +35,7 @@ connection.commit()
 
 connection.close()
 
-#Anna jan, please also check Lesson_13, thank you, in advance))
+
+# Anna - correct
+
+#Anna jan, please also check Lesson_13, thank you, in advance)) - Checked :)

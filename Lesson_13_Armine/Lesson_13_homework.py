@@ -23,8 +23,9 @@ class working_with_DB:
     
     
     def DB_update(self):
+        self.DB_connection()  #Anna - you should call this method to create connection
         cursor = self.connection.cursor()
-        cursor.execute("update courses set title = 'Katrina' where id IN (9000404, 9000405, 9000406)")
+        cursor.execute("update courses set title = 'Katrina5' where id IN (9000404, 9000405, 9000406)")
       
         if cursor.rowcount == 3:
             print("Here are your updates")
@@ -34,10 +35,12 @@ class working_with_DB:
             self.connection.rollback()
     
     def DB_close(self):
-        self.DB_connection().close()
+        self.DB_connection().close()  # Anna -you could use self.connect.close() as you already assign connection to self.connection variable
 
-       
+working_with_DB().DB_update()
+
+
 #Anna jan, but I do not understand why 'else' is being printed, and no updates in Database, but when I try to update one ID,
 # where rowcount = 1, in this casedata base is being updated and 'If' statement is being printed))
-
-
+# Look if you update same ids with same values, second time no rows are effected and else branch is work
+# If you change updated value, for example Katrin15, you will get  - Here are your updates message
