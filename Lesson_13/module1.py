@@ -9,7 +9,6 @@ import pymysql
 class DB:
 
     def create_connection(self):
-        
         connection = pymysql.connect(host= 'pro.freedb.tech',
                              user = 'qwallity',
                              password = '6YJsZQk&##7J2?e',
@@ -21,18 +20,20 @@ class DB:
         connection = self.create_connection()
         cursor  = connection.cursor() 
         # cursor.execute("select * from courses  WHERE price = 15")
-        result = cursor.execute("UPDATE courses SET title = 'aaaaaaabbbb' WHERE price = 15")
-        # result = cursor.fetchall()
-    
-        if result == 1:
-           connection.commit()
-        else:
-           connection.rollback()
-
+        result = cursor.execute("SELECT DISTINCT user_id FROM user_courses;")
+        result = cursor.fetchall()
+        my_list = []
+        for i in result:
+            my_list.append(i[0])
+        print(my_list) 
     def connection_close(self):
         connection = self.create_connection()
         connection.close()
 
+obj = DB()
+obj.create_connection()
+obj.update_courses()
+obj.connection_close()
 
 # Anna - everything is correct, only for avoid create connection several time for example in connection_close()
 # method you create connection  one more time and then close it
