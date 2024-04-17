@@ -86,3 +86,6 @@ obj = DB()
 obj.create_connection()
 obj.add_new_course()
 obj.connection_close()
+
+
+# Anna - generally very good solution, only in second task you get min date not course ID The earliest crieted course ID = 0000-00-00 00:00:00
