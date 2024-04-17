@@ -36,3 +36,6 @@ insert_data(query_insert_my_course)
 
 
 connection.close()
+
+
+# Anna - very good !!!
