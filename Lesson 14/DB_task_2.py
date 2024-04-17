@@ -1,6 +1,6 @@
 # Find out the user id with maximum account
 
-'''
+
 import pymysql
 
 connection = pymysql.connect(host='pro.freedb.tech',
@@ -41,6 +41,7 @@ else:
 
 connection.close()
 
+# Anna - good, second solution is more optimal
 
 # Find out the earliest crieted course ID
 
@@ -95,7 +96,7 @@ finally:
     if 'connection' in locals():
         connection.close()
 
-'''
+
 # Insert new course as author insert your name
 
 import pymysql
@@ -113,7 +114,7 @@ connection.commit()
 print("Course inserted successfully!")
 connection.close()
 
-'''
+
 
 import pymysql
 
@@ -139,4 +140,5 @@ except pymysql.Error as e:
 finally:
     if 'connection' in locals():
         connection.close()
-'''
+
+# Anna - very good solutions
