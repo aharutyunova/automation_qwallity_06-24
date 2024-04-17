@@ -92,3 +92,6 @@ class DB_2:
 
 database_1 = DB_2()
 database_1.new_course_title()
+
+# Anna - very good solution, only in first and second methods you should use result[0] to get id as integer, not tuple
+# You could also use 3 methods in the same class
