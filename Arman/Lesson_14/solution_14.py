@@ -53,7 +53,7 @@ def get_user_with_max_account():
             db_connection.close()
 
 
-get_user_with_max_account()
+# get_user_with_max_account()
 
 
 # 2. Find out the earliest created course ID
@@ -106,3 +106,7 @@ new_course = {
 }
 
 insert_new_course(new_course)
+
+
+# Anna - Good and complex solution, only in task 2 you should get not min dat, but course id with min date
+# you could again order all courses by date created with limit 1, like in the first example
