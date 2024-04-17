@@ -60,7 +60,7 @@ class MyCar(CarMarket):
                 price_with_discount = self.car_prices[brand] * (1 - self.discount)
                 print(f"Price of {brand} with 20% discount: ${price_with_discount:.2f}")
             else:
-                print(f"{brand} is not available in the market.")
+                print(f"{brand} is not available in the market.")  # Anna - you could not write this else, as you have not available message print in line 69
         elif self.check_brand(brand):
             print("Market list:")
             for car, price in self.car_prices.items():
@@ -70,7 +70,7 @@ class MyCar(CarMarket):
 
 
 car_market = MyCar()
-car_market.print_results("BMW")
-car_market.print_results("Toyota")
-car_market.print_results("Tesla")
-car_market.print_results("Ferrari")
+car_market.print_results("Honda1")
+
+# Anna - good, in case when car not BMW you should print current car price not all list of cars with prices
+# 

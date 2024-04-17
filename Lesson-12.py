@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(m
                     encoding='utf-8')
 
 def write_to_file():
-    os.chdir("Lesson_12_Mariam")
+    # os.chdir("Lesson_12_Mariam")
     try:
         file_path = "python_difficulties_and_ease.txt"
         with open(file_path, "w") as file:
@@ -27,3 +27,7 @@ def write_to_file():
         logging.error(e)
     finally:       
         print("Task completed")
+
+write_to_file()
+
+# Anna - Good solution,  commented line 20, as I don't have such folder and get error on this line
