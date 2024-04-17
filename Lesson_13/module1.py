@@ -7,18 +7,19 @@
 import pymysql
 
 class DB:
+    def __init__(self) :
+       self.conn = None
+        
 
     def create_connection(self):
-        connection = pymysql.connect(host= 'pro.freedb.tech',
+         self.conn = pymysql.connect(host= 'pro.freedb.tech',
                              user = 'qwallity',
                              password = '6YJsZQk&##7J2?e',
                              database = 'qwallitydb')
         
-        return connection
         
     def update_courses(self):
-        connection = self.create_connection()
-        cursor  = connection.cursor() 
+        cursor  =  self.conn.cursor() 
         # cursor.execute("select * from courses  WHERE price = 15")
         result = cursor.execute("SELECT DISTINCT user_id FROM user_courses;")
         result = cursor.fetchall()
@@ -27,8 +28,7 @@ class DB:
             my_list.append(i[0])
         print(my_list) 
     def connection_close(self):
-        connection = self.create_connection()
-        connection.close()
+         self.conn.close()
 
 obj = DB()
 obj.create_connection()
@@ -54,3 +54,4 @@ And in other methods already use self.connection
 """
 
 # I will change example in ppt too
+#Julia - fixed
