@@ -20,7 +20,11 @@ my_new_list = list(res1)
 print(my_new_list[0])
 
 
-query3 = "INSERT INTO courses (title, author, body, date_created, coursetype) VALUES ('Db_Anush', 'Anush', 'my_body', '2024-03-24 20:28:06", 2)"
+query3 = """INSERT INTO courses (title, author, body, date_created, coursetype) 
+VALUES ('Db_Anush', 'Anush', 'my_body', '2024-03-24 20:28:06', 2)"""
 cursor.execute(query3)
 res2 = cursor.fetchone()
 print(res2)
+
+
+# Anna - Good job, only after execute insert query you should commit it, like you do for update - connection.commit()
