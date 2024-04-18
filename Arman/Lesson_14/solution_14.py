@@ -53,7 +53,7 @@ def get_user_with_max_account():
             db_connection.close()
 
 
-# get_user_with_max_account()
+get_user_with_max_account()
 
 
 # 2. Find out the earliest created course ID
@@ -62,7 +62,7 @@ def get_earliest_created_course():
     db_connection = connect_to_db()
     if db_connection:
         cursor = db_connection.cursor()
-        query = "SELECT MIN(date_created) FROM courses"
+        query = "SELECT * FROM courses ORDER BY date_created DESC LIMIT 1"
         cursor.execute(query)
         result = cursor.fetchone()
         if result:
