@@ -35,3 +35,5 @@ resultat2 = cursor2.fetchone()
 cursor2.close()
 #my_added_id = resultat2[0]
 print("Instered the cours with \n", resultat2, "\nData.")
+
+# Anna - good job!!!
