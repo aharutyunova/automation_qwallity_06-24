@@ -24,3 +24,15 @@ except ValidationError as x:
     print(x.messages)
 else:
     print("Validated OK")
+
+
+# Anna - General logic and technices are correct, only there is a bit mess, I didn't find one file or method which was final
+# For example you could complete all logic in this one file
+# check validation and if validation will pass in else block write all thise code
+"""name = json_data.get("name")
+surname = json_data.get("surname")
+address = json_data.get("address")
+number = json_data.get("number")
+print(f"name: {name}\nsurname: {surname}\naddress: {address}\nnumber: {number}")"""
+
+# Anyway despite the comments, the general logic is good enougth :)
