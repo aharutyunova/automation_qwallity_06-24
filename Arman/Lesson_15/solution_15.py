@@ -29,13 +29,13 @@ user_dict = {
     "surname": "Doe",
     "age": 25
 }
-
+# Anna - You don't need to have user_dict separately, you get it when loads from json string
 
 def from_json_to_object(input_data):
     py_object = {}
     if isinstance(input_data, str):
         try:
-            py_object = json.loads(input_data)
+            py_object = json.loads(input_data) # Anna - you should return py_object in try or else block, becasue in case of exception you will have no object to return
         except json.JSONDecodeError as error:
             print(error)
         return py_object
@@ -64,3 +64,8 @@ my_data_validation = MyDataValidation()
 
 # Check my dictionary data schema validation
 check_my_data_schema = my_data_validation.validate(my_dict_data)
+
+# Anna - general technices are used but you didn't use everything as a parts of same flow.
+# Look you should write one function which will get your json string, will check if json format pass validation, print name, surname, address values
+
+# You separately checked validation, print data, but didn't get everything as an end to end flow
