@@ -74,8 +74,9 @@ class DB_update_courses_titles_1:
     def db_update_courses_1(self):
         db_1 = self.db_connection1()
         cursor = db_1.cursor()
-        sql_data_1 = """UPDATE courses set title = "Shushan's change" WHERE price = 3000"""
+        sql_data_1 = """UPDATE courses set title = "Shushan's change1" WHERE price = 3000"""
         cursor.execute(sql_data_1)
+        print(cursor.rowcount)
         if cursor.rowcount == 3:
                 db_1.commit()
                 print("Changes committed.")
@@ -89,3 +90,5 @@ class DB_update_courses_titles_1:
 
 db1 = DB_update_courses_titles_1()
 db1.db_update_courses_1() 
+
+# Anna - The logic is correct, only your update every time update more or less than 3 rows, so your changes are rolling back every time
