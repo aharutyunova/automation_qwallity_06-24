@@ -17,4 +17,6 @@ class DB:
         # cursor.execute("select * from courses  WHERE price = 1000")
         result = cursor.execute("UPDATE courses SET title = AAAA WHERE price =1000")
         # result = cursor.fetchall()
-        
+
+
+#Anna jan I can’t finish the task, I need your help
