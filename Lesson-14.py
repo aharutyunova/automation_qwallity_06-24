@@ -30,3 +30,10 @@ print(result3)
 # 3 Insert new course as author insert your name
 
 cur3 = 'connection'.cursor()
+
+
+
+
+
+
+#I didn’t finish Anna jan, I couldn’t write my name)) I think I registered in the database, but it didn’t work
