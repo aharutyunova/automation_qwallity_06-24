@@ -27,3 +27,6 @@ def method():
         print("File exists in anyway")
 
 method()
+
+
+# Anna - correct, only would be better log errors not print it - logging.error(fe)

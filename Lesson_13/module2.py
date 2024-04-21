@@ -6,4 +6,4 @@ obj.db_update()
 obj.db_close()
 
 
-#Anna jan please check also Lesson_12 and OOP_additonal_task
+#Anna jan please check also Lesson_12 and OOP_additonal_task - Checked, good job!!!
