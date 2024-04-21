@@ -10,10 +10,8 @@ with open("json_data.json", "r+") as f:
     print(type(new_res))
 
 
-# Validate JSON data
 is_valid = result
 
-# Parse JSON data and print name, surname, and address
 if is_valid:
     name = json_data['name']
     surname = json_data['surname']
