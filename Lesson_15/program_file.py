@@ -23,6 +23,10 @@ else:
     print("Validation failed:")
 
 
+# Anna - almost correct, only you should use in validation schema your parsed json (new res)
+# And also in your example in case validation doesn't pass you don't get result, so in this file you will get error when import result
+
+# But anyway your solution logically was close to the expected result
 
 '''
 --Task description--
