@@ -5,7 +5,7 @@
 import json
 
 try:
-    with open(r"C:\automation_qwallity_06-24\Lesson 15\my_example.json", "r") as f:
+    with open(r"C:\automation_qwallity_06-24\Lesson 15\my_example.json", "r") as f: # Anna - URL is hardcoded
         json_data = f.read() 
         python_object = json.loads(json_data)  
     print(python_object)
@@ -43,3 +43,7 @@ try:
 
 except FileNotFoundError:
     print("Error: The specified file 'my_file.json' does not exist.")
+
+    # Anna - I didn't see where do you give required structure for your json and where do you validate?
+    # You should write one function, which will load data from json, check if validation is passed, print data from that json
+    # I will add example on main branch
