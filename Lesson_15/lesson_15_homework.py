@@ -4,7 +4,7 @@
 
 import json
 import os
-os.chdir("c:/automation_qwallity_06-24/Lesson_15")
+os.chdir("c:/automation_qwallity_06-24/Lesson_15")  # Anna - path is hardcoded
 def python_object():
     with open("data.json", 'r+') as f:
         result = f.read()
@@ -64,7 +64,8 @@ with open("my_data.json", 'r+') as f:
 
   
     
-
+# Anna - almost correct, only you should combine all steps in one flow
+# Load from json file - check validation using ExpectedSchema - In case validation will pass print data from json
 
 
 
