@@ -23,7 +23,7 @@ try:
 except ValidationError as x:
     print(x.messages)
 else:
-    print("Validation is passed")
+    print("Validation passed")
 
 
 # Anna - General logic and technices are correct, only there is a bit mess, I didn't find one file or method which was final
@@ -52,7 +52,7 @@ class JsonSchema(Schema):
 with open("json_file.json", 'r', ) as f:
     json_data = json.load(f)
 # or json_data = json.loads(json_data_raw)
-
+# delete one key with value from json_file and get ValidationError
 try:
     result = JsonSchema().load(json_data)
     print("Validation passed.")
