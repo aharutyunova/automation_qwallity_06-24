@@ -1,4 +1,5 @@
-
+import json
+from marshmallow import schema, validate, fields, validationError
 
 def validate_schema(data):
     required_fields = {"name", "lastname", "address"}
