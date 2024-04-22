@@ -9,5 +9,5 @@ class ValidationSchema(Schema):
 
 class MyDataValidation(Schema):
     name = fields.Str(required=True)
-    age = fields.Int(required=True)
+    surname = fields.Str(required=True)
     address = fields.Str(required=True)
