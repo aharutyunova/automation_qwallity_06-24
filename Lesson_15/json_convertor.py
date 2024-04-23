@@ -1,0 +1,12 @@
+import json
+
+
+class Json_Convertor:
+    def json_load(self, filname):
+        with open(filname, "r") as f:
+            self.load_res = json.load(f)
+        return self.load_res
+
+    def json_dump(self, data, filename):
+        with open(filename, "w+") as f:
+            json.dump(self.load_res, f, indent=4)
