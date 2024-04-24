@@ -22,3 +22,6 @@ json_data_raw = """{
 json_data = json.loads(json_data_raw)
 print(json_data)
 print(type(json_data))
+
+# Anna - Mariam jan this part of code and part with schema validation are correct
+# End to End flow of requirement didn't covered, but what you wrote is correct
