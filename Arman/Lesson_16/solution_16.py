@@ -65,5 +65,5 @@ if dimensions:
 # With this pattern
 """
 pattern = (r'\w+\s\=\s\d+')
-res = re.findall(pattern, a)
+res = re.findall(pattern, YOURDATA)
 """
