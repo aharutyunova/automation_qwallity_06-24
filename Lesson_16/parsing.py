@@ -39,3 +39,5 @@ def parsing(file):
       return dict
       
 print(parsing('config.ini'))
+
+# Ann jan please also check 14 and 15, sorry for late homework((
