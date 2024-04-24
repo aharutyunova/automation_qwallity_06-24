@@ -10,3 +10,6 @@ regex_pattern = r'(\w+)\s*=\s*(\d+)'
 replaced_text = Data_Parser.parse_text_to_dict(data_file, regex_pattern)
 print(replaced_text)
 print(type(replaced_text))
+
+
+# Anna - very good solution and optimal regex pattern
