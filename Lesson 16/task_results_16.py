@@ -54,7 +54,7 @@ def config_file(file_path):
     except Exception as e:
          logging.error(f"An error occurred: {str(e)}")
     finally:
-        logging.info("Config is completed")
+        logging.info("Config completed")
         return config_data
 
 if __name__ == "__main__":
