@@ -58,3 +58,12 @@ full_file_path = os.path.join(current_directory, configuration_file)
 dimensions = extract_dimensions_from_file(configuration_file)
 if dimensions:
     print(json.dumps(dimensions, indent=4))
+
+
+# Anna, correct solution, but a bit difficult
+# You could get values with easier way
+# With this pattern
+"""
+pattern = (r'\w+\s\=\s\d+')
+res = re.findall(pattern, a)
+"""
