@@ -25,3 +25,8 @@ try:
 
 except Exception as e:
     logging.error(f"Error occurred: {e}")
+
+# Anna - Good solution. Structure of code also good enough. But you could get data in more short way
+"""
+pattern = (r'\w+\s\=\s\d+')
+res = re.findall(pattern, YOURDATA)"""
