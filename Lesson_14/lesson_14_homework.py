@@ -41,3 +41,6 @@ else:
     print('The insert operation is not successfull')
 
 cursor.close()
+
+
+# Anna - Good solution, please also don't forget to close connetion - connection.close()
