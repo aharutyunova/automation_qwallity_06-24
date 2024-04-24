@@ -7,3 +7,6 @@ def validate_schema(data):
         if field not in data:
             return False
     return True
+
+
+# Anna - here you import marshmallow but didn't use it for validation :)

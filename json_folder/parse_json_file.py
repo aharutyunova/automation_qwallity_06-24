@@ -25,3 +25,9 @@ address = json_data["address"]
 print("Name:", name)
 print("Lastname:", lastname)
 print("Address:", address)
+
+# Anna - general steps are correct, but this steps don't combined into one flow
+# You should create one function, which will load from json file, check validation using marshmallow and if validaiton will pass print 
+# Name, Lastname and Address
+
+# I will add my solution to master branch, please have a look
