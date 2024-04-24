@@ -62,3 +62,13 @@ if __name__ == "__main__":
     config_data = config_file(config_file_path)
     print(config_data)
 
+# Anna - everything is correct, only you solve in a bit long way, you could get values in this way
+
+
+"""
+with open('text_file.txt', 'r') as file:
+    pattern = (r'\w+\s\=\s\d+')
+    res = re.findall(pattern, file.read())
+    print(res)"""
+
+# But your solution is good enough - especially structure with try except block and logging
