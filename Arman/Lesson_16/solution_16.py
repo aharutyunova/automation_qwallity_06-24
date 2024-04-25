@@ -3,7 +3,7 @@ Create a simple config file parser.
 
 Config file has the following syntax:
 
-Comments begin with # (may be in the beginning of the line or in the middle of the line.
+Comments begin with # may be in the beginning of the line or in the middle of the line.
 
 Blank lines are allowed.
 
@@ -58,7 +58,6 @@ full_file_path = os.path.join(current_directory, configuration_file)
 dimensions = extract_dimensions_from_file(configuration_file)
 if dimensions:
     print(json.dumps(dimensions, indent=4))
-
 
 # Anna, correct solution, but a bit difficult
 # You could get values with easier way
