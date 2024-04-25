@@ -21,6 +21,7 @@ Nulla facilisi. Maecenas a nisi eget justo congue suscipit.
 Integer euismod 095121515 mauris id dui malesuada, nec lobortis risus consequat.
 """
 
+
 # |\b\d{9,11}\b
 def find_all_phone_numbers(input_file):
     if input_file:
