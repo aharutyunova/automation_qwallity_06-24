@@ -16,7 +16,7 @@ weather_json = os.path.join(current_file, "weather.json")
 
 def kelvin_to_celsius(input_temp):
     KELVIN_VALUE = 273.15
-    """function returns converted temperature value from Kelvin to Celsius"""
+    """Function returns converted temperature value from Kelvin to Celsius"""
     return round(input_temp - KELVIN_VALUE)
 
 
@@ -41,7 +41,7 @@ def get_city_and_temperature(input_json):
         elif dict == "name":
             city = json_to_dict[dict]
 
-    return f"{city} temp is {kelvin_to_celsius(kelvin)}°C (temp={kelvin})"
+    return f"In {city} temp is {kelvin_to_celsius(kelvin)}°C (temp={kelvin})"
 
 
 print(get_city_and_temperature(weather_json))
