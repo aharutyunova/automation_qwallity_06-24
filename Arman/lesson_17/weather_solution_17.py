@@ -14,16 +14,16 @@ current_file = os.getcwd()
 weather_json = os.path.join(current_file, "weather.json")
 
 
-def fahrenheit_to_celsius(input_temp):
-    FAHRENHEIT_VALUE = 273.15
-    """function returns converted temperature value from Fahrenheit to Celsius"""
-    return round(input_temp - FAHRENHEIT_VALUE)
+def kelvin_to_celsius(input_temp):
+    KELVIN_VALUE = 273.15
+    """function returns converted temperature value from Kelvin to Celsius"""
+    return round(input_temp - KELVIN_VALUE)
 
 
 def get_city_and_temperature(input_json):
     """Get city and temperature from weather json and return result"""
     city = ""
-    fahrenheit = 0
+    kelvin = 0
 
     # Open and read weather.json file data
     with open(weather_json, "r+") as f:
@@ -37,11 +37,11 @@ def get_city_and_temperature(input_json):
         if dict == "main":
             for key, value in json_to_dict[dict].items():
                 if key == "temp":
-                    fahrenheit = value
+                    kelvin = value
         elif dict == "name":
             city = json_to_dict[dict]
 
-    return f"{city} temp is {fahrenheit_to_celsius(fahrenheit)}°C (temp={fahrenheit})"
+    return f"{city} temp is {kelvin_to_celsius(kelvin)}°C (temp={kelvin})"
 
 
 print(get_city_and_temperature(weather_json))
