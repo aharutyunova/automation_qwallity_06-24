@@ -15,8 +15,9 @@ weather_json = os.path.join(current_file, "weather.json")
 
 
 def fahrenheit_to_celsius(input_temp):
+    FAHRENHEIT_VALUE = 273.15
     """function returns converted temperature value from Fahrenheit to Celsius"""
-    return ((input_temp - 32) * 5) / 9
+    return round(input_temp - FAHRENHEIT_VALUE)
 
 
 def get_city_and_temperature(input_json):
@@ -40,7 +41,7 @@ def get_city_and_temperature(input_json):
         elif dict == "name":
             city = json_to_dict[dict]
 
-    return f"{city} temp is {fahrenheit_to_celsius(fahrenheit)}C (temp={fahrenheit})"
+    return f"{city} temp is {fahrenheit_to_celsius(fahrenheit)}°C (temp={fahrenheit})"
 
 
 print(get_city_and_temperature(weather_json))
