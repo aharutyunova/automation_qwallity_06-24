@@ -12,3 +12,6 @@ with open(data_file, "r") as f:
 kelvin_temp = weather_data[0]["temp"]
 converted_temp = Temp_Convertor.kelvin_to_celsius(kelvin_temp)
 print(converted_temp)
+
+
+# Anna - good solution, you only didn't print full message with city name :) But that's ok 
