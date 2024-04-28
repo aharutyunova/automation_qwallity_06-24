@@ -2,8 +2,8 @@ import json
 import os
 
 
-def print_weather(json_file):
-    with open(json_file, 'r') as f:
+def print_weather(arg):
+    with open(arg, 'r') as f:
         data = json.load(f)
         city_name = data['name']
         temperature = data['main']['temp'] - 273.15  # Convert temperature from Kelvin to Celsius
