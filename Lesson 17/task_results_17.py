@@ -30,6 +30,8 @@ def city_temperature(filename):
 filename = "city_weather.json"
 city_temperature(filename)
 
+# Anna - Everything is correct, only what about exception, in case you use general exception you could not additionally use FileNotFoundError exception,
+# as this exception will be catched in line 27 
 
 
 def city_weather(file):
@@ -47,5 +49,5 @@ file = "city_weather.json"
 city_weather(file)
 
 
-
+# Anna - in this function, I didn't understand, why you hardcoded  country_name and weather_description values, in case you also get it fron json in line 41 and 42
 
