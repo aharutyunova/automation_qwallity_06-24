@@ -19,6 +19,8 @@ current_directory = os.getcwd()
 full_file_path = os.path.join(current_directory, file_name)
 print_temperature(full_file_path, file_name)
 
+# Anna - Good solution, wverything is correct :)
+
 
 # Login to https://qwallity-prod.onrender.com/
 #  Go to Weather Tab - https://qwallity-prod.onrender.com/weather
