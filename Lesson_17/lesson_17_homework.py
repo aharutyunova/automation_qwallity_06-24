@@ -15,3 +15,5 @@ def getWeather(file):
         temp =  int(result['main']['temp'] - kelvin)
         return f"The temperature in {city} is {temp}°C."
 print(getWeather('weather.json'))
+
+# Anna - Everything is correct
