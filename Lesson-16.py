@@ -52,3 +52,7 @@ try:
 
 except Exception as e:
     logging.error(f"Error occurred: {e}")
+
+
+# Anna - code works :) I am very happy to see printed dictionary :)
+# Only I didn't find config file and added it myself
