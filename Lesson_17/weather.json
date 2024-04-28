@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 43.8453,
+        "lat": 40.7942
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 288.94,
+        "feels_like": 288.12,
+        "temp_min": 288.94,
+        "temp_max": 288.94,
+        "pressure": 1023,
+        "humidity": 59
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.57,
+        "deg": 10
+    },
+    "clouds": {
+        "all": 3
+    },
+    "dt": 1714247563,
+    "sys": {
+        "type": 1,
+        "id": 8847,
+        "country": "AM",
+        "sunrise": 1714183679,
+        "sunset": 1714233371
+    },
+    "timezone": 14400,
+    "id": 616635,
+    "name": "Gyumri",
+    "cod": 200
+}

@@ -37,3 +37,10 @@ full_file_path = os.path.join(current_directory, file_name)
 new_res_dict = parse_config(full_file_path)
 print("Resulting dictionary:", new_res_dict)
 print(json.dumps(new_res_dict, indent=4))
+
+# Anna - correct solution and correct result
+# But you get data in a bit difficult way, you could get data also using this pattenr
+"""
+pattern = (r'\w+\s\=\s\d+')
+res = re.findall(pattern, YOURDATA)
+"""
