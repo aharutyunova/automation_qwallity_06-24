@@ -45,3 +45,6 @@ def get_city_and_temperature(input_json):
 
 
 print(get_city_and_temperature(weather_json))
+
+
+# Anna - very good solution without hardcoding
