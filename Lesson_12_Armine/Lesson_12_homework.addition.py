@@ -58,36 +58,9 @@ class Automated_Testing(Courses):
     
 
 
-<<<<<<< HEAD
 new_instance = Automated_Testing("4", "26.02.2024", "Automated Testing", student_names=["Arman", "Anna", "Lusine"])
 print(new_instance.Create_Contract())
 print(new_instance.Learn_Python())
 print(new_instance.Learn_Selenium())
 print(new_instance.Certification())
     
-=======
-student2 = Automated_Testing("4", "26.02.2024", "Automated Testing", "Lusine")
-print(student2.Create_Contract())
-print(student2.Learn_Python())
-print(student2.Learn_Selenium())
-print(student2.Certification())
-
-student3 = Automated_Testing("4", "26.02.2024", "Automated Testing", "Arman")
-print(student3.Create_Contract())
-print(student3.Learn_Python())
-print(student3.Learn_Selenium())
-print(student3.Certification())
-
-#Anna jan, I think Learn Selenium, and Learn Python functions should be called for each student, so I did in this way)
-
-# Anna - In this solution you have to create object for each student, 
-# and if you course has 15 student, you should create 15 object
-#  It is not so optimal
-#  Will be better to pass not separate name but list of names to Create_Contract and Certification methods
-# And inside that methods woth for loop print message for each name of the list
-
-# After it you will create object 1 time for Automated_Testing class and call each method just one
-# I will add my solution to the main branch
-
-# NOTE- Please pay attention on method names - variables, object names, method names start with lowercase, classes with uppercase
->>>>>>> 5fd1d130dd6c472be11350873d59d013ed9bdffb

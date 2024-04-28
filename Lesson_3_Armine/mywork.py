@@ -224,4 +224,21 @@ print(sumofthenumbers(poghos))
 
 
 
+#reg expressions
 
+import re
+text = "teseteset AA test, AA AA"
+patt = 'DD'
+res = re.match(patt, text)
+print(res)
+
+search = re.search(patt, text)
+print(search)
+find = re.findall(patt, text)
+print(find)
+
+res_split = re.split(patt, text)
+print(res_split)
+
+res_sub = re.sub("AA", patt, text)
+print(res_sub)
