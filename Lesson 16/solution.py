@@ -38,3 +38,5 @@ full_file_path = os.path.join(current_directory, config_data)
 parsed_data = parse_config_file(config_data)
 parsed_data_str = json.dumps(parsed_data, indent=4)
 print(parsed_data_str)
+
+# Anna - parsing way a bit long, but is correct, also in case you use general exception ( line 30) you could skip filenotfound exception(line 28)

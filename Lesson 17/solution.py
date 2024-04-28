@@ -15,4 +15,6 @@ current_directory = os.getcwd()
 full_file_path = os.path.join(current_directory, json_file)
 print_weather(full_file_path)
 
-# Anna jan please also review my solution to lesson 16, pease ^_^
+# Anna - correct, good solution
+
+# Anna jan please also review my solution to lesson 16, pease ^_^ -Checked
