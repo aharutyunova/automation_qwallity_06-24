@@ -1,8 +1,8 @@
 import requests
 from requests.auth import HTTPBasicAuth
 
-from api_endpoints import *
-from user_credentials import *
+from practice_api_endpoints import *
+from practice_user_credentials import *
 
 # Authorization with post method
 get_token = requests.post(login_api, auth=HTTPBasicAuth(user_name, password))
