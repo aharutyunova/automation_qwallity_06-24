@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 36.25,
+        "lat": 50
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 292.13,
+        "feels_like": 290.92,
+        "temp_min": 292.13,
+        "temp_max": 292.13,
+        "pressure": 1027,
+        "humidity": 32,
+        "sea_level": 1027,
+        "grnd_level": 1009
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 6.53,
+        "deg": 22,
+        "gust": 8.01
+    },
+    "clouds": {
+        "all": 23
+    },
+    "dt": 1714393741,
+    "sys": {
+        "country": "UA",
+        "sunrise": 1714356864,
+        "sunset": 1714409401
+    },
+    "timezone": 10800,
+    "id": 706483,
+    "name": "Kharkiv",
+    "cod": 200
+}
