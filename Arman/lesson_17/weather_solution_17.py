@@ -46,6 +46,5 @@ def get_city_and_temperature(input_json):
 
 print(get_city_and_temperature(weather_json))
 
-
 # Anna - very good solution without hardcoding
 # Only one note - you could get value fron json without loop, to get temp value, you could write - json_to_dict['main']['temp']
