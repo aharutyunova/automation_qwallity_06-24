@@ -11,6 +11,7 @@ new_course = {
     "price": 50000
 }
 
+
 def add_new_course(input_body, input_token):
     try:
         headers = {"Authorization": f"Bearer {input_token}"}
@@ -29,3 +30,4 @@ new_course = add_new_course(new_course, token)
 course_id = new_course["id"]
 
 # print(course_id)
+print(f"Created course with id: {course_id}")

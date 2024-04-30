@@ -5,6 +5,11 @@ from login import token
 
 UPDATE_COURSE_API_ENDPOINT = f'https://qwallity-prod.onrender.com/course/{course_id}/update'
 
+update_course_dict = {
+    "title": "Update Python course title",
+    "body": 'Update Python course body',
+}
+
 
 def update_course_data(input_data, input_token):
     try:
@@ -24,7 +29,7 @@ def update_course_data(input_data, input_token):
 
 
 # Update course
-updated_course = update_course_data(course_data, token)
+updated_course = update_course_data(update_course_dict, token)
 
 if updated_course is not None:
     print(f"Updated course with id {course_id}: {updated_course}")
