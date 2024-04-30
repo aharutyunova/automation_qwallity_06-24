@@ -7,7 +7,7 @@ new_course = {
     "title": "Python title",
     "body": "Python body",
     "coursetype": "1",
-    "author": "Arman",
+    "author": "Admin",
     "price": 50000
 }
 
