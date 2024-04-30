@@ -3,11 +3,10 @@ import requests
 from add_course import course_id
 from login import token
 
-DELETE_COURSE_API_ENDPOINT = f'https://qwallity-prod.onrender.com/courses/course/{course_id}'
-
 
 def delete_course(input_token):
     try:
+        DELETE_COURSE_API_ENDPOINT = f'https://qwallity-prod.onrender.com/courses/course/{course_id}'
         headers = {"Authorization": f"Bearer {input_token}"}
         response = requests.delete(DELETE_COURSE_API_ENDPOINT, headers=headers)
         response.raise_for_status()

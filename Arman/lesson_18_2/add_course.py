@@ -1,3 +1,5 @@
+import json
+
 import requests
 
 from api_endpoints import ADD_NEW_COURSE_API_ENDPOINT
@@ -28,6 +30,9 @@ new_course = add_new_course(new_course, token)
 
 # Created course id
 course_id = new_course["id"]
+
+# Print created course JSON to the console
+print(json.dumps(new_course, indent=4))
 
 # print(course_id)
 print(f"Created course with id: {course_id}")

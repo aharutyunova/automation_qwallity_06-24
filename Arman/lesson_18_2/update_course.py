@@ -3,11 +3,6 @@ import requests
 from add_course import course_id
 from login import token
 
-UPDATE_COURSE_API_ENDPOINT = f'https://qwallity-prod.onrender.com/course/{course_id}/update/'
-
-# Check which course is going to be updated to the console
-print(UPDATE_COURSE_API_ENDPOINT)
-
 update_course_dict = {
     "title": "Update Python course title",
     "body": 'Update Python course body',
@@ -16,6 +11,7 @@ update_course_dict = {
 
 def update_course_data(input_data, input_token):
     try:
+        UPDATE_COURSE_API_ENDPOINT = f'https://qwallity-prod.onrender.com/course/{course_id}/update/'
         headers = {"Authorization": f"Bearer {input_token}"}
         response = requests.patch(UPDATE_COURSE_API_ENDPOINT, json=input_data, headers=headers)
         response.raise_for_status()
@@ -23,11 +19,6 @@ def update_course_data(input_data, input_token):
     except requests.exceptions.RequestException as error:
         print(f"Error occurred: {error}")
         return None
-
-
-# except requests.exceptions.RequestException as error:
-#     print(f"Error occurred: {error}")
-#     return None
 
 
 # Update course

@@ -6,6 +6,8 @@ from config_file import user_credentials
 
 user_credentials_for_login = user_credentials
 
+print(LOGIN_API_ENDPOINT)
+
 
 def get_access_token(input_credentials):
     try:
