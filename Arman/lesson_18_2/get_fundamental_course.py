@@ -7,7 +7,7 @@ from login import token
 user_credentials_for_login = user_credentials
 
 
-def get_fundamental_course(input_credentials):
+def get_fundamental_course():
     try:
         headers = {"Authorization": f"Bearer {token}"}
         response = requests.get(
@@ -23,4 +23,4 @@ def get_fundamental_course(input_credentials):
         return None
 
 
-print(get_fundamental_course(user_credentials_for_login))
+print(get_fundamental_course())
