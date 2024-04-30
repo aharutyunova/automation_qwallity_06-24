@@ -11,7 +11,6 @@ new_course = {
     "price": 50000
 }
 
-
 def add_new_course(input_body, input_token):
     try:
         headers = {"Authorization": f"Bearer {input_token}"}

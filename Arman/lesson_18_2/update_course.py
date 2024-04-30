@@ -5,11 +5,6 @@ from login import token
 
 UPDATE_COURSE_API_ENDPOINT = f'https://qwallity-prod.onrender.com/course/{course_id}/update'
 
-course_data = {
-    "title": "Update Python course title",
-    "body": 'Update Python course body',
-}
-
 
 def update_course_data(input_data, input_token):
     try:
