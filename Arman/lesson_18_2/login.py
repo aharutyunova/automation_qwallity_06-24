@@ -4,16 +4,32 @@ from requests.auth import HTTPBasicAuth
 from api_endpoints import LOGIN_API_ENDPOINT
 from config_file import user_credentials
 
+user_credentials_for_login = user_credentials
 
-def get_access_token():
+
+def get_access_token(input_credentials):
     try:
-        get_token = requests.post(LOGIN_API_ENDPOINT,
-                                  auth=HTTPBasicAuth(user_credentials["username"], user_credentials["password"]))
-        access_token = get_token.json()['token']
+        response = requests.post(LOGIN_API_ENDPOINT,
+                                 auth=HTTPBasicAuth(input_credentials["username"], input_credentials["password"]))
+        response.raise_for_status()
+        access_token = response.json()['token']
         return access_token
-    except Exception as error:
-        print(error)
+    except requests.exceptions.RequestException as error:
+        print(f"Error occurred: {error}")
+        return None
 
 
-token = get_access_token()
+def is_logged_in(input_token):
+    is_logged = False
+    if input_token:
+        is_logged = True
+    return is_logged
+
+
+# Get access token
+token = get_access_token(user_credentials_for_login)
+
+print(f"Is logged in: {is_logged_in(token)}")
+
+# Print access token to the console
 print(token)
