@@ -22,5 +22,3 @@ def get_fundamental_course():
             print("Unauthorized: Check your credentials.")
         return None
 
-
-print(get_fundamental_course())

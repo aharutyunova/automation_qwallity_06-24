@@ -22,10 +22,10 @@ def delete_course(input_token):
         return None
 
 
-# Delete course
-deleted_course = delete_course(token)
+# # Delete course
+# deleted_course = delete_course(token)
 
-if deleted_course is not None:
-    print(f"Deleted course with id {course_id}: {deleted_course}")
-else:
-    print("Failed to delete course.")
+# if deleted_course is not None:
+#     print(f"Deleted course with id {course_id}: {deleted_course}")
+# else:
+#     print("Failed to delete course.")
