@@ -1,0 +1,82 @@
+Course Management System
+
+Overview
+The Course Management System is a Python program designed to manage courses within a learning platform.
+It provides functionalities to add new courses, retrieve existing courses, update course information, and delete the course.
+
+Features
+Login: Allows users to authenticate and obtain a token for accessing the system.
+Add Course: Enables users to add new courses to the platform.
+Get Fundamental Courses: Retrieves a list of fundamental courses available in the system.
+Update Course: Updates the information of a specific course.
+Delete Course: Deletes the course with the specified ID.
+
+Prerequisites
+Before running the program, ensure you have the following dependencies installed:
+
+Python 3.x
+Requests library (pip install requests)
+
+Usage
+1) Login:
+This function returns an authentication token required for accessing other functionalities.
+
+from login import login
+
+token = login()
+
+2) Add Course:
+Adds a new course to the platform and returns the ID of the newly added course.
+
+from add_course import add_course
+
+new_course_id = add_course(token)
+
+3) Get Fundamental Courses:
+Retrieves the list of fundamental courses and checks if the newly added course exists.
+
+from get_fundamental_course import get_added_fundamental_course
+
+added_course_id = get_added_fundamental_course(token, new_course_id)
+
+
+4) Update Course:
+Updates the body of the newly added course with the provided content.
+
+from update_course import update_course
+
+updated_body = "updated_by_Lus"
+update_course(token, new_course_id, updated_body)
+
+5) Delete Course:
+Deletes the newly added course with the provided ID from the platform.
+
+from endpoints import endpoint_delete_course
+
+delete_course(token, new_course_id)
+
+
+Endpoints
+The program uses the following endpoints:
+
+Login: https://qwallity-prod.onrender.com/login/api
+Add Course: https://qwallity-prod.onrender.com/add_course/api
+Get Fundamental Courses: https://qwallity-prod.onrender.com/courses/fundamental/api
+Update Course: https://qwallity-prod.onrender.com/course/{course_id}/update/
+Delete Course: https://qwallity-prod.onrender.com/courses/course/{course_id}
+
+File Structure
+login.py: Contains functions for user authentication.
+add_course.py: Implements functionality to add a new course.
+get_fundamental_course.py: Provides functions to retrieve fundamental courses.
+update_course.py: Implements course update functionality.
+delete_course.py: Provides functionality to delete a course from the system.
+endpoints.py: Stores endpoint URLs used in the program.
+config.py: Stores user credentials and other configuration parameters used in the program.
+main.py: Orchestrates the execution of various modules within the program, handling user authentication, course management, and interactions with the endpoints.
+
+Contributors
+Lusine Hovsepyan
+
+License
+This project is licensed under the QWALLITY License.
