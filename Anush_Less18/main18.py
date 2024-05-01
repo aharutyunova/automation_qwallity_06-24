@@ -30,5 +30,10 @@ print(add_course.json())
 
 headers1 = {"Authorization": f"Bearer {token}"}
 
-del_courses = requests.delete('https://qwallity-prod.onrender.com/courses/course/{course_id}', headers=headers1)
+del_courses = requests.delete(f'https://qwallity-prod.onrender.com/courses/course/{course_id}', headers=headers1)
 print(del_courses.json())
+
+
+# Anna - in readme file you should descrive structure of the code - which files you use for which goal and how run the code
+# What about the code, you wrote everything in the same file, without write each api action in separate function
+# In delete action course_id is not defined, you should get course_id from add_course and use it in del_courses 
