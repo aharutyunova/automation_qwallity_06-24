@@ -15,10 +15,15 @@ def get_fundamental_course():
             headers=headers)
         response.raise_for_status()
         fundamental_course_body = response.json()
-        return fundamental_course_body
+        if fundamental_course_body:
+            return fundamental_course_body
+        else:
+            return f"{fundamental_course_body} is empty"
     except requests.exceptions.RequestException as error:
         print(f"Error occurred: {error}")
         if response.status_code == 401:
             print("Unauthorized: Check your credentials.")
         return None
 
+
+print(get_fundamental_course())

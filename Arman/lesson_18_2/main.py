@@ -17,8 +17,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-# The concept is good , the structure also
-# I commented functions calls in separate files, because when you import this files, all functions called 
-# Also some APIs failed durinf the run (with update/delete APIs we have system issue, they are failed from time to time )
-# And hwo I understand you get fundamental courses but missed part of checking, that your course is added
+# The concept is good , the structure also I commented functions calls in separate files, because when you import
+# this files, all functions called Also some APIs failed durinf the run (with update/delete APIs we have system
+# issue, they are failed from time to time ) And hwo I understand you get fundamental courses but missed part of
+# checking, that your course is added
