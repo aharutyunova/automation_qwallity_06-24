@@ -18,4 +18,4 @@ def write_in_json():
             json.dump(advanced_courses, json_file, indent=4)
     else:
         raise Exception("File not found in lesson_19 directory")
-    return "JSON data successfully written in advanced_courses.json file"q
+    return "JSON data successfully written in advanced_courses.json file"
