@@ -1,0 +1,5 @@
+login_post= 'https://qwallity-prod.onrender.com/login/api'
+add_course_post= 'https://qwallity-prod.onrender.com/add_course/api'
+get_fundamental_course= 'https://qwallity-prod.onrender.com/add_course/api'
+patch_update_course_by_id='https://qwallity-prod.onrender.com/course/update'
+delete_course='https://qwallity-prod.onrender.com/courses/course'

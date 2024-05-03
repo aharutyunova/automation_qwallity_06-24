@@ -15,7 +15,7 @@ from valid_scheme import text_validation_funct
 
 def print_data():
 
-    with open('myexample.json') as ex:
+    with open(r'C:\Users\Արմինա\automation_qwallity_06-24\Lesson_15_Armine\myexample.json') as ex:
         js_file = json.load(ex)
     
     if text_validation_funct(js_file):
@@ -23,7 +23,8 @@ def print_data():
    
     
 
+
      #Dear Anna, I did this following your solution, but nothing returns when I run the code, I cannot find what is incorrect in my code(
 
     
-    
+print_data()
