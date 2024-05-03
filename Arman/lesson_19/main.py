@@ -5,9 +5,9 @@
 # 5) create bat file to call second .py ✓
 # 6) create task scheduler (if we have time)
 
+from config_file import user_credentials
 from get_advanced_courses import get_advanced_courses
 from login import get_access_token
-from login import user_credentials
 from write_json import write_in_json
 
 
