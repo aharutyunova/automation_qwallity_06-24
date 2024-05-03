@@ -5,6 +5,7 @@ from login import token
 
 
 def get_advanced_courses():
+    global response
     try:
         headers = {"Authorization": f"Bearer {token}"}
         response = requests.get(
@@ -23,7 +24,7 @@ def get_advanced_courses():
         return None
 
 
-courses_json = get_advanced_courses()['result']
+courses_json = get_advanced_courses()["result"]
 ten_courses = []
 
 if courses_json:
