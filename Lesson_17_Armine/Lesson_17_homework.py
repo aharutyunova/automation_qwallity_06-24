@@ -26,4 +26,7 @@ def Moscow_wheather():
 
 Moscow_wheather()
 
-#Anna jan, whould you please check also Lesson_15, thank you)    
+
+# Anna - Аpart from hardcoded path, everything else is correct
+
+#Anna jan, whould you please check also Lesson_15, thank you) - Checked

@@ -20,11 +20,13 @@ def print_data():
     
     if text_validation_funct(js_file):
         print(js_file['name'], js_file['surname'], js_file['address'], js_file['phone'])
+
    
-    
+print_data()
 
 
      #Dear Anna, I did this following your solution, but nothing returns when I run the code, I cannot find what is incorrect in my code(
 
+# Anna - didn't call the function, that's why you didn't see result (Added line 25)
     
 print_data()
