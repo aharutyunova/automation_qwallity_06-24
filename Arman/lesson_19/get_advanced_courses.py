@@ -5,6 +5,7 @@ from login import token
 
 
 def get_advanced_courses():
+    """Function get advanced courses json data"""
     global response
     try:
         headers = {"Authorization": f"Bearer {token}"}
@@ -24,9 +25,13 @@ def get_advanced_courses():
         return None
 
 
+# Get result list from courses json
 courses_json = get_advanced_courses()["result"]
+
+# Empty courses list to append first 10 courses from advanced courses
 ten_courses = []
 
+# Append 10 advanced courses from courses_json to ten_courses
 if courses_json:
     temp = 0
     for dict in courses_json:
@@ -36,4 +41,5 @@ if courses_json:
             ten_courses.append(dict)
         temp += 1
 
+# Print ten courses to console for debug
 print(ten_courses)

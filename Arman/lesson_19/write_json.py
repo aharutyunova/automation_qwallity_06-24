@@ -8,6 +8,7 @@ advanced_courses = ten_courses
 
 
 def write_in_json():
+    """Function writes advanced courses json data in the advanced_courses.json file"""
     current_directory = os.getcwd()
     advanced_courses_json_file = r'C:\Users\arman.petrosyan\Desktop\Qwallity\Arman\lesson_19\advanced_courses.json'
     file_full_path = os.path.join(current_directory, advanced_courses_json_file)
@@ -17,6 +18,4 @@ def write_in_json():
             json.dump(advanced_courses, json_file, indent=4)
     else:
         raise Exception("File not found in lesson_19 directory")
-    return "JSON data successfully written in advanced_courses.json file"
-
-
+    return "JSON data successfully written in advanced_courses.json file"q

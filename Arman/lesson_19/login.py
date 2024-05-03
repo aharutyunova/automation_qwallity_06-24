@@ -22,6 +22,7 @@ def get_access_token(input_credentials):
 
 
 def is_logged_in(input_token):
+    """Function check is token exists or not"""
     is_logged = False
     if input_token:
         is_logged = True
