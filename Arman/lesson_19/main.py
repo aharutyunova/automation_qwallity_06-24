@@ -2,7 +2,7 @@
 # 2) Add schema validation for check returned data ✓
 # 3) Open file and add json data there if validation passes ✓
 # 4) Create second .py file and organize code run there ✓
-# 5) create bat file to call second .py
+# 5) create bat file to call second .py ✓
 # 6) create task scheduler (if we have time)
 
 from get_advanced_courses import get_advanced_courses
