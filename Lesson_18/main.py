@@ -25,7 +25,7 @@ from delete_course import delete_course
 
 path = os.getcwd()
 full_path = os.path.join(path,'Lesson_18')
-os.chdir(full_path)
+# os.chdir(full_path)
 
 token = login()
 course_id = add_course(token)
@@ -33,3 +33,7 @@ fund_course_ids = get_fundamental_courses(token)
 check_course_existence(course_id,fund_course_ids)
 update_course(course_id, token)
 delete_course(course_id, token)
+
+
+# Anna - good, everything works and readable
+# In the future it is better to use logging for track data, instead of print data
