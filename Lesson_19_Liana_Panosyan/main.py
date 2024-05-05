@@ -14,3 +14,9 @@ if __name__ == "__main__":
     advanced_courses_data = courses_list
 
     write_json(courses_list)
+
+
+# Anna - everything works, bat file also.
+# As you write some parts of code in functionas and some part directly in teh module, it was a bit confusing, but generally everything is correct
+# Also Json file path was hardcoded
+# Good Job

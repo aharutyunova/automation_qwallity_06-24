@@ -21,7 +21,7 @@ def write_json(data):
         jsonschema.validate(instance=data, schema=courses_schema)
         print("Courses data is valid!")
         current_directory = os.getcwd()
-        json_file = r'C:\automation_qwallity_06-24\Lesson_19_Liana_Panosyan\courses_data.json'
+        json_file = r'courses_data.json'
         file_path = os.path.join(current_directory, json_file)
         if file_path:
             with open(file_path, "w") as f:
