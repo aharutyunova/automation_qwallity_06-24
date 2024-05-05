@@ -20,3 +20,7 @@ if random_10_courses:
         write_to_file(random_10_courses, valid_data_file_path)
 else:
     print("No random courses found")
+
+# Anna - everything is correct,good solution. I chnaged bat file with my path and it worked for me, I will commit with my changes
+# Alos in the future better to use logging to check data, instead of print it
+# Readme file also good enough :)
