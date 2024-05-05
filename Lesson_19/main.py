@@ -23,3 +23,8 @@ if __name__ == "__main__":
             print("Failed to retrieve advanced courses.")
     else:
         print("Login failed.")
+
+# An jan really very good solution and readme file.
+# Only use logging to see reault, instead of print different data
+# In final code prints as a rule are deleted
+# And also random is python built-in module, so no need for pip install random
