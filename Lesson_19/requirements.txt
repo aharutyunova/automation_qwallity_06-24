@@ -1,0 +1,14 @@
+certifi==2024.2.2
+charset-normalizer==3.3.2
+Faker==25.0.0
+idna==3.7
+jmespath==1.0.1
+marshmallow==3.21.1
+mysql-connector-python==8.3.0
+packaging==24.0
+PyMySQL==1.1.0
+python-dateutil==2.9.0.post0
+requests==2.31.0
+setuptools==69.5.1
+six==1.16.0
+urllib3==2.2.1
