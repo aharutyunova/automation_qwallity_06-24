@@ -17,7 +17,7 @@ def get_added_fundamental_course(token, new_course_id):
 
         for course in courses:
             if str(course["id"]) == str(new_course_id):
-                print(f"Newly Added Course ID: {course["id"]}")
+                print(f"Newly Added Course ID: {course['id']}")
                 return course["id"]
 
     except Exception as e:

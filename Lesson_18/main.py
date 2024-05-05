@@ -16,3 +16,7 @@ updated_body = "updated_by_Lus"
 update_course(token, new_course_id, updated_body)
 
 delete_course(token, new_course_id)
+
+# Anna - very good everything works and code structure is good
+# Readme aslo very detailed, you even could not describe each function in readme,
+#  just give informaiton about structure, dependeces and which file need to execute to see the result
