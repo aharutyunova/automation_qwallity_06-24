@@ -36,3 +36,7 @@ for course_id, course_title in courses:
     print(f"Course ID: {course_id}, Course Title: {course_title}")  
 with open("validated_courses.json", "w") as f:
     json.dump(get_ten_courses(), f, indent=4)
+
+
+# An jan you actually get courses but not using API )) and also you didn't implement json schema validation part
+# But final result is correct))
