@@ -1,27 +1,8 @@
 import json
 from schema_validation import validate
 
-'''
 file_path = 'data.json'
 
-
-def append_to_json(data):
-    validation = False
-    if validate(data):
-        validation = True
-    try:
-        with open(file_path, 'a') as f:
-            json.dump(data, f, indent=4)
-            f.write('\n')
-    except Exception as e:
-        print(f"Error: {e}")
-
-'''
-
-import json
-from schema_validation import validate
-
-file_path = 'data.json'
 
 def append_to_json(data):
     validation = False
