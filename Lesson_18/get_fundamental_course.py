@@ -1,14 +1,20 @@
 import requests
-from add_course import added_id
+from login import login
 from endpoints_file import get_course_api
-from login import token
+from add_course import Adding_new_course
 
-# get_fundamental_course.py
-headers = {"Authorization": f"Bearer {token}"}
-get_fund_courses = requests.get(get_course_api, headers=headers)
-courses = get_fund_courses.json()["result"]
-# print(courses)
 
-for dict in courses:
-    if str(dict["id"]) == str(added_id):
-        print("course is added")
+def get_fundamental_course():
+    token = login()
+    added_id = Adding_new_course()
+    headers = {"Authorization": f"Bearer {token}"}
+    response = requests.get(get_course_api, headers=headers)
+    courses = response.json()["result"]
+    for course in courses:
+        if str(course["id"]) == str(added_id):
+            # print("Course is added")
+            return courses
+
+
+if __name__ == '__main__':
+    get_fundamental_course()
