@@ -17,13 +17,7 @@ if get_token.status_code == 200:
 
 add_course_api_endpoint = 'https://qwallity-prod.onrender.com/add_course/api'
 
-course_body = {
-    "title": "python_title",
-    "body": 'python_body',
-    "coursetype": "1",
-    "author": "python_author",
-    "price": 500
-}
+course_body = dict(title="python_title", body='python_body', coursetype="1", author="python_author", price=500)
 
 add_course = requests.post('add_course_api_endpoint', json=course_body, headers=headers)
 
