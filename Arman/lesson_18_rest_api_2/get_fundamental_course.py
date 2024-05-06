@@ -8,6 +8,7 @@ user_credentials_for_login = user_credentials
 
 
 def get_fundamental_course():
+    global response
     try:
         headers = {"Authorization": f"Bearer {token}"}
         response = requests.get(
