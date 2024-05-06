@@ -20,10 +20,10 @@ Upon successful validation, the program writes the data to a JSON file.
 Before running the program, ensure that you have the following:
 Used library:                       - requests (pip install requests)
                                     - marshmallow (pip install marshmallow)
-                                    - random (pip install random)
+                                    - random
 
 
 
 # Usage
 
-To start the program run main.py file
+To start the program run main_with_logging.py file
