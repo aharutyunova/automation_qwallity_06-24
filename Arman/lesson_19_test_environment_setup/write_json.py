@@ -10,7 +10,7 @@ advanced_courses = ten_courses
 def write_in_json():
     """Function writes advanced courses json data in the advanced_courses.json file"""
     current_directory = os.getcwd()
-    advanced_courses_json_file = r'C:\Users\arman.petrosyan\Desktop\Qwallity\Arman\lesson_19\advanced_courses.json'
+    advanced_courses_json_file = r'/Arman/lesson_19_test_environment_setup\advanced_courses.json'
     file_full_path = os.path.join(current_directory, advanced_courses_json_file)
 
     if file_full_path:
