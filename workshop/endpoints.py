@@ -1,0 +1,1 @@
+register_url = 'https://qwallity-prod.onrender.com/register/api'
