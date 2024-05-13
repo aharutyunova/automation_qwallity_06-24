@@ -1,0 +1,3 @@
+2024-05-08 12:06:03 [DEBUG] Starting new HTTPS connection (1): jsonplaceholder.typicode.com:443
+2024-05-08 12:06:04 [DEBUG] https://jsonplaceholder.typicode.com:443 "POST /posts HTTP/1.1" 500 None
+2024-05-08 12:06:04 [ERROR] Data is not equal
