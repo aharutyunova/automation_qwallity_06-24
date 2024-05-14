@@ -1,0 +1,14 @@
+""" Create HTML page, which contain
+Page title
+Page footer
+Name, Surname, Address input fields
+Comment textarea
+Ok and Cancel button
+‘I am qwallity Link’  link, which will redirect to qwallity production page
+
+
+Design page CSS
+All input fields should be the same size
+Buttons should be orange
+Link should have blue color
+Footer should be at the bottom and contain ‘Copyright @2024 qwallity’ text """
