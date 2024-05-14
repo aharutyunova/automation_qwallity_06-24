@@ -27,7 +27,6 @@
 
 /* --- Navigation bar end ---*/
 
-
 /* --- Main body content start ---*/
 
 .main-body {
@@ -63,7 +62,8 @@ label {
   height: 30px;
 }
 
-.input-field, textarea {
+.input-field,
+textarea {
   padding: 10px;
   outline: none;
 }
@@ -96,18 +96,17 @@ textarea {
 /* --- Footer start ---*/
 
 footer {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer p {
-    color: #df691a;
-    font-family: Lato-Regular;
-    font-size: 16px;
-    padding: 24px;
+  color: #df691a;
+  font-family: Lato-Regular;
+  font-size: 16px;
+  padding: 24px;
 }
 
 /* --- Footer end ---*/
