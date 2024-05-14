@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Lato-Light;
+  src: url(/fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url(/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url(/fonts/Lato/Lato-Bold.ttf);
+}
+
+/* --- Navigation bar start ---*/
+
+.navbar {
+  background-color: #fff;
+}
+
+.qwallity-logo {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 20px;
+}
+
+/* --- Navigation bar end ---*/
+
+
+/* --- Main body content start ---*/
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2b3e50;
+  height: 100%;
+}
+
+.link-block {
+  margin-bottom: 20px;
+}
+
+.qwallity-link {
+  text-decoration-line: none;
+}
+
+textarea,
+.input-field {
+  margin-top: 10px;
+  font-family: Lato-Regular;
+  font-size: 16px;
+}
+
+p,
+label {
+  color: #fff;
+  font-family: Lato-Regular;
+  font-size: 16px;
+}
+
+.input-field {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
+}
+
+.input-field, textarea {
+  padding: 10px;
+  outline: none;
+}
+
+.submit-btn {
+  font-family: Lato-Regular;
+  background-color: #df691a;
+  border-color: #df691a;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+/* --- Main body content end ---*/
+
+/* --- Footer start ---*/
+
+footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p {
+    color: #df691a;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    padding: 24px;
+}
+
+/* --- Footer end ---*/
