@@ -9,5 +9,5 @@ from validation_scheme import validate_advanced_courses
 token = get_auth_token()
 courses = get_10_advanced_courses(token)
 if validate_advanced_courses(courses):
-    with open("advanced_courses.json", 'w+') as f:
+    with open("advanced_10_courses.json", 'w+') as f:
         f.write(json.dumps(courses,indent=4))
