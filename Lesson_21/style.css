@@ -1,0 +1,72 @@
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body {
+
+    background-color: rgb(135, 211, 235);
+}
+
+.container {
+    display: flex;
+    margin-top: 10px;
+    align-items: baseline;
+    justify-content:space-between;
+}
+
+input {
+    padding: 0;
+    border: 0;
+    width: 150px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.input_fileds {
+    text-align: right;
+}
+
+textarea {
+    padding: 0;
+    border: 0;
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+button {
+    background-color: orange;
+    margin-top: 20px;
+    width: auto;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+}
+
+label {
+    color: white;
+}
+
+a {
+    color: blue;
+}
+
+.ref {
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+}
