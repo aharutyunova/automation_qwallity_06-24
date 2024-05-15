@@ -1,0 +1,71 @@
+.page-header {
+        background-color: #fff;
+        color: #2b3e50;
+        padding: 24px;
+		font-family: Lato-Regular;
+		font-size: 16px;
+        text-align: center;
+    }
+    .page-body {
+        font-family: circular, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+		background-color: #2b3e50;
+    }
+    
+	.page-footer {
+        background-color: #df691a;
+        color:  #fff;
+        padding: 24px;
+		font-family: Lato-Regular;
+		font-size: 16px;
+        text-align: center;
+		margin-top: auto;
+    }
+    .page-main {
+        display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: #2b3e50;
+		height: 100%;
+		margin-top: 20px;
+    }
+	.input-label {
+		color: #ffff;
+		font-size: 14px;
+	}
+    .input-field {
+		margin-bottom: 10px;
+		font-family: Lato-Regular;
+		font-size: 16px;
+		width: 300px;
+		height: 10px; 
+		padding: 10px;
+		outline: none;
+		color: black;
+	}
+    .page-textarea {
+        resize: vertical;
+        color: black;
+		height: 90px !important;
+    }
+    .page-button {
+        width: 75px; 
+        padding: 10px;
+        margin: 10px 0px;
+        background-color: #df691a;
+        color: #fff;
+        border-color: #df691a;
+        border-radius: 5px;
+    }
+	.qwallity-link {
+		color: #29a5ef;
+        margin-right: 200px;
+        text-decoration: none;
+        display: block;
+        margin-top: 10px;
+	}
