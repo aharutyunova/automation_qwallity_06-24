@@ -4,8 +4,10 @@ from selenium.webdriver.common.by import By
 # Initialize the ChromeDriver with the service
 driver = webdriver.Chrome()
 
+# Store Google Chrome and Mozilla Firefox web drivers in the drivers list
 drivers = [webdriver.Chrome(), webdriver.Firefox()]
 
+# Run test on each browser
 for driver in drivers:
     try:
         # Get application base url
