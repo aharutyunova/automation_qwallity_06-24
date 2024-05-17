@@ -1,39 +1,39 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-
-# Set up the ChromeDriver service
-chrome_driver_path = ChromeDriverManager().install()
-service = Service(chrome_driver_path)
 
 # Initialize the ChromeDriver with the service
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()
 
-# Get application base url
-driver.get("https://www.python.org/")
+drivers = [webdriver.Chrome(), webdriver.Firefox()]
 
-# Maximize browser window
-driver.maximize_window()
+for driver in drivers:
+    try:
+        # Get application base url
+        driver.get("https://www.python.org/")
 
-# Store search input field id in the search variable
-search = driver.find_element(By.ID, "id-search-field")
+        # Maximize browser window
+        driver.maximize_window()
 
-# Fill search input field with data
-search.send_keys("bla bla")
+        # Store search input field id in the search variable
+        search = driver.find_element(By.ID, "id-search-field")
 
-# Get Log In button XPath and store in the email variable
-go_button = driver.find_element(By.ID, "submit")
+        # Fill search input field with data
+        search.send_keys("bla bla")
 
-# Click on the Go button
-go_button.click()
+        # Get Log In button XPath and store in the email variable
+        go_button = driver.find_element(By.ID, "submit")
 
-# Store no result store text Xpath in the no_results_found variable
-no_results_found = driver.find_element(By.XPATH, "//*[@id='content']/div/section/form/ul/p")
+        # Click on the Go button
+        go_button.click()
 
-# Check search result text matches with expected text
-assert no_results_found.text == "No results found.", "Fail: 'No results found.' text not showed"
+        # Store no result store text Xpath in the no_results_found variable
+        no_results_found = driver.find_element(By.XPATH, "//*[@id='content']/div/section/form/ul/p")
 
-driver.close()
+        # Check search result text matches with expected text
+        assert no_results_found.text == "No results found.", "Fail: 'No results found.' text not showed"
 
-print("Pass: Test passed successfully.")
+        driver.close()
+
+        print(f"Pass: Test passed successfully for {driver.name}.")
+    except Exception as error:
+        print(error)
