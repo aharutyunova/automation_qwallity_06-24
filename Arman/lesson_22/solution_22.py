@@ -32,7 +32,8 @@ go_button.click()
 no_results_found = driver.find_element(By.XPATH, "//*[@id='content']/div/section/form/ul/p")
 
 # Check search result text matches with expected text
-assert no_results_found.text == "No result found.", "Not displayed No result found."
+assert no_results_found.text == "No results found.", "Fail: 'No results found.' text not showed"
 
 driver.close()
-print("Test is finished")
+
+print("Pass: Test passed successfully.")
