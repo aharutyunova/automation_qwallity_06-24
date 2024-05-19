@@ -1,0 +1,5 @@
+@echo on 
+open new file
+call C:\Qwallity\Automation_02_2024\Lesson_19\env\Scripts\activate 
+python "of.py"
+pause
