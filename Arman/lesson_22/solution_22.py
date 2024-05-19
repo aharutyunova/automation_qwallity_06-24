@@ -2,13 +2,18 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # Initialize the ChromeDriver with the service
-driver = webdriver.Chrome()
+# driver = webdriver.Chrome()
 
 # Store Google Chrome and Mozilla Firefox web drivers in the drivers list
-drivers = [webdriver.Chrome(), webdriver.Firefox()]
+browsers = ['Chrome', 'Firefox']
 
 # Run test on each browser
-for driver in drivers:
+for browser in browsers:
+    if browser == 'Chrome':
+        driver = webdriver.Chrome()
+    elif browser == 'Firefox':
+        driver = webdriver.Firefox()
+
     try:
         # Get application base url
         driver.get("https://www.python.org/")
@@ -39,3 +44,8 @@ for driver in drivers:
         print(f"Pass: Test passed successfully for {driver.name}.")
     except Exception as error:
         print(error)
+
+
+# Anna - everything is almost correct, and code style is good enouth, only some notes
+#  with this syntax drivers = [webdriver.Chrome(), webdriver.Firefox()] 2 browsers are initialized at the same time, I changed that part
+#  - dirver.close() will be better to write in finally block, so even if assert fail, driver will be closed
