@@ -5,12 +5,12 @@ import time
 import logging
 
 logging.basicConfig(level=logging.INFO,
-                    filename='log.txt',
+                    filename='logs.log',
                     filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 logger = logging.getLogger()
-
+driver = webdriver
 browsers = ["chrome", "firefox"]
 
 url = "https://www.python.org"
@@ -43,10 +43,9 @@ for browser in browsers:
         time.sleep(3)
 
         body_text = driver.find_element(By.TAG_NAME, "body").text
-        if expected_result in body_text:
-            logger.info(f"Search result as expected: {expected_result}")
-        else:
-            logger.warning(f"Search result not as expected. Found: {body_text}")
+        assert expected_result in body_text, f"Expected '{expected_result}' " \
+                                             f"to be in the search results, but found: {body_text}"
+        logger.info(f"Search result as expected: {expected_result}")
 
     except Exception as e:
         logger.error(f"An error occurred: {e}")
