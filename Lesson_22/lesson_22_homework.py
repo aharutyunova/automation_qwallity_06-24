@@ -70,3 +70,7 @@ Do the following in all type of browsers(Chrome and Firefox). Make for loop for 
 Handle exceptions
 Use Logging
 """
+
+# An jan very good solution, only for check element text, you could write in this way
+#    no_results_text = driver.find_element(By.XPATH, "//p[contains(text()," "'No results found.')]").text
+#  assert no_results_text == ''No results found."
