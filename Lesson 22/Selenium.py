@@ -57,3 +57,6 @@ for browser in browsers:
         logger.info("Closed browser and ended session.")
 
 logger.info("Test is finished.")
+
+# Anna - good solution, everything is correct, only fo rlog file use .log extension 
+# And you could assert body_text ==  expected_result not check with if and else
