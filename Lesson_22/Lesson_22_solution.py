@@ -10,7 +10,7 @@ try:
     log_file_path = os.path.join(CURRENT_DIR, 'Lesson_22_log')
 
     logging.basicConfig(
-        level=logging.DEBUG,
+        level=logging.INFO,
         format='%(asctime)s [%(levelname)s] %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
         filename=log_file_path,
@@ -49,3 +49,6 @@ for browser in browser_list.values():
         logging.error(
             f"An error occurred while setting up {browser} browser: {e}"
             )
+
+# Anna - good job, especially part with get driver, only you didn't check No result Found text exists on the page
+# And for logging use INFO instead of DEBUG, it will make log more readable
