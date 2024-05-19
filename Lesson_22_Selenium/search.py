@@ -52,3 +52,18 @@ assert "No results found." in results
 driver.close()
 print("Test is finsihed.")
 """
+
+
+# Anna - for one browser actions are correct, only you didn't use exceptions and logging, for loop you could write like this
+"""
+browsers = ['Chrome', 'Firefox']
+
+for browser in browsers:
+    if browser == 'Chrome':
+        driver = webdriver.Chrome()
+    elif browser == 'Firefox':
+        driver = webdriver.Firefox()
+
+    driver.maximize_window()
+    ...
+"""
