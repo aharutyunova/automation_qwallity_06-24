@@ -42,3 +42,9 @@ def my_func(active_driver):
 
 my_func(webdriver.Chrome())
 my_func(webdriver.Firefox())
+
+
+# Anna - Good job, everything almost correct, will add several notes
+#  - For logging use INFO mode instead DEBUG, it will be more readable
+# All messages add to log instead of print
+#  - diver.close() you could write in finally block, so even something went wrong, driver.close() will work
