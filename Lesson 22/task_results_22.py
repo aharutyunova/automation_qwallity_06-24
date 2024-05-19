@@ -82,4 +82,5 @@ if "No results found." == no_result_text:
 else:
     logging.info("Ooops! Test is failed.")
 
-
+# Anna - Everything very good organized, logging, error exception, driver close in finally block- good job
+# Only lines 80-84 are additional, you should write success message in try block and error in except block
