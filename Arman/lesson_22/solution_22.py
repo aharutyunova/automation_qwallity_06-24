@@ -8,7 +8,9 @@ from selenium.webdriver.common.by import By
 browsers = ['Chrome', 'Firefox']
 
 # Run test on each browser
+
 for browser in browsers:
+    driver = ''
     if browser == 'Chrome':
         driver = webdriver.Chrome()
     elif browser == 'Firefox':
@@ -44,7 +46,6 @@ for browser in browsers:
         print(f"Pass: Test passed successfully for {driver.name}.")
     except Exception as error:
         print(error)
-
 
 # Anna - everything is almost correct, and code style is good enouth, only some notes
 #  with this syntax drivers = [webdriver.Chrome(), webdriver.Firefox()] 2 browsers are initialized at the same time, I changed that part
