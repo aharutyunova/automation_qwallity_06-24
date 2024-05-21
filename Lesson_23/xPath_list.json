@@ -1,0 +1,11 @@
+{
+    "rbtn_benz": "[@id='benzradio']",
+    "chkbx": "//*[@id='hondacheck']",
+    "sw_tab_open": "//*[@id='opentab']",
+    "m_select": "//option[@value='orange' or @value='peach']",
+    "el_displ_show": "//*[@id='show-textbox']",
+    "hide_show": "//*[@id='displayed-text']",
+    "name": "//*[@id='name']",
+    "mouse_hov": "//*[@id='mouse-hover-example-div']/div/fieldset/legend",
+    "web_table": "//td[contains(text(), 'Python Programming Language')]"
+}
