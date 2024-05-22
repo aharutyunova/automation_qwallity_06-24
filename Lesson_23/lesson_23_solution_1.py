@@ -26,3 +26,6 @@ count = 0
 for items in xPath_dict:
     count += 1
 print(count)
+
+# Anna - good xpaths, only related to count of elements, you count number of locators, not elements,
+# for example, m_select return 2 elements 
