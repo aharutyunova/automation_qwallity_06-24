@@ -27,3 +27,7 @@ for xpath in xpaths_list:
 print(f"Total number of elements found: {elements_count}")
 
 driver.close()
+
+# Anna - Everything is correct and good organized, only last 2 xpath could be more optmimal
+#  //div[@id='mouse-hover-example-div']//legend[text()='Mouse Hover Example']
+# //table[@id='product']//td[text() = 'Python Programming Language']
