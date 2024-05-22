@@ -54,3 +54,4 @@ web_table_example_xpath = driver.find_element(By.XPATH,
                                               "//*[@id='product']/tbody/tr[3]/td[@class='course-name']")
 
 # Anna - xpaths are correct(except first 2 xpaths), but not optimal, try to use minimum attributes in xpaths like this //a[@id='opentab']
+# Anna - And also you didn't get number of elements you get
