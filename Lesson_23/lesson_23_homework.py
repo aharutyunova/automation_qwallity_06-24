@@ -46,7 +46,7 @@ def perform_test(driver):
 
 
 # List of browsers to test
-browser_list = ['chrome', 'firefox']
+browser_list = ['chrome']
 
 for browser in browser_list:
     try:
@@ -61,3 +61,6 @@ for browser in browser_list:
 
     except Exception as e:
         logging.error(f"Error with {browser} browser: {e}")
+
+# An jan very good, xpaths are optimal and the way of count elements also good organized
+# Keep it up!!!
