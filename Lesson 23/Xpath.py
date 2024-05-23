@@ -77,3 +77,6 @@ time.sleep(3)
 print(f"Total elements found: {len(element_count)}")
 
 driver.quit()
+
+# Good, xpaths in most cases are effective, try don't use indexes in xpath, wherever it possible, like div[1], tr[3] etc, better identify elements by attribute names or texts
+# Element count part also correct
