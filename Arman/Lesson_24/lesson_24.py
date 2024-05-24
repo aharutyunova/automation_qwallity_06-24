@@ -27,6 +27,7 @@ offscreen_button = driver.find_element(By.XPATH, "//*[@id='offscreenButton']")
 
 hide_button.click()
 
+# Visibility page buttons XPath list
 button_ids = [
     hide_button,
     removed_button,
@@ -39,9 +40,11 @@ button_ids = [
 ]
 
 driver.execute_script("window.open('')")
-first_tab = driver.window_handles[0]
+
 second_tab = driver.window_handles[1]
 third_tab = driver.window_handles[2]
+
+# Switch to Text Progress bar tab
 driver.switch_to.window(second_tab)
 
 # Progress bar url
@@ -52,6 +55,7 @@ stop_button = driver.find_element(By.XPATH, "//*[@id='stopButton']")
 start_button.click()
 stop_button.click()
 
+# Switch to Text Input tab
 driver.switch_to.window(third_tab)
 
 # Text Input url
@@ -63,9 +67,14 @@ playground_input.send_keys(text)
 same_text_button = driver.find_element(By.XPATH, '//*[@id="updatingButton"]')
 same_text_button.click()
 
-if text == same_text_button.text:
-    print("Text and button texts are same")
-else:
-    print("Text and button texts are not same!")
+
+def same_text(input_text, button_text):
+    if input_text == button_text.text:
+        print("Text and button texts are same")
+    else:
+        print("Text and button texts are not same!")
+
+
+same_text(text, same_text_button)
 
 driver.quit()
