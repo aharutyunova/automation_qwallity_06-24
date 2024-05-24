@@ -9,6 +9,8 @@ Go to Text Input, enter any text, click the button and check if the button text 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+from modules import same_text
+
 driver = webdriver.Chrome()
 driver.maximize_window()
 
@@ -61,20 +63,14 @@ driver.switch_to.window(third_tab)
 # Text Input url
 driver.get("http://www.uitestingplayground.com/textinput")
 
+# Request text for input Playground input field
 text = "Test Button"
 playground_input = driver.find_element(By.XPATH, '//*[@id="newButtonName"]')
 playground_input.send_keys(text)
 same_text_button = driver.find_element(By.XPATH, '//*[@id="updatingButton"]')
 same_text_button.click()
 
-
-def same_text(input_text, button_text):
-    if input_text == button_text.text:
-        print("Text and button texts are same")
-    else:
-        print("Text and button texts are not same!")
-
-
 same_text(text, same_text_button)
 
+# Close all tabs and quit
 driver.quit()
