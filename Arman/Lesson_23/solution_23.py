@@ -35,7 +35,7 @@ multiple_select_peach_xpath = driver.find_element(By.XPATH,
 show_button_xpath = driver.find_element(By.XPATH,
                                         "//div[@id='hide-show-example-div']/fieldset/input[@id='show-textbox']")
 
-# Anna - more optmial xpath - //input[@id='show-textbox']
+# Anna - more optimal xpath - //input[@id='show-textbox']
 
 # Hide/Show Example XPath
 hide_show_example_xpath = driver.find_element(By.XPATH,
@@ -53,5 +53,5 @@ mouse_hover_button_xpath = driver.find_element(By.XPATH,
 web_table_example_xpath = driver.find_element(By.XPATH,
                                               "//*[@id='product']/tbody/tr[3]/td[@class='course-name']")
 
-# Anna - xpaths are correct(except first 2 xpaths), but not optimal, try to use minimum attributes in xpaths like this //a[@id='opentab']
-# Anna - And also you didn't get number of elements you get
+# Anna - xpath are correct(except first 2 xpath), but not optimal, try to use minimum attributes in xpath like this
+# //a[@id='opentab'] Anna - And also you didn't get the number of elements you get
