@@ -28,7 +28,7 @@ def test_visibility(driver):
             "//tbody/tr[1]/td[2]",
             "//button[@class='btn btn-warning zerowidth']",
             "//div[@id='hidingLayer']",
-            "//button[@style='opacity: 0;']",
+            "//button[@style='opacity: 1;']",
             "//button[@style='visibility: hidden;']",
             "//button[@style='display: none;']",
             "//button[@class='btn btn-info offscreen']"
@@ -37,17 +37,18 @@ def test_visibility(driver):
         all_hidden = False
         for xpath in buttons_xpath:
             try:
-                button = driver.find_element(By.XPATH, xpath)
-                if button.is_enabled():
-                    all_hidden = True
-                    continue
-                else:
-                    logging.info("Not all buttons are hidden")
-                    all_hidden = False
-                    break
+                driver.find_element(By.XPATH, xpath)
+
+                all_hidden = True
+                continue
+                # else:
+                #     logging.info("Not all buttons are hidden")
+                #     all_hidden = False
+                #     break
             except Exception as e:
                 logging.error(f"Exception occurred while checking button visibility: {e}")
                 all_hidden = False
+                break
 
         if all_hidden:
             logging.info("All buttons are hidden as expected")
@@ -125,3 +126,9 @@ if __name__ == "__main__":
         test_text_input(driver)
     finally:
         driver.quit()
+
+# Very good An jan, code logic and style
+# The most important you solve correctly the first task with checking hiddent buttons
+# Only there was no need to check button is enable or not. 
+# Because in case any element wouldn't be found, you will get exception and all_hidden value in except blco will become false
+# I chnaged a bit that part in your code you can have a look
