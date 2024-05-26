@@ -70,3 +70,10 @@ else:
     logger.info("Button text does not match the entered text.")
 
 driver.quit()
+
+# Anna - in the first task, you locate all elements by id, but not all ids are changed after hidden, 
+# so what you locate elements in this case, it is not yet mean that element is hidden
+# You should check each element is hidden or not
+# And the action when you append text to the list additional
+
+# Task 2 and Task 3 are correct
