@@ -14,3 +14,12 @@ def run_methods():
 
 if __name__ == "__main__":
     run_methods()
+
+
+# First task very good organized, you get the root. Overlapped button is visible in your solution, 
+# because you should check style not for button itself, but for ovelap element
+# When you click hide, in element which overlap our button added style(id=hidingLayer), 
+# and you should check style of that element
+
+# Task 2 and Task 3 are correct
+# Good job :) I liked solution especially for first task
