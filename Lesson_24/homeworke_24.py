@@ -4,7 +4,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 import logging
 
-# Configure logging
+
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s [%(levelname)s] %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
@@ -108,7 +108,6 @@ def test_text_input(driver):
 
 
 if __name__ == "__main__":
-    # Initialize the driver
     try:
         driver = webdriver.Chrome()
         driver.get("http://www.uitestingplayground.com")
