@@ -1,0 +1,93 @@
+body {
+    background-color: #fff9eb;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+.qwallity-logo {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+}
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+.center p {
+    margin-top: 70px; 
+}
+
+
+.input-container {
+    width: 50%;
+    margin: 10px auto;
+}
+
+
+.input-field {
+    width: calc(100% - 32px); 
+    height: 30px;
+    font: 16px Lato-Regular;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Add border radius to round the corners */
+    border: 1px solid #Cabcd0; /* Add border color */
+}
+
+textarea {
+    width: calc(100% - 32px);
+    font: 16px Lato-Regular;
+    border-radius: 5px; /* Add border radius to round the corners */
+    border: 1px solid #Cabcd0; /* Add border color */
+    min-height: 100px; /* Set the minimum height of the text area */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+
+
+.submit-btn {
+    font: 16px Lato-Regular;
+    background-color: #f17a22;
+    border-color: #f17a33;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+
+.footer-text {
+    color: #000;
+    font: 16px Lato-Regular;
+    padding: 30px;
+}
+
+footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    margin-bottom: 20px;
+    margin-top: 20px
+    text-align: center; 
+}
