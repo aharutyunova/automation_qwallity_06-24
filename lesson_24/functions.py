@@ -2,12 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-driver = webdriver.Chrome()
-driver.maximize_window()
-
-
 def visibilty():
     try:
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+
         driver.get('http://www.uitestingplayground.com/')
         time.sleep(2)
 
@@ -33,6 +32,9 @@ def visibilty():
 
 def progres_bar():
     try:
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+
         driver.get('http://www.uitestingplayground.com/')
         time.sleep(5)
 
@@ -59,6 +61,9 @@ def progres_bar():
 
 def input_text():
     try:
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+
         driver.get('http://www.uitestingplayground.com/')
         time.sleep(5)
 
