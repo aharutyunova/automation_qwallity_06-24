@@ -15,15 +15,20 @@ logging.basicConfig(
                     encoding='utf-8')
 
 browsers = ['Chrome', 'Firefox']
+# for browser in browsers:
+#     if browser == 'Chrome':
+#         driver = webdriver.Chrome()
+#         logging.info(f"This browser {browser} is supported")
+#     elif browser == 'Firefox':
+#         driver = webdriver.Firefox()
+#         logging.info(f"This browser {browser} is supported")
+#     else:
+#         logging.error("Browser is not available")
+
 for browser in browsers:
-    if browser == 'Chrome':
-        driver = webdriver.Chrome()
-        logging.info(f"This browser {browser} is supported")
-    elif browser == 'Firefox':
-        driver = webdriver.Firefox()
-        logging.info(f"This browser {browser} is supported")
-    else:
-        logging.error("Browser is not available")
+    driver = getattr(webdriver, browser, None)()
+    logging.info(f"This browser {browser} is supported")
+
 
     def func_test():
         try:
@@ -45,7 +50,12 @@ for browser in browsers:
 
     #Anna jan, but I did not understand why code runs so long and so slowly. Maybe there is  more optimal option?
 
+# Armine jan on my side code run was not slowly. 
+# But run code on different browsers, you can use solution, which is Lusine implemented
+# I added it in line 28
+# It will help you avoid write so many if else, and also will increase performance
 
+# Solution is correct :)
 """
 Step 1) Open browser
 Step 2) Navigate to python.org
