@@ -75,7 +75,6 @@ same_text(text, same_text_button)
 # Close all tabs and quit
 driver.quit()
 
-
 # Anna - in line 47 you try handle window with index 2, but you have just 2 active tab 0 and 1, so you get out of range error here
 #  I didn't understand how you check that button are hidden for the first task? You get all elements locators and get them in the list,
 # But I didn't see checking part, how you verify, that after click on hide, or buttons become hidden
@@ -86,3 +85,4 @@ driver.quit()
 # Arman jan I noticed that you try to quickly solve tasks and send.
 # Try to spent more time to go deep with the requirements, even you solve task in the first day, don't send it, 
 # have a look on the next day be sure everything is correct and then send
+   
