@@ -85,4 +85,3 @@ driver.quit()
 # Arman jan I noticed that you try to quickly solve tasks and send.
 # Try to spent more time to go deep with the requirements, even you solve task in the first day, don't send it, 
 # have a look on the next day be sure everything is correct and then send
-   
