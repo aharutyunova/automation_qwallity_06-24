@@ -1,9 +1,7 @@
-from selenium import webdriver
-from selenium.common import NoSuchElementException, TimeoutException
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
-from modules import *
 import logging
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -24,7 +22,7 @@ logging.basicConfig(
 driver = webdriver.Chrome()
 
 # Set an implicit wait of 10 seconds
-driver.implicitly_wait(10)
+driver.implicitly_wait(5)
 
 # Navigate to a website
 driver.get('https://www.letskodeit.com/practice')
@@ -84,7 +82,7 @@ driver.get('https://www.letskodeit.com/practice')
 # hover_button.click()
 #
 # # Set an implicit wait of 10 seconds
-# driver.implicitly_wait(10)
+# driver.implicitly_wait(5)
 #
 # # Perform mouse hover action on the "Mouse Hover" button
 # action.move_to_element(hover_button).perform()
@@ -122,14 +120,15 @@ page
 16. Come back to the first tab
 17. Close all opened tabs
 """
+
 # Sign in text/button XPath
 sign_in = driver.find_element(By.XPATH, "//*[@id='navbar-inverse-collapse']/div/div/a")
 
-#  Click on the Sign In button
+#  Click on the Sign-In button
 sign_in.click()
 
 # Set an implicit wait of 10 seconds
-driver.implicitly_wait(10)
+driver.implicitly_wait(5)
 
 test_email_address = "test@gmail.com"
 test_password = "test12345"
@@ -146,14 +145,53 @@ login_button = driver.find_element(By.XPATH, "//*[@id='login']")
 email_address.send_keys(test_email_address)
 password.send_keys(test_password)
 
+# Click on the login button
 login_button.click()
 
 # Set an implicit wait of 10 seconds
-driver.implicitly_wait(10)
+driver.implicitly_wait(5)
 
 error_validation = driver.find_element(By.XPATH, "//*[@id='incorrectdetails']")
 
+# Log error validation in the app.log file
 logging.info(error_validation.text)
+
+driver.execute_script("window.open('')")
+
+first_tab = driver.window_handles[0]
+second_tab = driver.window_handles[1]
+
+# Switch to second tab
+driver.switch_to.window(second_tab)
+
+# Progress bar url
+driver.get("https://www.python.org/")
+
+# python.org home page search input field XPath
+search_input_field = driver.find_element(By.XPATH, "//*[@id='id-search-field']")
+
+search_input_field.send_keys("Automation")
+
+# python.org home page GO button XPath
+go_button = driver.find_element(By.XPATH, "//*[@id='submit']")
+
+# Click on the GO button
+go_button.click()
+
+# Set an implicit wait of 10 seconds
+driver.implicitly_wait(5)
+
+# Find all li elements within the ul element that contain the text "Automation"
+li_elements = driver.find_elements(By.XPATH,
+                                   '//ul/li[p[contains(translate(text(), "AUTOMATION", "automation"), "automation")]]')
+
+# Count the number of such li elements
+automation_count = len(li_elements)
+
+print(f"Count of 'Automation' word after search: {automation_count}")
+
+# Switch to first tab
+driver.switch_to.window(first_tab)
 
 # Close the browser
 driver.quit()
