@@ -1,0 +1,5 @@
+{
+    "api_url": "https://jsonplaceholder.typicode.com/posts",
+    "log_file_name": "out.log"
+
+}
