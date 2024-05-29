@@ -59,7 +59,7 @@ def fill_and_submit(driver, locator, text, message):
 def check_element_hidden(driver, locator, assertion_message):
     element = WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
     assert "display: none;" in element.get_attribute("style"), assertion_message
-    logger.info(assertion_message)
+    logger.info(assertion_message) # Anna - assertion message will write only if assertion fail, so in case you wants to log success message in line 62, you should log other message
 
 
 def search_and_count_results(driver, locator, text):
@@ -103,7 +103,7 @@ def main():
         log_and_click(driver, top_option_loc, "Clicked on Top option")
 
         # Footer text
-        footer_text_loc = (By.XPATH, "//*[@id='page']/div[3]/div/div/div[1]/div/div[1]/p")
+        footer_text_loc = (By.XPATH, "//*[@id='page']/div[3]/div/div/div[1]/div/div[1]/p") # Anna - xpath is not effective
         scroll_into_view_and_hover(driver, footer_text_loc, "Page is scrolled to the footer")
         footer_text = driver.find_element(*footer_text_loc).text
         logger.info(f"Footer text: {footer_text}")
@@ -151,3 +151,7 @@ if __name__ == "__main__":
 
 # here I used some python logic
 # and the issue  explained in workshop25.py file does not exists here, cause I made some changes
+
+# Anna - Izabella jan I added some notes in the code but generally very good structure, it is close to POM model we will use
+#  Only try not to use time.sleep()
+#  instead if you need wait until page will be loaded or changed, try find any element which is on new page and wait until that element will be visible
