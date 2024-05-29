@@ -155,7 +155,8 @@ driver.quit()
 # I am writting it here in order not to forget to remind you about it in our next lesson :D
 
 
-# Another solution for this task but all in all I want to know how I can fix it in the code above ^_^
+# I found another solution for this task where the problem is solved
+# but all in all I want to know how I can fix it in the code above ^_^
 '''
 import time
 from selenium import webdriver
