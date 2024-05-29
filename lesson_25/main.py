@@ -39,7 +39,7 @@ WebDriverWait(driver, 10).until(
 print("The input box is successfully hidden.")
 
 # 8
-footer_loc = (By.XPATH, "//div[@id='page-footer']")
+footer_loc = (By.XPATH, "//div[contains(@class,'FooterBlock')]//p")
 footer = WebDriverWait(driver, 10).until(
     EC.presence_of_element_located(footer_loc)
 )
@@ -58,3 +58,7 @@ sign_in_btn.click()
 print("Sign In button clicked.")
 
 driver.quit()
+
+# Anna - footer locator, didn't find, try this one //div[contains(@class,'FooterBlock')]//p
+# Sign in button not found by your locator in line 53
+# Actions generally correct, only you didn't use logging to keep text, messages etc
