@@ -143,3 +143,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# An jan very good, structure is close to POM model. Good job!!!
