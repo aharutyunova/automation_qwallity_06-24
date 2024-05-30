@@ -89,7 +89,7 @@ driver.implicitly_wait(5)
 action.move_to_element(hover_button).perform()
 
 # Find and click on the "Top" option
-top_option = driver.find_element(By.XPATH, "//a[contains(text(), 'Top')]") 
+top_option = driver.find_element(By.XPATH, "//a[contains(text(), 'Top')]")
 top_option.click()
 
 # 8. Go to the footer and log footer text
@@ -196,7 +196,6 @@ driver.switch_to.window(first_tab)
 
 # Close the browser
 driver.quit()
-
 
 # Anna - I changed xpath in line 92. And related to other xpaths, try to use minimum components and indexes like /a/div[2]/div...etc
 # sign in button not always visible when click on top, so additional move to element is needed for stability
