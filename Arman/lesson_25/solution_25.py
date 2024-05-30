@@ -197,9 +197,10 @@ driver.switch_to.window(first_tab)
 # Close the browser
 driver.quit()
 
-# Anna - I changed xpath in line 92. And related to other xpaths, try to use minimum components and indexes like /a/div[2]/div...etc
-# sign in button not always visible when click on top, so additional move to element is needed for stability
-# If you use implicitly.wait, no need to write it every time, when you one time write driver.implicitly_wait(5) it means for all session , before work with any element, driver will wait 5 seconds
+# Anna - I changed xpath in line 92. And related to other xpaths, try to use minimum components and indexes like
+# /a/div[2]/div...etc. sign in button not always visible when click on top, so additional move to element is needed
+# for stability If you use implicitly.wait, no need to write it every time, when you one time write
+# driver.implicitly_wait(5) it means for all session , before work with any element, driver will wait 5 seconds
 # Automation result in python.org is 20, the correct xpath is //ul[@class='list-recent-events menu']/li (line 186)
 
 # Generally commands are correct, just need a bit more time and practice
