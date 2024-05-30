@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.action_chains import ActionChains
 
 
+
 driver = webdriver.Chrome()
 
 driver.get("https://www.letskodeit.com/practice")
