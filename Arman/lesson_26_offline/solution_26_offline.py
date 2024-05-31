@@ -1,12 +1,10 @@
 import logging
 
-from selenium.webdriver import ActionChains
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
-from selenium.common import TimeoutException
-from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+
+from modules import *
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -17,40 +15,34 @@ logging.basicConfig(
     encoding='utf-8'
 )
 
-# Initialize the WebDriver (make sure to specify the path to your WebDriver executable)
+# Initialize the Google Chrome WebDriver
 driver = webdriver.Chrome()
 
+# Maximize the browser window to full screen
 driver.maximize_window()
 
-# Navigate to a website
+# Navigate to the specified website
 driver.get('https://www.letskodeit.com/home')
 
+# Define the locator for the 'All Courses' link in the navigation bar
 all_courses = (By.XPATH, '//*[@id="navbar-inverse-collapse"]/ul/li[2]/a')
 
+# Wait until the 'All Courses' link is present and clickable (max 10 seconds)
 element = WebDriverWait(driver, 10).until(EC.presence_of_element_located(all_courses))
 
+# Click the 'All Courses' link
 element.click()
 
-action = ActionChains(driver)
+footer = scroll_to_footer(driver)
 
-footer = driver.find_element(By.XPATH, '//*[@class="small dynamic-text jqCopyRight"]')
-
+# Scroll to the footer element to ensure it's in view
 driver.execute_script("arguments[0].scrollIntoView(true);", footer)
 
+# Locate all course price elements using their common class name
 all_courses_block = driver.find_elements(By.XPATH, "//*[@class='zen-course-price dynamic-text']")
 
-prices = []
-for price in all_courses_block:
-    prices.append(price.text)
+# Extract prices from the located elements using a custom function (assumed to be defined in 'modules')
+prices_list = get_prices(all_courses_block)
 
-# Initialize the result list
-result = []
-for number in prices:
-    # Remove the dollar sign and convert to an integer
-    cleaned_number = number.replace("$", "")
-    result_number = int(cleaned_number)
-    result.append(result_number)
-
-# Print the result list
-print("Complete Test Automation Bundle")
-print(f"Maximum price number: ${max(result)}")
+# Print the maximum price found in the list of prices
+print(f"Maximum price number: ${max(prices_list)}")

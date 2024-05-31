@@ -1,8 +1,10 @@
 import logging
-from modules import check_hidden
+
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.by import By
+
+from modules import check_hidden
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -203,4 +205,4 @@ driver.quit()
 # driver.implicitly_wait(5) it means for all session , before work with any element, driver will wait 5 seconds
 # Automation result in python.org is 20, the correct xpath is //ul[@class='list-recent-events menu']/li (line 186)
 
-# Generally commands are correct, just need a bit more time and practice
+# Generally commands are correct, need a bit more time and practice
