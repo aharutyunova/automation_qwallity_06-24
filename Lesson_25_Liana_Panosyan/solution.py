@@ -96,3 +96,6 @@ except Exception as e:
 
 finally:
     driver.quit()
+
+# Anna - steps are correct, only for get autonation result in python.org you should get count of all found result, not only with Automation text
+# And I expect you will solve this task using functions and modules
