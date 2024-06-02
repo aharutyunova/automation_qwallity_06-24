@@ -160,7 +160,7 @@ finally:
     logging.info("Browser has been closed")
 
 
-
+# Please check also lesson 23
 
 
         
