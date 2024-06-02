@@ -128,3 +128,6 @@ driver.switch_to.window(all_windows[0])
 driver.quit()
 
 # Anna jan please also check my solution for Lesson 24 if you have time
+
+# Anna - actions are correct, but I would like you create functions working with elements and solve task with that fucntions
+# Homework 24 is checked

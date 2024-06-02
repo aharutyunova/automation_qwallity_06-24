@@ -92,3 +92,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Anna correct, assertion of stop value is additional in this case
