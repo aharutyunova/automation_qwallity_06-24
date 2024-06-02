@@ -30,3 +30,6 @@ if __name__ == "__main__":
 # I used the ones you used
 # and also some scripts is taken from your solution
 # workshop 26 would do but not today
+
+# Anna - Even you took some parts from my solution, anyway it's good job.
+# Exactly what I expect
