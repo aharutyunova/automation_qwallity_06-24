@@ -1,0 +1,17 @@
+from selenium.webdriver.common.by import By
+
+alert_loc = (By.XPATH, "//input[@id='alertbtn']")
+hide_show_text_loc = (By.XPATH, "//input[@id='displayed-text']")
+hide_btn = (By.XPATH, "//input[@id='hide-textbox']")
+show_btn = (By.XPATH, "//input[@id='show-textbox']")
+mouse_hover_top = (By.XPATH, "//div[@class ='mouse-hover-content']/a[@href ='#top']")
+mouse_hover_btn = (By.XPATH, "//button[@id = 'mousehover']")
+footer_loc = (By.XPATH, "//p[@class = 'small dynamic-text jqCopyRight']")
+signIn_btn = (By.XPATH, "//a[@href = '/login']")
+email = (By.XPATH, "//input[@id= 'email' and @class = 'form-control input-md']")
+password = (By.XPATH, "//input[@id= 'login-password']")
+login_btn = (By.XPATH, "//button[@id = 'login']")
+incorrect_login_text_loc = (By.XPATH, "//span[@id = 'incorrectdetails']")
+search_loc = (By.XPATH, "//input[@id = 'id-search-field']")
+submit_search = (By.XPATH, "//button[@id = 'submit']")
+search_result_loc = (By.XPATH, "//ul[@class = 'list-recent-events menu']//li//h3")

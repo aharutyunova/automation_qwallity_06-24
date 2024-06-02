@@ -1,0 +1,7 @@
+url = 'https://www.letskodeit.com/practice'
+python_url = 'https://www.python.org/' 
+expected_attr_value_of_hid_el = 'display: none;'
+email = 'aaa@gmail.com'
+password = 'password'
+expected_incorrect_login_text = 'Incorrect login details. Please try again.'
+search_text = 'Automation'
