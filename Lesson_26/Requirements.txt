@@ -1,0 +1,4 @@
+- Have general file where keep functions to work with elements
+- Have separate file/files where keep functions by requirement points
+- Have test data file where keep test data used in the flow
+- Have main test file where call functions for cover end to end flow of the task

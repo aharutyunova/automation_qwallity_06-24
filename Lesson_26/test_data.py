@@ -1,0 +1,5 @@
+url = "https://www.letskodeit.com/practice"
+email_data = "incorrect_email@gmail.com"
+pass_data = "incorrect_password"
+search_data = "Automation"
+new_tab_url = "https://www.python.org/"
