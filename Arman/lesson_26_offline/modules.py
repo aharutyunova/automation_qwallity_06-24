@@ -1,8 +1,9 @@
+
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
-
 def get_prices(courses_block):
+    """Function get courses block prices and return prices list"""
     # Store prices in the list with currency sign
     prices_with_sign = []
     # Store prices in the list without a currency sign
@@ -17,6 +18,7 @@ def get_prices(courses_block):
 
 
 def scroll_to_footer(browser_driver):
+    """Function scroll down to the page footer part"""
     # Initialize ActionChains for performing advanced interactions
     action = ActionChains(browser_driver)
     # Locate the footer element using its XPath

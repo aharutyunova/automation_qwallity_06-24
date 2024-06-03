@@ -7,7 +7,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from modules import *
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
     filename='app.log',
@@ -33,16 +33,15 @@ element = WebDriverWait(driver, 10).until(EC.presence_of_element_located(all_cou
 # Click the 'All Courses' link
 element.click()
 
-footer = scroll_to_footer(driver)
-
-# Scroll to the footer element to ensure it's in view
-driver.execute_script("arguments[0].scrollIntoView(true);", footer)
-
-# Locate all course price elements using their common class name
-all_courses_block = driver.find_elements(By.XPATH, "//*[@class='zen-course-price dynamic-text']")
-
-# Extract prices from the located elements using a custom function (assumed to be defined in 'modules')
-prices_list = get_prices(all_courses_block)
-
-# Print the maximum price found in the list of prices
-print(f"Maximum price number: ${max(prices_list)}")
+try:
+    footer = scroll_to_footer(driver)
+    # Scroll to the footer element to ensure it's in view
+    driver.execute_script("arguments[0].scrollIntoView(true);", footer)
+    # Locate all course price elements using their common class name
+    all_courses_block = driver.find_elements(By.XPATH, "//*[@class='zen-course-price dynamic-text']")
+    # Extract prices from the located elements using a custom function (assumed to be defined in 'modules')
+    prices_list = get_prices(all_courses_block)
+    # Print the maximum price found in the list of prices
+    logging.info(f"Maximum price number in the prices list: ${max(prices_list)}")
+except TimeoutError as error:
+    logging.error(error)
