@@ -6,7 +6,7 @@ import locators
 
 
 path = os.getcwd()
-full_path = os.path.join(path, 'Lesson_25')
+full_path = os.path.join(path)
 os.chdir(full_path)
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s',
@@ -78,3 +78,6 @@ except Exception:
     logging.error("An unexpected error occurred somewhere")
 finally:
     driver.quit()
+
+# Everything is correct, only I get error several times when click on Sign in and in log see such line An unexpected error occurred somewhere
+# It was not informative
