@@ -1,7 +1,12 @@
+import logging
+
+
 def run_driver(input_driver, url):
     """Function run web browser driver with given URL"""
-    driver = input_driver.Chrome()
-    driver.get(url)
+    try:
+        input_driver.get(url)
+    except TimeoutError as error:
+        logging.error(error)
 
 
 def close_browser(input_driver):
@@ -20,4 +25,4 @@ def check_hidden(input_style):
     if hidden_style in input_style:
         return "Hide/Show input field hidden"
     else:
-        return "Hide/Show input field show"
+        return "Hide/Show input field is showing"

@@ -1,9 +1,6 @@
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
-from Arman.lesson_27_page_object_model.letskodeit.test.test import driver
 
-
-action = ActionChains(driver)
+from Arman.lesson_27_page_object_model.letskodeit.helpers.driver import driver
 
 element = driver.find_element(By.XPATH, '//*[@id="alertbtn"]')
 hide_button = driver.find_element(By.XPATH, "//*[@id='hide-textbox']")
