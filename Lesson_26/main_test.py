@@ -24,3 +24,5 @@ def main():
 if __name__ == '__main__':
     main()
     print("Test case finished!")
+
+# An jan good, will be wait for solution with Page Object Model :)
