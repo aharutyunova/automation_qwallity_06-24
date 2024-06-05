@@ -1,0 +1,17 @@
+2024-06-02 22:16:55,667 - INFO - Clicked on Alert button
+2024-06-02 22:16:55,672 - INFO - Alert text: Hello , share this practice page and share your knowledge
+2024-06-02 22:16:55,797 - INFO - Clicked on Hide button
+2024-06-02 22:16:55,821 - INFO - Element is hidden successfully
+2024-06-02 22:16:56,196 - INFO - Hovered over the Mouse Hover button
+2024-06-02 22:16:56,383 - INFO - Clicked on Top option
+2024-06-02 22:16:56,695 - INFO - Page is scrolled to the footer
+2024-06-02 22:16:56,820 - INFO - Footer text: © 2024 letskodeit
+2024-06-02 22:16:56,832 - INFO - Page is scrolled to the top
+2024-06-02 22:16:56,979 - INFO - Clicked on Sign In button
+2024-06-02 22:17:10,563 - INFO - Filled incorrect email
+2024-06-02 22:17:10,883 - INFO - Filled incorrect password
+2024-06-02 22:17:11,033 - INFO - Clicked on Login button
+2024-06-02 22:17:11,652 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-02 22:17:12,946 - INFO - Switched to the new tab
+2024-06-02 22:17:16,327 - INFO - Number of search results on the first page: 20
+2024-06-02 22:17:18,949 - INFO - Driver and all opened tabs are closed
