@@ -1,16 +1,27 @@
-# from Arman.lesson_27_page_object_model.letskodeit.helpers.action import action
-from Arman.lesson_27_page_object_model.letskodeit.helpers.driver import driver
-# from Arman.lesson_27_page_object_model.letskodeit.helpers.locators import *
-# from Arman.lesson_27_page_object_model.letskodeit.helpers.logging import logging
+from Arman.lesson_27_page_object_model.letskodeit.helpers.locators import *
 from Arman.lesson_27_page_object_model.letskodeit.helpers.test_data import *
 from Arman.lesson_27_page_object_model.letskodeit.library.general import *
 
 
-# from Arman.lesson_27_page_object_model.letskodeit.pages.practice_page_locators import *
-# from Arman.lesson_27_page_object_model.letskodeit.pages.python_page import *
-
 def run_test():
+    wait(driver, 10)
     run_driver(driver, practice_page_url)
+    click_on_button(driver, alert_button)
+    click_on_alert(driver, alert_button)
+    click_on_button(driver, hide_button)
+    style_attribute = get_style_attribute(hide_input_field_xpath)
+    check_hidden(style_attribute)
+    scroll_to_footer(driver, footer_text)
+    print_text(driver, footer_text)
+    click_on_button(driver, sign_in)
+    fill_form(email_address, password, login_credentials['email'], login_credentials['password'])
+    click_on_button(driver, login_button)
+    change_tab(driver, 1)
+    run_driver(driver, python_page_url)
+    search(driver, search_input_field, 'Automation')
+    click_on_button(driver, go_button)
+    change_tab(driver, 0)
+    close_browser(driver)
 
 
 if __name__ == '__main__':

@@ -43,11 +43,6 @@ try:
     # Accept the alert (click OK)
     alert.accept()
     print("Alert accepted!")
-
-# except NoSuchElementException:
-#     print("Element not found within the given time")
-# except TimeoutException:
-#     print("Alert not found within the given time")
 except Exception as e:
     print(f"An error occurred: {e}")
 
