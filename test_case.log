@@ -1,0 +1,148 @@
+2024-06-04 17:43:45 - INFO - tEST
+2024-06-04 17:44:33 - INFO - tEST
+2024-06-04 17:47:32 - INFO - Starting the test case
+2024-06-04 17:47:35 - INFO - Opened the login page
+2024-06-04 17:47:35 - INFO - Entered email
+2024-06-04 17:47:35 - INFO - Entered password
+2024-06-04 17:47:36 - INFO - Clicked login button
+2024-06-04 17:47:36 - INFO - Validation message: 
+2024-06-04 17:47:36 - INFO - Opened a new tab
+2024-06-04 17:47:36 - INFO - Switched to the new tab
+2024-06-04 17:47:37 - INFO - Opened example.com in the new tab
+2024-06-04 17:47:37 - INFO - Example page heading: Example Domain
+2024-06-04 17:47:37 - INFO - Closed the browser and ended the test case
+2024-06-04 17:48:54 - INFO - Starting the test case
+2024-06-04 17:48:58 - INFO - Opened the login page
+2024-06-04 17:48:58 - INFO - Entered email
+2024-06-04 17:48:58 - INFO - Entered password
+2024-06-04 17:48:58 - INFO - Clicked login button
+2024-06-04 17:48:58 - INFO - Validation message: 
+2024-06-04 17:50:33 - INFO - Starting the test case
+2024-06-04 17:50:36 - INFO - Opened the login page
+2024-06-04 17:50:36 - INFO - Entered email
+2024-06-04 17:50:36 - INFO - Entered password
+2024-06-04 17:50:36 - INFO - Clicked login button
+2024-06-04 17:50:36 - INFO - Validation message: 
+2024-06-04 17:51:40 - INFO - Starting the test case
+2024-06-04 17:51:43 - INFO - Opened the login page
+2024-06-04 17:51:43 - INFO - Entered email
+2024-06-04 17:51:43 - INFO - Entered password
+2024-06-04 17:51:44 - INFO - Clicked login button
+2024-06-04 17:51:44 - INFO - Validation message: 
+2024-06-04 17:51:44 - INFO - Opened a new tab
+2024-06-04 17:51:44 - INFO - Switched to the new tab
+2024-06-04 17:51:45 - INFO - Opened example.com in the new tab
+2024-06-04 17:51:45 - INFO - Example page heading: Example Domain
+2024-06-04 17:51:45 - INFO - Closed the browser and ended the test case
+2024-06-04 17:56:29 - INFO - Starting the test case
+2024-06-04 17:56:33 - INFO - Opened the login page
+2024-06-04 17:56:33 - INFO - Entered email
+2024-06-04 17:56:33 - INFO - Entered password
+2024-06-04 17:56:33 - INFO - Clicked login button
+2024-06-04 17:56:33 - INFO - Validation message: 
+2024-06-04 17:56:33 - INFO - Opened a new tab
+2024-06-04 17:56:33 - INFO - Switched to the new tab
+2024-06-04 17:56:35 - INFO - Opened https://www.python.org/ in the new tab
+2024-06-04 17:56:36 - INFO - Searched for 'Automation'
+2024-06-04 17:56:36 - INFO - Page title after search: Welcome to Python.org
+2024-06-04 17:56:36 - INFO - Closed the browser and ended the test case
+2024-06-04 18:03:02 - INFO - Starting the test case
+2024-06-04 18:03:07 - INFO - Opened the login page
+2024-06-04 18:03:07 - INFO - Entered email
+2024-06-04 18:03:07 - INFO - Entered password
+2024-06-04 18:03:07 - INFO - Clicked login button
+2024-06-04 18:03:07 - INFO - Validation message: 
+2024-06-04 18:03:07 - INFO - Opened a new tab
+2024-06-04 18:03:07 - INFO - Switched to the new tab
+2024-06-04 18:03:09 - INFO - Opened https://www.python.org/ in the new tab
+2024-06-04 18:03:09 - INFO - Searched for 'Automation'
+2024-06-04 18:03:09 - INFO - Page title after search: Welcome to Python.org
+2024-06-04 18:03:10 - INFO - Closed the browser and ended the test case
+2024-06-04 18:03:10 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f69823c5a90>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/727cd9e34240244ed1958e3f75f7e834/elements
+2024-06-04 18:03:10 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f69823c5be0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/727cd9e34240244ed1958e3f75f7e834/elements
+2024-06-04 18:03:10 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f69823c5df0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/727cd9e34240244ed1958e3f75f7e834/elements
+2024-06-05 10:43:37 - INFO - Starting the test case
+2024-06-05 10:43:42 - INFO - Entered password
+2024-06-05 10:43:42 - INFO - Clicked login button
+2024-06-05 10:44:45 - INFO - Starting the test case
+2024-06-05 10:44:49 - INFO - Entered password
+2024-06-05 10:44:49 - INFO - Clicked login button
+2024-06-05 10:44:49 - INFO - Validation message: 
+2024-06-05 10:46:10 - INFO - Starting the test case
+2024-06-05 10:46:14 - INFO - Entered password
+2024-06-05 10:46:14 - INFO - Clicked login button
+2024-06-05 10:46:14 - INFO - Validation message: 
+2024-06-05 10:49:28 - INFO - Starting the test case
+2024-06-05 10:49:31 - INFO - Entered password
+2024-06-05 10:49:31 - INFO - Clicked login button
+2024-06-05 10:49:31 - INFO - Validation message: 
+2024-06-05 10:51:58 - INFO - Starting the test case
+2024-06-05 10:52:02 - INFO - Entered password
+2024-06-05 10:52:02 - INFO - Clicked login button
+2024-06-05 10:52:19 - INFO - Starting the test case
+2024-06-05 10:52:22 - INFO - Entered password
+2024-06-05 10:52:22 - INFO - Clicked login button
+2024-06-05 10:52:23 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 10:53:35 - INFO - Starting the test case
+2024-06-05 10:53:39 - INFO - Entered password
+2024-06-05 10:53:39 - INFO - Clicked login button
+2024-06-05 10:53:40 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 10:53:40 - INFO - Opened a new tab
+2024-06-05 10:53:40 - INFO - Switched to the new tab
+2024-06-05 10:55:07 - INFO - Starting the test case
+2024-06-05 10:55:10 - INFO - Entered password
+2024-06-05 10:55:11 - INFO - Clicked login button
+2024-06-05 10:55:11 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 10:55:11 - INFO - Opened a new tab
+2024-06-05 10:55:11 - INFO - Switched to the new tab
+2024-06-05 10:55:13 - INFO - Opened https://www.python.org/ in the new tab
+2024-06-05 10:55:14 - INFO - Searched for 'Automation'
+2024-06-05 11:49:41 - INFO - Starting the test case
+2024-06-05 11:49:45 - INFO - Entered password
+2024-06-05 11:49:45 - INFO - Clicked login button
+2024-06-05 11:49:46 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 11:49:46 - INFO - Opened a new tab
+2024-06-05 11:49:46 - INFO - Switched to the new tab
+2024-06-05 11:49:48 - INFO - Opened https://www.python.org/ in the new tab
+2024-06-05 11:49:48 - INFO - Test case ended and browser closed
+2024-06-05 11:55:55 - INFO - Starting the test case
+2024-06-05 11:55:58 - INFO - Entered password
+2024-06-05 11:55:58 - INFO - Clicked login button
+2024-06-05 11:55:59 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 11:55:59 - INFO - Opened a new tab
+2024-06-05 11:55:59 - INFO - Switched to the new tab
+2024-06-05 11:56:15 - INFO - Opened https://www.python.org/ in the new tab
+2024-06-05 11:56:16 - INFO - Test case ended and browser closed
+2024-06-05 12:05:30 - INFO - Starting the test case
+2024-06-05 12:05:34 - INFO - Entered password
+2024-06-05 12:05:34 - INFO - Clicked login button
+2024-06-05 12:05:35 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 12:05:35 - INFO - Opened a new tab
+2024-06-05 12:05:35 - INFO - Switched to the new tab
+2024-06-05 12:05:37 - INFO - Opened https://www.python.org/ in the new tab
+2024-06-05 12:05:38 - INFO - Test case ended and browser closed
+2024-06-05 12:08:12 - INFO - Starting the test case
+2024-06-05 12:08:18 - INFO - Entered password
+2024-06-05 12:08:18 - INFO - Clicked login button
+2024-06-05 12:08:19 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 12:08:19 - INFO - Opened a new tab
+2024-06-05 12:08:19 - INFO - Switched to the new tab
+2024-06-05 12:08:25 - INFO - Opened https://www.python.org/ in the new tab
+2024-06-05 12:08:37 - INFO - Test case ended and browser closed
+2024-06-05 12:09:06 - INFO - Starting the test case
+2024-06-05 12:09:09 - INFO - Entered password
+2024-06-05 12:09:10 - INFO - Clicked login button
+2024-06-05 12:09:10 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 12:09:10 - INFO - Opened a new tab
+2024-06-05 12:09:10 - INFO - Switched to the new tab
+2024-06-05 12:09:12 - INFO - Opened https://www.python.org/ in the new tab
+2024-06-05 12:09:22 - INFO - Test case ended and browser closed
+2024-06-05 12:10:07 - INFO - Starting the test case
+2024-06-05 12:10:11 - INFO - Entered password
+2024-06-05 12:10:11 - INFO - Clicked login button
+2024-06-05 12:10:12 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 12:10:12 - INFO - Opened a new tab
+2024-06-05 12:10:12 - INFO - Switched to the new tab
+2024-06-05 12:10:13 - INFO - Opened https://www.python.org/ in the new tab
+2024-06-05 12:10:24 - INFO - Switched to the first page
+2024-06-05 12:10:25 - INFO - Test case ended and browser closed
