@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from Lesson_27.Helpers.basic_page import Basic_Helper
+from Helpers.basic_page import Basic_Helper
 import logging
 
 

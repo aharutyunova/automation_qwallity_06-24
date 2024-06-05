@@ -1,11 +1,11 @@
-from Lesson_27.Helpers.basic_page import Basic_Helper
-from Lesson_27.Helpers import logging_config
-from Lesson_27.Pages.result import Result_Page
-from Lesson_27.Pages.practise import Practise_Page
-from Lesson_27.Pages.python_org import Python_Org
-from Lesson_27.Pages.sign_in import Sign_In_Page
-from Lesson_27 import testdata
-from Lesson_27 import config
+from Helpers.basic_page import Basic_Helper
+from Helpers import logging_config
+from Pages.result import Result_Page
+from Pages.practise import Practise_Page
+from Pages.python_org import Python_Org
+from Pages.sign_in import Sign_In_Page
+import testdata
+import config
 import logging
 from selenium import webdriver
 
@@ -30,7 +30,7 @@ def test():
         practise_page.footer_text()
 
         logging.info("Testing Sign In Page")
-        sign_in_page.sign_in(testdata.email_data, testdata.password_data)
+        practise_page.sign_in(testdata.email_data, testdata.password_data)
 
         logging.info("Testing Python Org Page")
         python_org_page.python_search()
@@ -55,4 +55,6 @@ if __name__ == '__main__':
 # the only thing that is not working is as always the banner does not allow system to find and click
 # on sign in button
 
-
+#  Anna - the structure is correct and for first page object model structure really very good!!!
+# Sign in is not clickable in your example you call sign_in method from sign_in_page , in that method you don't click on sign_in link
+# Also you have sign_in method in practise page, where you call click on the sign in link, if you call sign in method from practise page, everything will work

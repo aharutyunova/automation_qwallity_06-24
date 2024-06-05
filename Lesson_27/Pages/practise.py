@@ -1,6 +1,6 @@
 import time
 from selenium.webdriver.common.action_chains import ActionChains
-from Lesson_27.Helpers.basic_page import Basic_Helper
+from Helpers.basic_page import Basic_Helper
 from selenium.webdriver.common.by import By
 import logging
 

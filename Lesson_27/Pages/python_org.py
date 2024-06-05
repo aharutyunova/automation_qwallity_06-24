@@ -1,4 +1,4 @@
-from Lesson_27.Helpers.basic_page import Basic_Helper
+from Helpers.basic_page import Basic_Helper
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import logging
