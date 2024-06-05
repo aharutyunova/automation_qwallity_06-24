@@ -42,3 +42,8 @@ def test():
 
 if __name__ == '__main__':
     test()
+
+
+# An jan really very good job!!! I enjoyed checking your solutions :) 
+# There are some minor cases, for example will be better open new tab action use separately in test case and don't include in open_new_tab_and_search method
+# But it is not a big issue, structure and code style are good enough!!!
