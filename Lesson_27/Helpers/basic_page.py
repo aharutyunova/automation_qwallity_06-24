@@ -12,7 +12,7 @@ class Basic_Helper:
         self.driver.get(url)
         logging.info(f"Opened URL {url}")
 
-    def find_elem_ui(self, loc, sec=10):
+    def find_elem_ui(self, loc, sec=2):
         try:
             elem = WebDriverWait(self.driver, sec).until(
                 EC.visibility_of_element_located(loc))

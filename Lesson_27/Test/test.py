@@ -1,11 +1,11 @@
-from Helpers.basic_page import Basic_Helper
-from Helpers import logging_config
-from Pages.result import Result_Page
-from Pages.practise import Practise_Page
-from Pages.python_org import Python_Org
-from Pages.sign_in import Sign_In_Page
-import testdata
-import config
+from Lesson_27.Helpers.basic_page import Basic_Helper
+from Lesson_27.Helpers import logging_config
+from Lesson_27.Pages.result import Result_Page
+from Lesson_27.Pages.practise import Practise_Page
+from Lesson_27.Pages.python_org import Python_Org
+from Lesson_27.Pages.sign_in import Sign_In_Page
+from Lesson_27 import testdata
+from Lesson_27 import config
 import logging
 from selenium import webdriver
 
@@ -18,6 +18,7 @@ def test():
     result = Result_Page(driver)
     python_org_page = Python_Org(driver)
     sign_in_page = Sign_In_Page(driver)
+    validation_text = Sign_In_Page(driver).validation_msg_loc
 
     try:
         logging.info("Starting test cases")
@@ -31,6 +32,7 @@ def test():
 
         logging.info("Testing Sign In Page")
         practise_page.sign_in(testdata.email_data, testdata.password_data)
+        sign_in_page.sign_in()
 
         logging.info("Testing Python Org Page")
         python_org_page.python_search()

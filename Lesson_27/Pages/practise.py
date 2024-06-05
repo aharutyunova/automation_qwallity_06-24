@@ -1,6 +1,6 @@
 import time
 from selenium.webdriver.common.action_chains import ActionChains
-from Helpers.basic_page import Basic_Helper
+from Lesson_27.Helpers.basic_page import Basic_Helper
 from selenium.webdriver.common.by import By
 import logging
 
@@ -64,11 +64,12 @@ class Practise_Page(Basic_Helper):
             logging.info("Sign-in button clicked, switching to new window")
             time.sleep(5)
             self.driver.switch_to.window(self.driver.window_handles[-1])
-            # Now handle the sign-in form
             self.find_and_send_keys((By.ID, "email"), email)
             self.find_and_send_keys((By.ID, "login-password"), password)
             self.find_and_click((By.XPATH, "//*[@id='login']"))
+            time.sleep(5)
             logging.info("Sign-in form submitted")
+
         except Exception as e:
             logging.error(f"Error signing in: {str(e)}")
 
