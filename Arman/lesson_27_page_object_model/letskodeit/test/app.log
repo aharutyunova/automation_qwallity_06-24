@@ -1,11 +1,14 @@
-2024-06-05 11:13:10 [INFO] Web driver successfully ran and opened https://www.letskodeit.com/practice page
-2024-06-05 11:13:10 [INFO] //*[@id="alertbtn"] button successfully clicked
-2024-06-05 11:13:10 [INFO] Hello , share this practice page and share your knowledge
-2024-06-05 11:13:10 [INFO] Alert accepted!
-2024-06-05 11:13:11 [INFO] //*[@id='hide-textbox'] button successfully clicked
-2024-06-05 11:13:11 [INFO] © 2024 letskodeit
-2024-06-05 11:13:11 [INFO] //*[@id='navbar-inverse-collapse']/div/div/a button successfully clicked
-2024-06-05 11:13:11 [INFO] Email and password successfully filled
-2024-06-05 11:13:12 [INFO] //*[@id='login'] button successfully clicked
-2024-06-05 11:13:12 [INFO] Successfully changed to 1 tab
-2024-06-05 11:13:12 [INFO] Web driver successfully ran and opened https://www.python.org/ page
+2024-06-05 11:19:52 [INFO] chrome web driver successfully ran and opened https://www.letskodeit.com/practice page
+2024-06-05 11:19:53 [INFO] //*[@id="alertbtn"] button successfully clicked
+2024-06-05 11:19:53 [INFO] Hello , share this practice page and share your knowledge
+2024-06-05 11:19:53 [INFO] Alert accepted!
+2024-06-05 11:19:53 [INFO] //*[@id='hide-textbox'] button successfully clicked
+2024-06-05 11:19:53 [INFO] © 2024 letskodeit
+2024-06-05 11:19:53 [INFO] //*[@id='navbar-inverse-collapse']/div/div/a button successfully clicked
+2024-06-05 11:19:53 [INFO] Email and password successfully filled
+2024-06-05 11:19:53 [INFO] //*[@id='login'] button successfully clicked
+2024-06-05 11:19:54 [INFO] Successfully changed to 1 tab
+2024-06-05 11:19:54 [INFO] chrome web driver successfully ran and opened https://www.python.org/ page
+2024-06-05 11:19:55 [INFO] //*[@id='submit'] button successfully clicked
+2024-06-05 11:19:55 [INFO] Successfully changed to 0 tab
+2024-06-05 11:19:57 [INFO] chrome browser successfully closed

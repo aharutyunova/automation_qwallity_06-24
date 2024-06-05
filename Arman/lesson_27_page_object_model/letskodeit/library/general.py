@@ -21,7 +21,7 @@ def run_driver(driver, url):
     try:
         driver.get(url)
         driver.maximize_window()
-        logging.info(f"Web driver successfully ran and opened {url} page")
+        logging.info(f"{driver.name} web driver successfully ran and opened {url} page")
     except TimeoutError as error:
         logging.error(error)
 
@@ -117,7 +117,7 @@ def close_browser(input_driver):
     """Function close tabs and browser"""
     try:
         input_driver.quit()
-        logging.info("Browser successfully closed")
+        logging.info(f"{driver.name} browser successfully closed")
     except Exception as error:
         logging.error(error)
 
