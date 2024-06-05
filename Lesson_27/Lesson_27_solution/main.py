@@ -32,3 +32,6 @@ In short, I still have a lot to do on this task (((
 Also, I got a little confused and there are things I just wrote,
 but I haven't digested them yet.
 '''
+# Got it Lusine jan, yes there is the work to do for complete the task.
+# In case you willn't be able to join to the call and will need short call to solve some general blockers to be able to continue, we can organize separate call to discuss that blockers
+# Please let me know 
