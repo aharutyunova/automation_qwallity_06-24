@@ -65,3 +65,5 @@ logging.info("Switched to the first page")
 
 driver.quit()
 logging.info("Test case ended and browser closed")
+
+# Separate functions works, will discuss tomorrow group actions by functions and by pages
