@@ -33,3 +33,10 @@ class BasicHelper:
     def find_and_send_keys(self, loc, inp_text, sec=10):
         element = self.find_element_ui(loc, sec)  # Locating an element
         element.send_keys(inp_text)  # Sending keys to the located element
+
+
+# Anna - the structure of page object model is correct
+# Pages are correctly separated and strucutred.
+#  Only in python_org.py page instead of open_new_tab_and_search method you could have search method, and open new tab directly in the test case
+# Because maybe in some cases you willn't need to open new tab for search
+# Other paths are good enough
