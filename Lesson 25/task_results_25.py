@@ -143,7 +143,7 @@ try:
     search_box = driver.find_element(By.ID, "id-search-field")
     search_box.send_keys("Automation")
     logging.info("Searched for the 'Automation' word")
-    results = driver.find_elements(By.CSS_SELECTOR, ".list-recent-events > li")
+    results = driver.find_elements(By.XPATH, '//div[@id="content"]//li')
     num_results = len(results)
     logging.info(f"Number of search results on the first page: {num_results}")
 

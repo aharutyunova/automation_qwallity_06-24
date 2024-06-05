@@ -1,0 +1,25 @@
+2024-06-05 23:07:06,044 - INFO - Navigated to letskodeit.com/practice page
+2024-06-05 23:07:06,193 - INFO - Clicked on the Alert button
+2024-06-05 23:07:06,203 - INFO - Alert accepted with text: Hello , share this practice page and share your knowledge
+2024-06-05 23:07:06,344 - INFO - Clicked on the Hide button
+2024-06-05 23:07:06,355 - INFO - Hide/Show Example text has been hidden
+2024-06-05 23:07:06,373 - INFO - Element has been hidden
+2024-06-05 23:07:06,416 - INFO - Scrolled to Mouse Hover button
+2024-06-05 23:07:06,885 - INFO - Performed mouse hover action on Mouse Hover button
+2024-06-05 23:07:06,995 - INFO - Clicked on the 'Top' option
+2024-06-05 23:07:07,054 - INFO - Scrolled to Footer
+2024-06-05 23:07:07,088 - INFO - Footer displayed with text: © 2024 letskodeit
+Home Courses Support Terms & Conditions Privacy Policy Cookie Policy
+2024-06-05 23:07:07,177 - INFO - Scrolled to Header
+2024-06-05 23:07:07,917 - INFO - Clicked on the Sign in button
+2024-06-05 23:07:08,093 - INFO - Filled email field with incorrect email
+2024-06-05 23:07:08,219 - INFO - Filled password field with incorrect password
+2024-06-05 23:07:08,283 - INFO - Clicked on the Log In button
+2024-06-05 23:07:09,884 - INFO - Validation message: Incorrect login details. Please try again.
+2024-06-05 23:07:09,948 - INFO - Opened a new tab
+2024-06-05 23:07:09,957 - INFO - Switched to the new tab
+2024-06-05 23:07:12,515 - INFO - Opened https://www.python.org/ on the second tab
+2024-06-05 23:07:12,706 - INFO - Searched for the 'Automation' word
+2024-06-05 23:07:12,733 - INFO - Number of search results on the first page: 0
+2024-06-05 23:07:12,757 - INFO - Switched back to the first tab
+2024-06-05 23:07:15,032 - INFO - Browser has been closed
