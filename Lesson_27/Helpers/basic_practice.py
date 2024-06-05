@@ -13,7 +13,7 @@ class Basic_Helper:
         self.driver.maximize_window()
         logging.info(f"Open url {url}")
 
-    def locelement(self, loc, sec = 10):
+    def locelement(self, loc, sec=10):
         elem = WebDriverWait(self.driver, sec).until(EC.presence_of_element_located(loc))
         logging.info("Element located")
         return elem
