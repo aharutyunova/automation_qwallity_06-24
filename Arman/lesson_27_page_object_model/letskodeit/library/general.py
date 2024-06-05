@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from Arman.lesson_27_page_object_model.letskodeit.helpers.driver import driver
+from helpers.driver import driver
 
 logging.basicConfig(
     level=logging.INFO,

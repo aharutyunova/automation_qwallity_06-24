@@ -1,6 +1,6 @@
-from Arman.lesson_27_page_object_model.letskodeit.helpers.locators import *
-from Arman.lesson_27_page_object_model.letskodeit.helpers.test_data import *
-from Arman.lesson_27_page_object_model.letskodeit.library.general import *
+from helpers.locators import *
+from helpers.test_data import *
+from library.general import *
 
 
 def run_test():
@@ -26,3 +26,9 @@ def run_test():
 
 if __name__ == '__main__':
     run_test()
+
+# Anna - No need keep locators.py file when use page object model, you keep locators in pages
+# action.py file is additional, just to keep only one object, you could have  action = ActionChains(driver) in general helpers
+# Where is your pages? maybe you deleted it after last commit?
+# Code works, but page object model is not used
+
