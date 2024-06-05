@@ -31,7 +31,8 @@ def hide_element_and_check(driver):
     general.find_and_click(driver, locators.btn_hide_loc)
     logging.info("Clicked Hide button")
     hide_attr = general.find_elem_dom(driver, locators.inp_hide_loc).get_attribute('style')
-    logging.info(f"hidden attribute is: {hide_attr}")
+    logging.info(f"Hidden attribute is: {hide_attr}")
+    logging.info("Text box is hidden as expected")
     
 
 def scroll_and_click_mouse_hover(driver):
