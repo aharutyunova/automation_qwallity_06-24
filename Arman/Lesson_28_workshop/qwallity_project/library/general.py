@@ -47,56 +47,10 @@ def wait(input_driver, seconds):
     input_driver.implicitly_wait(seconds)
 
 
-def check_hidden(input_style):
-    """Function checks input field hidden"""
-    hidden_style = "display: none;"
-    if hidden_style in input_style:
-        return "Hide/Show input field hidden"
-    else:
-        return "Hide/Show input field is showing"
-
-
-def scroll_to_footer(driver, footer_xpath):
-    footer = driver.find_element(By.XPATH, footer_xpath)
-    driver.execute_script("arguments[0].scrollIntoView();", footer)
-
-
-def click_on_alert(driver, alert):
-    try:
-        # Attempt to switch to the alert
-        alert = driver.switch_to.alert
-        alert_text = alert.text
-        logging.info(alert_text)
-
-        # Accept the alert (click OK)
-        alert.accept()
-        logging.info("Alert accepted!")
-    except Exception as e:
-        logging.error(f"An error occurred: {e}")
-
-
 def get_style_attribute(input_xpath):
     input_field_xpath = driver.find_element(By.XPATH, input_xpath)
     style = input_field_xpath.get_attribute('style')
     return style
-
-
-def print_text(driver, xpath):
-    text_xpath = driver.find_element(By.XPATH, xpath)
-    if text_xpath.text:
-        logging.info(text_xpath.text)
-    else:
-        logging.error("There is no text to log")
-
-
-def change_tab(driver, tab_index):
-    driver.execute_script("window.open('')")
-    windows = driver.window_handles
-    if 0 <= tab_index < len(windows):
-        driver.switch_to.window(windows[tab_index])
-        logging.info(f"Successfully changed to {tab_index} tab")
-    else:
-        logging.error("Invalid tab index")
 
 
 def fill_form(email_input_xpath, password_input_xpath, email, password):
@@ -123,13 +77,3 @@ def close_browser(input_driver):
         logging.info(f"{driver.name} browser successfully closed")
     except Exception as e:
         logging.error(e)
-
-
-def search(driver, search_xpath, data):
-    try:
-        search_input = WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, search_xpath))
-        )
-        search_input.send_keys(data)
-    except Exception as e:
-        logging.error(f"An error occurred: {e}")

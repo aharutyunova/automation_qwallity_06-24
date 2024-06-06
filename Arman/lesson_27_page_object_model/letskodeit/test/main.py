@@ -1,4 +1,3 @@
-from helpers.locators import *
 from helpers.test_data import *
 from library.general import *
 
