@@ -1,6 +1,5 @@
 import logging
 
-
 def configure_logging():
     logging.basicConfig(
         filename='test_case.log',
