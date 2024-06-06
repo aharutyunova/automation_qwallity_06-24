@@ -3,8 +3,13 @@ import logging
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-
+from selenium.webdriver.common.action_chains import ActionChains
 from helpers.driver import driver
+
+
+
+action = ActionChains(driver)
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -118,8 +123,8 @@ def close_browser(input_driver):
     try:
         input_driver.quit()
         logging.info(f"{driver.name} browser successfully closed")
-    except Exception as error:
-        logging.error(error)
+    except Exception as e:
+        logging.error(e)
 
 
 def search(driver, search_xpath, data):

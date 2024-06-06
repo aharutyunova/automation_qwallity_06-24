@@ -31,4 +31,3 @@ if __name__ == '__main__':
 # action.py file is additional, just to keep only one object, you could have  action = ActionChains(driver) in general helpers
 # Where is your pages? maybe you deleted it after last commit?
 # Code works, but page object model is not used
-
