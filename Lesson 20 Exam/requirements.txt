@@ -1,2 +1,0 @@
-requests==2.26.0
-marshmallow==3.21.1
