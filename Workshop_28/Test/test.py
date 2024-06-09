@@ -35,7 +35,7 @@ def test():
         logging.info(f"Current balance is: {account_balance}")
 
         # Convert the balance to a numerical value
-        current_balance = float(account_balance.replace(',', '').replace('$', ''))  # Adjust as per the format
+        current_balance = float(account_balance.replace(',', '').replace('$', ''))
 
         # Add the new amount
         amount_to_add = float(test_data.amount)
