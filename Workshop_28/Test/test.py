@@ -35,10 +35,10 @@ def test():
         logging.info(f"Current balance is: {account_balance}")
 
         # Convert the balance to a numerical value
-        current_balance = float(account_balance.replace(',', '').replace('$', ''))
+        current_balance = int(account_balance)
 
         # Add the new amount
-        amount_to_add = float(test_data.amount)
+        amount_to_add = int(test_data.amount)
         user_action_page.add_amount_and_submit_checkout_btn(test_data.amount)
         logging.info(f"Amount {amount_to_add} added and checkout button is clicked")
 
@@ -47,7 +47,7 @@ def test():
         logging.info(f"New account balance is: {new_account_balance}")
 
         # Convert the new balance to a numerical value
-        new_balance = float(new_account_balance.replace(',', '').replace('$', ''))
+        new_balance = float(new_account_balance)
 
         # Verify the new balance is the sum of the current balance and the added amount
         expected_balance = current_balance + amount_to_add
@@ -64,3 +64,5 @@ def test():
 
 if __name__ == '__main__':
     test()
+
+# Please in test_data file for username and password use your creds <3
