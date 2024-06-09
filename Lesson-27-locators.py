@@ -1,0 +1,13 @@
+alert_button = '//*[@id="alertbtn"]'
+hide_button = "//*[@id='hide-textbox']"
+hide_input_field_xpath = "//*[@id='displayed-text']"
+footer_block = "//*[@id='page']/div[3]"
+footer_text = "//*[@id='page']/div[3]/div/div/div[1]/div/div[1]/p"
+sign_in = "//*[@id='navbar-inverse-collapse']/div/div/a"
+email_address = "//*[@id='email']"
+password = "//*[@id='login-password']"
+login_button = "//*[@id='login']"
+li_elements = "//ul[@class='list-recent-events menu']/li"
+error_validation = "//*[@id='incorrectdetails']"
+search_input_field = "//*[@id='id-search-field']"
+go_button = "//*[@id='submit']"
