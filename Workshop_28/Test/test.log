@@ -29,3 +29,34 @@
 2024-06-10 00:40:51 - INFO - New balance is correct
 2024-06-10 00:40:51 - INFO - Test is completed
 2024-06-10 00:40:54 - INFO - All opened tabs are closed
+2024-06-10 00:56:11 - INFO - Open url https://qwallity-prod.onrender.com/
+2024-06-10 00:56:12 - INFO - Email and code fields are filled with correct data  and Send button is iclicked
+2024-06-10 00:56:12 - INFO - Successfully logged in!
+2024-06-10 00:56:16 - INFO - Login button is clicked
+2024-06-10 00:56:16 - INFO - Login page is opened
+2024-06-10 00:56:20 - INFO - Username and passwords are filled, and Log in button is clicked
+2024-06-10 00:56:20 - INFO - Home page is opened
+2024-06-10 00:56:20 - INFO - User Acction button is clicked
+2024-06-10 00:56:20 - INFO - User action button is clicked!
+2024-06-10 00:56:21 - INFO - Balance is: 3600
+2024-06-10 00:56:22 - INFO - 200 amount is added and Checkout button is clicked
+2024-06-10 00:56:23 - INFO - New account balance is: 3800
+2024-06-10 00:56:23 - INFO - New balance is correct
+2024-06-10 00:56:23 - INFO - Test is completed
+2024-06-10 00:56:25 - INFO - All opened tabs are closed
+2024-06-10 00:58:24 - INFO - Open url https://qwallity-prod.onrender.com/
+2024-06-10 00:58:27 - INFO - Email and code fields are filled with correct data  and Send button is iclicked
+2024-06-10 00:58:27 - INFO - Successfully logged in!
+2024-06-10 00:58:27 - INFO - Login button is clicked
+2024-06-10 00:58:27 - INFO - Login page is opened
+2024-06-10 00:58:31 - INFO - Username and passwords are filled, and Log in button is clicked
+2024-06-10 00:58:31 - INFO - Home page is opened
+2024-06-10 00:58:33 - INFO - User Acction button is clicked
+2024-06-10 00:58:33 - INFO - User action button is clicked!
+2024-06-10 00:58:34 - INFO - Current balance is: 3800
+2024-06-10 00:58:35 - INFO - 200 amount is added and Checkout button is clicked
+2024-06-10 00:58:35 - INFO - Amount 200.0 added and checkout button is clicked
+2024-06-10 00:58:36 - INFO - New account balance is: 4000
+2024-06-10 00:58:36 - INFO - New balance is correct and verified
+2024-06-10 00:58:36 - INFO - Test is completed
+2024-06-10 00:58:39 - INFO - All opened tabs are closed

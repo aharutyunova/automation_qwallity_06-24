@@ -10,7 +10,7 @@ class HomeLoginPage(BasicHelper):
 
     def fill_and_submit_new_user_login_form(self, username, password):
         username_fld = self.find_and_send_keys(self.username_loc, username)
-        pass_fld = self.find_and_send_keys(self.password_loc, password)
+        password_fld = self.find_and_send_keys(self.password_loc, password)
         btn_log_in = self.find_and_click(self.btn_log_in_loc)
         logging.info("Username and passwords are filled, and Log in button is clicked")
-        return username_fld, pass_fld, btn_log_in
+        return username_fld, password_fld, btn_log_in

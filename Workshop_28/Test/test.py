@@ -11,7 +11,7 @@ from selenium import webdriver
 
 
 def test():
-    driver = webdriver.Chrome()  # Ensure the path to the ChromeDriver is correctly set
+    driver = webdriver.Chrome()
     logging_config.configure_logging()
     bh = BasicHelper(driver)
     main_lgn_page = MainLoginPage(driver)
@@ -29,13 +29,30 @@ def test():
         logging.info("Home page is opened")
         home_page.click_user_action_btn()
         logging.info("User action button is clicked!")
+
+        # Get the current balance
         account_balance = user_action_page.get_balance()
-        logging.info(f"Balance is: {account_balance}")
+        logging.info(f"Current balance is: {account_balance}")
+
+        # Convert the balance to a numerical value
+        current_balance = float(account_balance.replace(',', '').replace('$', ''))  # Adjust as per the format
+
+        # Add the new amount
+        amount_to_add = float(test_data.amount)
         user_action_page.add_amount_and_submit_checkout_btn(test_data.amount)
+        logging.info(f"Amount {amount_to_add} added and checkout button is clicked")
+
+        # Get the new balance
         new_account_balance = user_action_page.get_balance()
         logging.info(f"New account balance is: {new_account_balance}")
-        logging.info("New balance is correct")
-        assert ((int(account_balance) + int(test_data.amount)) == int(new_account_balance))
+
+        # Convert the new balance to a numerical value
+        new_balance = float(new_account_balance.replace(',', '').replace('$', ''))  # Adjust as per the format
+
+        # Verify the new balance is the sum of the current balance and the added amount
+        expected_balance = current_balance + amount_to_add
+        assert new_balance == expected_balance, f"Expected balance {expected_balance}, but got {new_balance}"
+        logging.info("New balance is correct and verified")
 
     except Exception as e:
         logging.error(f"Test failed: {e}")
