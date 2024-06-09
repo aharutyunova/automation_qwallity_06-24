@@ -1,10 +1,10 @@
-2024-06-09 16:38:43 [INFO] test.py:15 - test_case - Starting test case
-2024-06-09 16:38:44 [INFO] basic_page.py:8 - open_url - Browser window maximized
-2024-06-09 16:38:45 [INFO] basic_page.py:10 - open_url - URL opened: https://qwallity-prod.onrender.com
-2024-06-09 16:38:49 [INFO] home_app.py:11 - go_to_login - Login page
-2024-06-09 16:38:52 [INFO] login_app.py:16 - login_system - Successful login
-2024-06-09 16:38:53 [INFO] home_app.py:15 - go_to_user_actions - User action page
-2024-06-09 16:38:58 [INFO] test.py:26 - test_case - Amount = 10
-2024-06-09 16:38:58 [INFO] test.py:27 - test_case - Balance before = 250
-2024-06-09 16:38:58 [INFO] test.py:28 - test_case - Balance after = 260
-2024-06-09 16:39:00 [INFO] test.py:39 - test_case - Browser closed
+2024-06-10 00:00:20 [INFO] test.py:15 - test_case - Starting test case
+2024-06-10 00:00:21 [INFO] basic_page.py:8 - open_url - Browser window maximized
+2024-06-10 00:00:23 [INFO] basic_page.py:10 - open_url - URL opened: https://qwallity-prod.onrender.com
+2024-06-10 00:00:28 [INFO] home_app.py:11 - go_to_login - Login page
+2024-06-10 00:00:31 [INFO] login_app.py:16 - login_system - Successful login
+2024-06-10 00:00:32 [INFO] home_app.py:15 - go_to_user_actions - User action page
+2024-06-10 00:00:36 [INFO] test.py:26 - test_case - Amount = 10
+2024-06-10 00:00:36 [INFO] test.py:27 - test_case - Balance before = 260
+2024-06-10 00:00:36 [INFO] test.py:28 - test_case - Balance after = 270
+2024-06-10 00:00:38 [INFO] test.py:39 - test_case - Browser closed

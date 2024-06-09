@@ -43,3 +43,5 @@ def test_case():
 
 if __name__ == '__main__':
     test_case()
+
+# Good job Lian jan, Test is pass, structure of POM is correct
