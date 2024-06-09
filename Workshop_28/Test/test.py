@@ -47,7 +47,7 @@ def test():
         logging.info(f"New account balance is: {new_account_balance}")
 
         # Convert the new balance to a numerical value
-        new_balance = float(new_account_balance.replace(',', '').replace('$', ''))  # Adjust as per the format
+        new_balance = float(new_account_balance.replace(',', '').replace('$', ''))
 
         # Verify the new balance is the sum of the current balance and the added amount
         expected_balance = current_balance + amount_to_add
