@@ -1,0 +1,13 @@
+2024-06-10 00:38:24 - INFO - Open url https://qwallity-prod.onrender.com/
+2024-06-10 00:38:25 - INFO - <selenium.webdriver.remote.webelement.WebElement (session="4b22aeada69106242af8e7cf8c5e3596", element="f.39AF51386646F43D0073F296A7D00961.d.47E53EB5965C0C5A003E2F54037A22B9.e.18")> is found
+2024-06-10 00:38:29 - INFO - <selenium.webdriver.remote.webelement.WebElement (session="4b22aeada69106242af8e7cf8c5e3596", element="f.39AF51386646F43D0073F296A7D00961.d.4D88E2FBBA77E1E7117B4DD275CC8110.e.36")> is found
+2024-06-10 00:38:33 - INFO - 1000.0 is equal to 1000.0
+2024-06-10 00:38:33 - INFO - Test is Pass
+2024-06-10 00:43:24 - INFO - Open url https://qwallity-prod.onrender.com/
+2024-06-10 00:43:25 - INFO - Enter to qwallity page successfully
+2024-06-10 00:43:29 - INFO - Login to the system
+2024-06-10 00:43:30 - INFO - Balance Value is 1000
+2024-06-10 00:43:30 - INFO - Balance is added with 150
+2024-06-10 00:43:31 - INFO - Balance Value is 1150
+2024-06-10 00:43:31 - INFO - 1150.0 is equal to 1150.0
+2024-06-10 00:43:31 - INFO - Test is Pass
