@@ -1,0 +1,31 @@
+2024-06-10 00:39:28 - INFO - Open url https://qwallity-prod.onrender.com/
+2024-06-10 00:39:29 - INFO - Email and code fields are filled with correct data  and Send button is iclicked
+2024-06-10 00:39:29 - INFO - Successfully logged in!
+2024-06-10 00:39:32 - INFO - Login button is clicked
+2024-06-10 00:39:32 - INFO - Login page is opened
+2024-06-10 00:39:35 - INFO - Username and passwords are filled, and Log in button is clicked
+2024-06-10 00:39:35 - INFO - Home page is opened
+2024-06-10 00:39:36 - INFO - User Acction button is clicked
+2024-06-10 00:39:36 - INFO - User action button is clicked!
+2024-06-10 00:39:36 - INFO - Balance is: 
+2024-06-10 00:39:37 - INFO - 200 amount is added and Checkout button is clicked
+2024-06-10 00:39:37 - INFO - New account balance is: 
+2024-06-10 00:39:37 - INFO - New balance is correct
+2024-06-10 00:39:37 - ERROR - Test failed: invalid literal for int() with base 10: ''
+2024-06-10 00:39:37 - INFO - Test is completed
+2024-06-10 00:39:39 - INFO - All opened tabs are closed
+2024-06-10 00:40:42 - INFO - Open url https://qwallity-prod.onrender.com/
+2024-06-10 00:40:44 - INFO - Email and code fields are filled with correct data  and Send button is iclicked
+2024-06-10 00:40:44 - INFO - Successfully logged in!
+2024-06-10 00:40:45 - INFO - Login button is clicked
+2024-06-10 00:40:45 - INFO - Login page is opened
+2024-06-10 00:40:48 - INFO - Username and passwords are filled, and Log in button is clicked
+2024-06-10 00:40:48 - INFO - Home page is opened
+2024-06-10 00:40:49 - INFO - User Acction button is clicked
+2024-06-10 00:40:49 - INFO - User action button is clicked!
+2024-06-10 00:40:50 - INFO - Balance is: 3400
+2024-06-10 00:40:50 - INFO - 200 amount is added and Checkout button is clicked
+2024-06-10 00:40:51 - INFO - New account balance is: 3600
+2024-06-10 00:40:51 - INFO - New balance is correct
+2024-06-10 00:40:51 - INFO - Test is completed
+2024-06-10 00:40:54 - INFO - All opened tabs are closed

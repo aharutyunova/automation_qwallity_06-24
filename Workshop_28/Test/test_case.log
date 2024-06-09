@@ -1,5 +1,16 @@
-2024-06-06 21:58:58 - INFO - Open url https://qwallity-prod.onrender.com/
-2024-06-06 21:59:01 - INFO - Filled incorrect email and code, and clicked Send button
-2024-06-06 21:59:01 - INFO - Successfully logged in!
-2024-06-06 21:59:01 - INFO - Test is complete
-2024-06-06 21:59:03 - INFO - Closed all opened tabs
+2024-06-09 23:21:31 - INFO - Open url https://qwallity-prod.onrender.com/
+2024-06-09 23:21:33 - INFO - Email and code fields are filled with correct data  and Send button is iclicked
+2024-06-09 23:21:33 - INFO - Successfully logged in!
+2024-06-09 23:21:34 - INFO - Clicked Login button
+2024-06-09 23:21:34 - INFO - Login page opened
+2024-06-09 23:21:37 - INFO - Filled  username, password, and clicked Log in button
+2024-06-09 23:21:37 - INFO - Home page opened
+2024-06-09 23:21:37 - INFO - Clicked User_Action button
+2024-06-09 23:21:37 - INFO - User action button is clicked!
+2024-06-09 23:21:37 - INFO - Balance is: None
+2024-06-09 23:21:38 - INFO - 100 amount is added and Checkout button is clicked
+2024-06-09 23:21:38 - INFO - New account balance is: None
+2024-06-09 23:21:38 - INFO - New balance is correct
+2024-06-09 23:21:38 - ERROR - Test failed: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2024-06-09 23:21:38 - INFO - Test is complete
+2024-06-09 23:21:40 - INFO - Closed all opened tabs

@@ -12,6 +12,7 @@ class Result_Page(Basic_Helper):
         logging.info(f"Number of results: {len(res)}")
         return len(res)
 
+
     def get_search_input_value(self):
         search_field_value = self.find_elem_ui(self.inp_field).get_attribute('value')
         logging.info(f"Search input value: {search_field_value}")

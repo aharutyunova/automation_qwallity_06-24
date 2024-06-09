@@ -12,4 +12,4 @@ class MainLoginPage(BasicHelper):
         self.find_and_send_keys(self.email_loc, email)
         self.find_and_send_keys(self.code_loc, password)
         self.find_and_click(self.btn_send_loc)
-        logging.info("Filled incorrect email and code, and clicked Send button")
+        logging.info("Email and code fields are filled with correct data  and Send button is iclicked")
