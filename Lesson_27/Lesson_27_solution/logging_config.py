@@ -6,7 +6,8 @@ def configure_logging():
 
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s [%(levelname)s] %(message)s',
+        format='%(asctime)s [%(levelname)s] %(filename)s:'
+        '%(lineno)d - %(funcName)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
         filename=config.log_file_path,
         filemode='w+',
