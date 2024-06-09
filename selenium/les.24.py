@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(m
 
 WAIT_TIME = 30
 
-browsers = ["Chrome", "Firefox"]
+browsers = ["Chrome"]
 
 for browser in browsers:
     try:
@@ -87,7 +87,7 @@ for browser in browsers:
         submit.click()
         time.sleep(5)
         conf_message = driver.find_element(By.XPATH, '//*[@id="incorrectdetails"]')
-        assert conf_message(), "Incorrect login details. Please try again."
+        assert conf_message, "Incorrect login details. Please try again."   # Anna - conf_message not a function
         time.sleep(5)
 
         # Open a new tab and switch to it
@@ -118,3 +118,8 @@ for browser in browsers:
         logging.exception("An exception occurred")
     finally:
         driver.quit()
+
+
+# Anna - steps are correct but please don't use time.sleep(). If you need more time for stability add time in explicit wait 
+# Also you didn't use logging
+# But selenium commands are correctly used
