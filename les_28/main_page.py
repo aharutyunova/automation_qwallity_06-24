@@ -26,3 +26,7 @@ def authorization(driver, email, code):
 
 
 # Dear Anna, I used Lusines homework solution.
+
+# Lian jan thanks for your honesty :)
+# I hope even you re-used this solution you get the page object model idea and how it works
+# I added comment under Lusine solution, you can have a look ;)
