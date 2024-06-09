@@ -71,3 +71,7 @@ def test():
 
 if __name__ == '__main__':
     test()
+
+# Anna - good job, only in test case try don't use so many assertions, test case should check one max 2 main cases, so assert only that cases
+# If you want to check that after click on element page is changed, don't assert every step in test case, check it in page functions
+# for example in add payment method write all actionas and wait until url will be changed or any other element will be visible etc

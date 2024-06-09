@@ -38,3 +38,9 @@ if __name__ == "__main__":
     test()
 
 # Anna jan I couldn't realise why I'm getting errors on my mentioned above lines
+
+# Lusine jan you get error because when click on hide button, after it input field is hidden, then you try find element in ui and get exception
+# But because you added this code in try except block it is not failed with timeout exception
+# I changed find_element_ui to find_element_dom (to wait until element be exist in dom, not diplayed)
+# Also in your test_data.py file, email is not with correct format. 
+# I changed it, but it depends what you want to check, incorrect format message, or incorrect username message

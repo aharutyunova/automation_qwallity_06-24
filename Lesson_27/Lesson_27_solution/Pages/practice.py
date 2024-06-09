@@ -27,7 +27,7 @@ try:
         try:
             basic_page.find_and_click(driver, hidden_el_loc)
 
-            inp_field = basic_page.find_elem_ui(driver, hidden_inp_field_loc)
+            inp_field = basic_page.find_elem_dom(driver, hidden_inp_field_loc)
             show_attr = inp_field.get_attribute('style')
 
             assert 'display: none' in show_attr, (
