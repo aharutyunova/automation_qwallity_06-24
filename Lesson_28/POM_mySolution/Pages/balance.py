@@ -1,9 +1,5 @@
 from Helpers.basicHelper import Basic_Helper
-from Helpers import locators
-import testdata
-
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 import logging
 import time
 
