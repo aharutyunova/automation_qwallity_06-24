@@ -1,4 +1,6 @@
 from selenium import webdriver
+
+# Ray jan even a lot of part is not complete but it's clear that you're on the right way )))
 from Helpers.basic_page import Basic_Helper
 from Helpers import logging_config
 from Pages.practice import Practice_Page
