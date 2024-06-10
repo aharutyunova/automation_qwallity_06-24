@@ -1,4 +1,4 @@
-from Helpers.basic_practice import Basic_Helper
+from Helpers.basic_page import Basic_Helper
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import logging
@@ -14,6 +14,6 @@ class Login_Page(Basic_Helper):
     expected_incorrect_login_text = 'Incorrect login details. Please try again.'
     
     def incorrectLogin(self, _email, _password):
-        Basic_Helper.findandinput(self.driver, self.email, _email)
-        Basic_Helper.findandinput(self.driver, self.password, _password)
-        Basic_Helper.findandclick(self.driver, self.login_btn)
+        Basic_Helper.findandinput(self.email, _email)
+        Basic_Helper.findandinput(self.password, _password)
+        Basic_Helper.findandclick(self.login_btn)
