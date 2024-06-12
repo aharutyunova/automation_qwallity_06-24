@@ -19,4 +19,5 @@ class HomePage(BasePage):
 
     def get_result(self):
         res = self.find_elements(self.search_results_loc)
-        logging.info(f"Number of results: {res}")
+        logging.info(f"Number of results: {res[0].text}")
+        return res[0].text
