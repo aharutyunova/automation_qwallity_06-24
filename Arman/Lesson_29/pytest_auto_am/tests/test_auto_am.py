@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from pytest_auto_am.conftest import driver
+# from pytest_auto_am.conftest import driver
 
 
 def test_search_mazda(driver):
@@ -39,3 +39,11 @@ def test_search_mazda(driver):
 
     # Check that results are not "Null"
     assert len(results) > 0, "No results found for 'Mazda'"
+
+
+# Anna mainly logic is correct, I could run test with pytest command
+#  But there are some notes
+# 1. In condftest.py gile, for selenium 4 no need to import from webdriver_manager.chrome import ChromeDriverManager
+# You should initialize driver like we did it without pytest
+# 2. Conftest.py file and fixtures from that file are accessable without import, so no need import driver from conftest here
+# 3. You didn't use Page object model
