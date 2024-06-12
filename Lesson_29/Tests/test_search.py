@@ -40,4 +40,4 @@ def test_kia():
 
 if __name__ == '__main__':
     test_kia()
-    print("This test case finished, but not successfully!:D")
+    print("This test case finished successfully!")
