@@ -6,9 +6,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 @pytest.fixture
 def driver():
-    # Step 1: Set up the Chrome WebDriver using ChromeDriverManager to handle the installation
+    # Set up the Chrome WebDriver using ChromeDriverManager to handle the installation
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    # Step 2: Yield the driver to the test function so it can be used
+    # Yield the driver to the test function
     yield driver
-    # Step 3: Quit the driver after the test finishes to clean up resources
+    # Quit the driver after the test finishes to clean up resources
     driver.quit()
