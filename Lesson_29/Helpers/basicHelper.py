@@ -2,7 +2,7 @@ import logging
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
-
+import time
 
 class Basic_Helper:
     def __init__(self, driver):
@@ -25,7 +25,8 @@ class Basic_Helper:
 
 
     def findandinput(self, loc, inputtext, sec=10):
-        elem = WebDriverWait(self.driver, sec).until(EC.presence_of_element_located(loc))
+        elem = WebDriverWait(self.driver, sec).until(EC.visibility_of_element_located(loc))
         elem.send_keys(inputtext)
+        time.sleep(0.5)
         elem.send_keys(Keys.ENTER)
         logging.info("Input field located and text was filled")

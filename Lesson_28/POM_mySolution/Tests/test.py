@@ -41,3 +41,6 @@ def test():
     finally:
         driver.quit()
 test()
+
+# Ray jan structure is correct, as we have issue with our webpage i can't run test, but the main note here is
+# Don't use try except in test case because you willn't see fail of assertion. NEVER use assert in try except block
