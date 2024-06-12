@@ -1,8 +1,6 @@
 from selenium.webdriver.common.by import By
 from Lesson_29.Helpers.base_page import BasePage
-from selenium.webdriver.common.keys import Keys
 import logging
-from Lesson_29 import testdata
 
 
 class HomePage(BasePage):

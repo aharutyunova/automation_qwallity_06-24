@@ -3,6 +3,7 @@ from selenium import webdriver
 from Helpers.logging_config import configure_logging
 import logging
 
+
 @pytest.fixture(scope="session")
 def driver():
     configure_logging()
