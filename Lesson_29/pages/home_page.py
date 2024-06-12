@@ -6,7 +6,8 @@ class HomePage:
     def __init__(self, driver):
         self.driver = driver
         self.url = "https://www.auto.am"
-        self.search_input = (By.NAME, "category")
+    
+    search_input = (By.NAME, "category")
 
     def load(self):
         self.driver.get(self.url)
