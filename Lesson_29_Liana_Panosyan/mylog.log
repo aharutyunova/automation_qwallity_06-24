@@ -1,0 +1,6 @@
+2024-06-13 00:56:04 [INFO] Starting test case!
+2024-06-13 00:56:27 [INFO] Open url https://auto.am/
+2024-06-13 00:56:34 [INFO] Searching for car brand: Kia
+2024-06-13 00:56:38 [INFO] Search results on one page:: 51
+2024-06-13 00:56:38 [INFO] Found 51 results for Kia
+2024-06-13 00:56:38 [INFO] Test completed
