@@ -1,6 +1,5 @@
 import pytest 
 from selenium import webdriver
-from auto_am_page import AutoAmPage
 import logging
 
 
@@ -42,3 +41,6 @@ def test_search_kia_results_not_null(driver)
 
     def get_search_results(self)
        pass
+
+
+# Mariam jan general methods and actions are correct, but it doesn't work because everything in the same file
