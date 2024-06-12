@@ -1,11 +1,11 @@
 from selenium.webdriver.common.by import By
-from Lesson_29.Helpers.base_page import BasePage
+from Helpers.base_page import BasePage
 import logging
 
 
 class HomePage(BasePage):
-    input_fld_loc = (By.XPATH, "//*[@id='searchInp-small']")
-    search_btn_loc = (By.XPATH, "//*[@id='submit_search-small']")
+    input_fld_loc = (By.XPATH, "//*[@id='searchInp']")
+    search_btn_loc = (By.XPATH, "//i[@id='submit_search']")
     search_results_loc = (By.XPATH, "//*[@id='research-btn']/span")
 
     def enter_search_key(self, key):
