@@ -1,7 +1,7 @@
-from Helpers.basic_page import BasicHelper  # Importing BasicHelper class from Helpers.basic_page module
-from selenium.webdriver.common.by import By  # Importing By class for locating elements
-from selenium.webdriver.common.keys import Keys  # Importing Keys class for keyboard interactions
-import logging  # Importing the logging module for logging messages
+from Helpers.basic_page import BasicHelper 
+from selenium.webdriver.common.by import By  
+from selenium.webdriver.common.keys import Keys  
+import logging  
 
 
 class Brands_Page(BasicHelper):

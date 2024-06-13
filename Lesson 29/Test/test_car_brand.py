@@ -8,6 +8,7 @@ from selenium import webdriver
 import config_data 
 import conftest
 
+
 def test_search_car(driver):
     auto_page = Brands_Page(driver)
     logging.info("Starting test_search_car")
