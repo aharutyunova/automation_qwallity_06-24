@@ -1,4 +1,0 @@
-1. Login to Azure with credentials from ppt
-2. Add new project with your name
-3. Create pipeline which will run any pytest repository with 2 test cases
-4. Attache allure report to test results
