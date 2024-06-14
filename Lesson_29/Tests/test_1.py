@@ -1,23 +1,19 @@
-from Helpers.logging_ import logging_
-from pages.search import SearchPage
+from Pages.search import SearchPage
 import config
 import testdata
 import logging
 import time
 
-
 def test(driver):
 
-    logging_()
     si = SearchPage(driver)
     si.geturl(config.base_url)
-    si.searchInput(testdata.car_name)
-    #assert brand == testdata.car_name, logging.error("Search is failed")
-    
-    time.sleep(1)   
+    brand = si.searchInput(testdata.car_name)
+    assert brand.lower() == (testdata.car_name).lower(), logging.error("Search is failed")
+    time.sleep(5)     
     result = si.searchresult()
     assert len(result) > 0, logging.error("No result")
-
+    logging.info("Test passed")
 
 # Ray jan generel concept is correct but there is some notes and the MOST IMPORTNAT
 #  NEVER PUT ASSERT In try except block. In this case your test always will pass and never fail even assertion will fail

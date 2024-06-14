@@ -10,8 +10,8 @@ class SearchPage(Basic_Helper):
 
     def searchInput(self, car_name):
         self.findandinput(self.search_input_loc, car_name)
-        brand = self.find_element(self.searched_brand_ddl_loc).text
-        return brand
+        brand = self.find_element(self.searched_brand_ddl_loc)
+        return brand.text
 
     def searchresult(self):
         result = self.find_elements(self.search_result_loc)
