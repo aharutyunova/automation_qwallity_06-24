@@ -1,5 +1,6 @@
-1 == 2
-assert False, "Oh no! This assertion failed!"
+def test_fail():
+    assert False
 
-1 == 1
-assert True, "This assertion is successful!"
+
+def test_true():
+    assert True
