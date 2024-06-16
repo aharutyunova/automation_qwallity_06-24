@@ -23,3 +23,4 @@ def test_search_car(driver):
 # Also conftest.py file should be out of the Test folder. It should be in the root of the project.
 # No need to import conftest.py file in the test file. It will be automatically imported by pytest.
 # With debug test is passing. In tun mode it is failing.
+# Config_data.py also will be better keep in root folder
