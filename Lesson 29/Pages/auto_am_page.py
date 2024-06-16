@@ -21,5 +21,3 @@ class Brands_Page(BasicHelper):
         search_results = self.find_elements(self.search_result_loc)
         logging.info(f"Search results on one page:: {len(search_results)}")
         return search_results
-
- 
