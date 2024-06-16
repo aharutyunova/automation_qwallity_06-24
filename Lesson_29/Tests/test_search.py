@@ -1,11 +1,10 @@
 import time
-
-from pages.home_page import HomePage
+from Lesson_29.Pages.home_page import HomePage
 from selenium import webdriver
-from Helpers import logging_config
-from Helpers.base_page import BasePage
-import config
-import testdata
+from Lesson_29.Helpers import logging_config
+from Lesson_29.Helpers.base_page import BasePage
+from Lesson_29 import config
+from Lesson_29 import (testdata)
 import logging
 
 
@@ -15,7 +14,6 @@ def test_kia():
     bp = BasePage(driver)
     home_page = HomePage(driver)
 
- 
     logging.info("Starting test cases")
     bp.open_url(config.url)
 
@@ -29,7 +27,6 @@ def test_kia():
     home_page.get_result()
     time.sleep(5)
     logging.info("All test cases are passed")
-
 
 
 
