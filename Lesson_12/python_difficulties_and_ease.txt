@@ -1,0 +1,8 @@
+Difficulties:
+	Indentation
+	Access Modifiers
+	Many types of lists
+	Self
+
+Ease:
+	Dynamic Typing

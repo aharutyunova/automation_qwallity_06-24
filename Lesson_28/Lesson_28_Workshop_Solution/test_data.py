@@ -1,0 +1,5 @@
+email = "qwallityautomation26022024@gmail.com"
+code = "26022024#"
+password = "lushov33"
+username = "lushov"
+amount = "5"

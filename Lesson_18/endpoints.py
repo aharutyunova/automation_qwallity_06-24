@@ -1,0 +1,5 @@
+endpoint_login = "https://qwallity-prod.onrender.com/login/api"
+endpoint_add_course = "https://qwallity-prod.onrender.com/add_course/api"
+endpoint_get_fund_courses = "https://qwallity-prod.onrender.com/courses/fundamental/api"
+endpoint_update_course = "https://qwallity-prod.onrender.com/course/{}/update/"
+endpoint_delete_course = "https://qwallity-prod.onrender.com/courses/course/{}"

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "is_student": false,
+        "email": "john.doe@example.com",
+        "phone": "+1234567890",
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "postal_code": "12345",
+            "country": "USA"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "is_student": true,
+        "email": "jane.smith@example.com",
+        "phone": "+1987654321",
+        "address": {
+            "street": "456 Elm St",
+            "city": "Otherville",
+            "state": "NY",
+            "postal_code": "54321",
+            "country": "USA"
+        }
+    }
+]

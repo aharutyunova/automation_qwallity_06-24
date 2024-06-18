@@ -1,0 +1,8 @@
+The general logic is correct
+Only you didn't print result for else branch
+And in your example + branch never will be used. If you add it for general solution, in this case what should be the result- 0 or 1? Did I understand correctly?
+
+
+Yes, dear Anna, you are absolutely right.
+I just presented the general flow. That's why I specified it without the "Input" parameter and didn't get too detailed in terms of all the cases.
+But in the modified version you can see the cases you pointed out.
