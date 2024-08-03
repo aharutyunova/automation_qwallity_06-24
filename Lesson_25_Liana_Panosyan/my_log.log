@@ -1,0 +1,9 @@
+2024-06-02 17:15:36 [INFO] Navigated to letskodeit.com
+2024-06-02 17:15:37 [INFO] Alert text: Hello , share this practice page and share your knowledge
+2024-06-02 17:15:37 [INFO] Element hidden: <selenium.webdriver.remote.webelement.WebElement (session="578126fbacd6e4043e5b6c64f00b450c", element="f.EF384C053112BCD5453B7F53BAA335E0.d.C6A3C5527B1CC52881D78378819F81AA.e.32")>
+2024-06-02 17:15:38 [INFO] Footer text: © 2024 letskodeit
+2024-06-02 17:15:39 [INFO] Sign In button is visible: True
+2024-06-02 17:15:39 [INFO] Sign In button is clickable: True
+2024-06-02 17:15:39 [INFO] Clicked on Sign In button
+2024-06-02 17:15:41 [INFO] Validation error message: Incorrect login details. Please try again.
+2024-06-02 17:15:43 [INFO] Number of automation mentions: 2
